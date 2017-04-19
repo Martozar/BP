@@ -20,6 +20,8 @@
 \select@language {czech}
 \select@language {czech}
 \contentsline {chapter}{\numberline {1}\IeC {\'U}vod}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}C\IeC {\'\i }l pr\IeC {\'a}ce}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Motivace}{2}{section.1.2}
 \contentsline {chapter}{\numberline {2}N\IeC {\'a}vrh syst\IeC {\'e}mu}{3}{chapter.2}
 \contentsline {section}{\numberline {2.1}Volba vizu\IeC {\'a}ln\IeC {\'\i } zna\IeC {\v c}ky}{3}{section.2.1}
 \contentsline {section}{\numberline {2.2}Volba sou\IeC {\v r}adnicov\IeC {\'e}ho syst\IeC {\'e}mu}{3}{section.2.2}

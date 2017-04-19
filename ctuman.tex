@@ -175,11 +175,32 @@ Bylo provedeno hodně různých výzkumů ohledně návrhu robotu, který by dok
 Nejdříve je třeba definovat, co vlastně je robot následující člověka. Jedná se o mobilního robota, který sleduje určitou osobu
 a zároveň objíždí překážky a chová se k ostatním lidem, jako k překážkám, tj. nezmění cíl sledování během jízdy.
 
-Takový robot typicky může být vybaven hodně různými senzory, např. laserovým, zvukovým nebo IČ dálkoměrem, aby mohl měřit vzdálenost od překážek, kamerou pro detekci sledovaného objektu, bezdrátovým přenáčem signálu, GPS apod. Tyto senzory by měly fungovat současně, aby robot dokázal všechno, co se od něj očekává. 
+Takový robot typicky může být vybaven hodně různými senzory, např. laserovým, zvukovým nebo IČ dálkoměrem, aby mohl měřit vzdálenost od překážek, kamerou pro detekci sledovaného objektu, bezdrátovým přenášečem signálu, GPS apod. Tyto senzory by měly fungovat současně, aby robot dokázal všechno, co se od něj očekává. 
 
-Cílem této práce je navrhnout systém pro řízení robotu, aby dokázal sledovat člověka a vyhýbat se překážkám. Jelikož cíl pro robota by měl být unikátní, použije se vizuální značka, která by tento problém měla výřešit. Robot dopředu bude vědět, jaký typ značky musí hledat, tím pádem se snižuje šance, že si splete cíl s jiným člověkem nebo překážkou.
+\section{Cíl práce}
+Cílem této práce je navrhnout systém pro řízení robotu, aby dokázal sledovat člověka a vyhýbat se překážkám. Jelikož cíl pro robota by měl být unikátní, použije se vizuální značka, která by tento problém měla vyřešit. Robot dopředu bude vědět, jaký typ značky musí hledat, tím pádem se snižuje šance, že si splete cíl s jiným člověkem nebo překážkou.
 
 Při návrhu tohoto systému je třeba uvědomit si několik věcí:
+\begin{enumerate}
+	\item Cíl se nesmí pohybovat větší rychlostí, než je maximální rychlost robotu. Může se stát, že robot už nikdy nedokáže najít sledovaného člověka, dokud se dotyčný nevrátí na dostatečně blízkou k robotu pozici.
+	
+	\item Aby značka byla dobře detekovatelná, musí být umístěna v ochranném prostředí, tj. být kontrastní v porovnání s pozadím.
+	
+	\item V případě použití dálkoměru pro měření vzdálenosti mezi objekty, je důležité, aby systém nedetekoval sledovaný cíl jako překážku.
+\end{enumerate}
+
+\section{Motivace}
+
+Jak již bylo řečeno, robot s podobnou funkcionalitou by byl hodně užitečný nejen jako pomocník v každodenní činnosti lidí. V medicínských zařízených a domovech pro seniory takový robota by se mohl starat o pacienty (viz \ref{rnc}), také by našel své uplatnění v armádě, kde by pomáhal vojákům s různými náklady. Určitě vylepšená varianta robota následujícího člověka by mohla posloužit jako tělesná stráž.
+
+
+\begin{figure}
+	\caption{Robot následující člověka}
+	
+	\label{rnc}
+	\includegraphics[width=\textwidth]{images/0/maxresdefault.jpg}
+\end{figure}
+
 
 
 \chapter{Návrh systému}
