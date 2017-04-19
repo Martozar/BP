@@ -1,0 +1,611 @@
+% arara: pdflatex: { synctex: yes }
+% arara: makeindex: { style: ctuthesis }
+%% arara: bibtex
+
+%\listfiles
+
+
+%\PassOptionsToPackage{cp1250}{inputenc}
+
+% The class takes all the key=value arguments that \ctusetup does,
+% and couple more: draft and oneside
+\documentclass[twoside]{ctuthesis}
+
+\makeatletter
+\edef\mytoday{\expandafter\@gobbletwo\the\year\ifnum\month<10 0\fi\the\month\ifnum\day<10 0\fi\the\day}
+\makeatother
+
+% LaTeX logo with better kerning in sf bf font
+\makeatletter
+\newcommand\LaTeX@lmss@bx{L\kern -.33em{\sbox \z@ T\vbox to\ht \z@ {\hbox {\check@mathfonts \fontsize \sf@size \z@ \math@fontsfalse \selectfont A}\vss }}\kern -.15em\TeX}
+\DeclareRobustCommand\myLaTeX{%
+	\ifcsname LaTeX@\f@family @\f@series\endcsname
+		\csname LaTeX@\f@family @\f@series\endcsname
+	\else
+		\LaTeX
+	\fi
+}
+
+\ctusetup{
+%	preprint = {\ctuverlog \\ ctuman \mytoday},
+	mainlanguage = czech,
+	titlelanguage = czech,
+	otherlanguages = {english, czech},
+	title-czech = {Následování člověka mobilním robotem},
+	title-english = {},
+	doctype-czech = {Bakalářská práce},
+	doctype-english = {},
+	xfaculty = F3,
+	department-czech = {Katedra kybernetiky},
+	department-english = {Department of Cybernetics},
+	author = {Mykhaylo Zelenskyy},
+	supervisor = {Ing. Jan Chudoba},
+%	supervisor-address = {Ústav X, \\ Uliční 5, \\ Praha 99},
+	keywords-czech = {manuál, závěrečnná práce, \LaTeX},
+	keywords-english = {manual, degree project, \LaTeX},
+	day = 25,
+	month = 3,
+	year = 2017,
+%	list-of-figures = false,
+%	list-of-tables = false,
+%	monochrome = true,
+%	savetoner = true,
+	pkg-listings = true,
+	ctulstbg = none,
+%	layout-short = true,
+%	pkg-hyperref = false,
+}
+
+\ctuprocess
+
+% Theorem declarations, this is the reasonable default, anybody can do what they wish.
+% If you prefer theorems in italics rather than slanted, use \theoremstyle{plainit}
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{conjecture}[theorem]{Conjecture}
+
+\theoremstyle{note}
+\newtheorem*{remark*}{Remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\DeclareMathOperator{\atantwo}{atan2}
+
+% Marginpars used as navigation aids.
+\usepackage{mparhack}
+\usepackage{epstopdf}
+\usepackage{subfig}
+
+
+\newcommand\indexmp[1]{{\sffamily\bfseries#1}}
+
+\ExplSyntaxOn
+\cs_new:Nn \ctuman_domarginpar:n {
+	\marginpar
+	[ \raggedleft \footnotesize \sffamily #1 ]
+	{ \raggedright \footnotesize \sffamily #1 }
+}
+\cs_generate_variant:Nn \ctuman_domarginpar:n { x }
+\DeclareDocumentCommand \ctump { m } {
+	\clist_set:Nn \ctuman_temp_clist { #1 }
+	\ctuman_domarginpar:x { \clist_use:Nnnn \ctuman_temp_clist { \\ } { \\ } { \\ } }
+	\clist_map_inline:Nn \ctuman_temp_clist { \index{##1|indexmp} }
+	\ignorespaces
+}
+\ExplSyntaxOff
+
+% Abstract in Czech
+\begin{abstract-czech}
+Tento mánuál představuje \LaTeX ovou třídu ctuthesis, její použití, požadavky na systém atd.
+\end{abstract-czech}
+
+% Abstract in English
+\begin{abstract-english}
+This manual shows how to use the ctuthesis \LaTeX\ class, what are the requirements, etc.
+\end{abstract-english}
+
+% Acknowledgements / Podekovani
+\begin{thanks}
+Chtěl bych poděkovat svému vedoucímu, Ing. Janu Chudobovi, za jeho rady a nápady. 
+\end{thanks}
+
+% Declaration / Prohlaseni
+\begin{declaration}
+I declare that this work is all my own work and I have cited all sources I have
+used in the bibliography.
+
+\medskip
+
+Prague, \monthinlanguage{second} \ctufield{day}, \ctufield{year}
+
+\vspace*{2cm}
+
+Prohlašuji, že jsem předloženou práci vypracoval samostatně, a že jsem uvedl veškerou použitou literaturu.
+
+\medskip
+
+V Praze, \ctufield{day}.~\monthinlanguage{title}~\ctufield{year}
+\end{declaration}
+
+\usepackage{url}
+
+\usepackage{tabularx,array}
+
+\usepackage{mathtools,amssymb}
+
+% A savebox for typesetting listings in the titles
+\newsavebox{\myboxa}
+
+%\newcommand*\symbO{$\color{red}\bowtie$}
+\newcommand*\symbO{\raisebox{0.5\height}{\scalebox{0.7}{\color{red}${\vartriangleright}\mkern-6mu{\vartriangleleft}$}}}
+\newcommand*\symbM{\raisebox{0.5\height}{\scalebox{0.7}{\color{red}${\blacktriangleright}\mkern-6mu{\blacktriangleleft}$}}}
+\newcommand*\itemO{\item\leavevmode\kern-0.33em\symbO}
+\newcommand*\itemM{\item\leavevmode\kern-0.33em\symbM}
+
+
+
+\begin{document}
+	
+
+
+% We actually don't want inline listings to have a background color
+\renewcommand \ctulstsep {0pt}
+
+% \ctuclsname for typesetting the class' name
+\newcommand\ctuclsname{\leavevmode\unhcopy\ctuclsnamebox}
+\newsavebox\ctuclsnamebox
+\begin{lrbox}{\ctuclsnamebox}
+\ctulst!ctuthesis!
+\end{lrbox}
+
+\maketitle
+
+\chapter{Úvod}
+
+Pomocný robot může se zdát mnoha z nás jako futuristický sen. Takový robot, který by místo nás nosil věci, pomáhal při nákupech, asistoval v nemocnicích nebo ošetřoval raněné ve válkách. Podobný robot by měl tolik výhod, že by v budoucnu to bylo trendem vlastnit takového pomocníka.
+
+Bylo provedeno hodně různých výzkumů ohledně návrhu robotu, který by dokázal sledoval člověka. S tímto problémem jsou spojené dvě důležité otázky. První je jaké senzory použit pro lokalizaci člověka, druhá řeší řízení a navigaci robotu, aby udržoval určitou vzdálenost a vyhýbal se případným překážkám.
+
+Nejdříve je třeba definovat, co vlastně je robot následující člověka. Jedná se o mobilního robota, který sleduje určitou osobu
+a zároveň objíždí překážky a chová se k ostatním lidem, jako k překážkám, tj. nezmění cíl sledování během jízdy.
+
+Takový robot typicky může být vybaven hodně různými senzory, např. laserovým, zvukovým nebo IČ dálkoměrem, aby mohl měřit vzdálenost od překážek, kamerou pro detekci sledovaného objektu, bezdrátovým přenáčem signálu, GPS apod. Tyto senzory by měly fungovat současně, aby robot dokázal všechno, co se od něj očekává. 
+
+Cílem této práce je navrhnout systém pro řízení robotu, aby dokázal sledovat člověka a vyhýbat se překážkám. Jelikož cíl pro robota by měl být unikátní, použije se vizuální značka, která by tento problém měla výřešit. Robot dopředu bude vědět, jaký typ značky musí hledat, tím pádem se snižuje šance, že si splete cíl s jiným člověkem nebo překážkou.
+
+Při návrhu tohoto systému je třeba uvědomit si několik věcí:
+
+
+\chapter{Návrh systému}
+\section{Volba vizuální značky}
+%https://www.researchgate.net/publication/270107591_Visual_Localization_of_Mobile_Robot_Using_Artificial_Markers
+%https://pdfs.semanticscholar.org/71e8/30b6da4b7adbfcd369664e5347a515e25d64.pdf
+%http://www.uco.es/investiga/grupos/ava/sites/default/files/GarridoJurado2014.pdf
+Jak již bylo zmíněno, mobilní robot bude následovat člověka, který má na sobě umístěnou předem známou vizuální značku. Pro tyto účely se v praxi běžně používají markery pro rozšířenou realitu. Jejich detekce je většinou jednoduchá a můžou v sobě uchovávat užitečnou informaci, např. identifikační číslo, podle kterého robot pozná, koho sleduje. Jednu z možných vizuálních značek, které jsou použity v práci, lze vidět na obrázku \ref{am}.
+
+\begin{figure}[H]
+	\caption{Příklad vizuální značky}
+	
+	\label{am}
+	\includegraphics[width=0.5\textwidth]{images/2/ArucoMarker.jpg}
+\end{figure}
+
+\section{Volba souřadnicového systému}
+
+Pro řízení robotu je třeba zvolit souřadnicový systém, ve kterém se bude pohybovat. Z obrázku \ref{ss} je patrné, že je pohyb ve zvoleném souřadnicovém systému prováděn ve směru osy X'
+
+\begin{figure}[H]
+	\caption{Použitý souřadnicový systém}
+	
+	\label{ss}
+	\includegraphics[width=0.9\textwidth]{images/2/ss.png}
+\end{figure}
+\chapter{Detekce}
+
+\section{Zpracování obrazu z kamery}
+
+Než bude možné použít rozpoznávací algoritmy, výstup z kamery musí být náležitě zpracován, aby odpovídal formátu, se kterým algoritmy pracují.
+
+% http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.420.7883&rep=rep1&type=pdf
+%http://docs.opencv.org/trunk/d9/d8b/tutorial_py_contours_hierarchy.html
+%http://docs.opencv.org/3.1.0/d5/dae/tutorial_aruco_detection.html
+%https://en.wikipedia.org/wiki/Ramer–Douglas–Peucker_algorithm#cite_ref-1
+Načtený snímek je převeden do černobílé podoby, je tedy použito prahování. Jelikož se předpokládá, že se robot může pohybovat v prostředí s nerovnoměrným osvětlením, pro binarizaci obrazu je vhodné použit adaptivní prahování \ref{adapt}. Tato metoda počítá práh pro malé části obrazu místo globálního nastavení prahu pro celý snímek.
+
+Dále je třeba najít kontury. Algoritmus pro nalezení kontur je implementován v OpenCV knihovně. Tato funkce navíc zajišťuje zachování hierarchii kontur, tedy topologii obrázku, jako je vidět na \ref{hierarch}. Tato informace je užitečné pro následující rozpoznávání, protože pak kontury na nejnižší nebo nejvyšší úrovni hierarchie můžou být ignorovány, pokud se předpokládá, že vizuální značka bude umístěna v ochranné zóně a bude obsahovat další pod-vzory.
+
+\begin{figure}
+	\caption{Příklad použití adaptivního prahování}
+	
+	\label{adapt}
+	\includegraphics[width=0.8\textwidth]{images/2/adapt.jpg}
+\end{figure}
+
+\begin{figure}
+	
+	\caption{Hierarchie (topologie) obrazu}
+	
+	\label{hierarch}
+	\includegraphics[width=0.8\textwidth]{images/2/ccomp_hierarchy.png}
+\end{figure}
+
+\section{Rozpoznávání vzoru}
+
+Pro rozpoznávání vizuální značky byly zvoleny dva algoritmy: jeden založený na korelaci známých vzorů s nalezeným, druhý přímo z OpenCV knihovny -- ArUco marker detektor.
+
+\subsection{Korelační algoritmus}
+
+Tento algoritmus využívá principu korelaci mezi dvěma veličinami, tedy mezi známým vzorem a nalezenou oblasti zájmu (Region of Interest, ROI). Korelace uvádí, jak jsou na sobě tyto veličiny závislé, a může nabývat hodnot od -1 do +1. Hodnota korelačního koeficientu blížící se -1 značí nepřímou závislost veličin, koeficient blízký +1 naopak značí přímou závislost, což je zobrazeno na \ref{korelace}.
+
+\begin{figure}
+	
+	\caption{Příklad korelace mezi dvěma veličinami}
+	
+	\label{korelace}	
+	\subfloat[Kladná korelace]{\includegraphics[width=0.5\textwidth]{images/2/klad.eps}}
+	\subfloat[Záporná korelace]{\includegraphics[width=0.5\textwidth]{images/2/zap.eps}}
+	\hfill
+	\subfloat[Žádná korelace]{\includegraphics[width=0.5\textwidth]{images/2/zadna.eps}}
+\end{figure}
+Hledaná ROI v zjednodušeném případě je konvexní čtyřúhelník, proto stačí s použitím informace o topologii obrazu spočítat polygony nalezených kontur a vybrat pouze ty, co obsahují čtyři strany a nejsou konkávní. Pro aproximaci křivky se používá Ramerův Douglasův Peuckerův algoritmus (viz \ref{approx}), který je naimplementován v OpenCV knihovně.
+\begin{figure}
+	
+	\caption{Aproximace křivky pomocí Ramerova Douglasova Peuckerova algoritmu}
+	
+	\label{approx}
+	\includegraphics[width=0.8\textwidth]{images/2/approx.png}
+\end{figure}
+
+
+Následně je spočítána transformační matice mezi nalezeným polygonem a známým vzorem. Pomocí této matice se polygon převede do takové podoby, aby byl porovnatelný se vzorem.
+
+Dále se jenom vyhodnotí, jak nalezená ROI a známý vzor jsou na sobě závislý. Pokud je vypočtený korelační koeficient větší, než zadaný práh, ROI se vyhodnotí jako správně označena a algoritmus vrátí souřadnice jejích rohů pro následující zpracování.
+
+Korelaci mezi dvěma obrázky $I_1$ a $I_2$ s $N$ pixely spočítáme následujícím způsobem:
+
+	\begin{equation}
+	\mu_{1,2} = \frac{\sum_{i,j}I_{i,j}}{N},
+	\end{equation}
+	\begin{equation}
+	\sigma_{1,2} = \sqrt{\left(\frac{\sum_{i,j}(I_{i,j} - \mu_{1,2})^2}{N}\right)^2},
+	\end{equation}
+	\begin{equation}
+	covar(I_1, I_2) = \frac{(I_1 - \mu_1)\cdot(I_2 - \mu_2)}{N},
+	\end{equation}	
+	\begin{equation}
+	cor(I_1, I_2) = \frac{covar(I_1, I_2)}{\sigma_1 \sigma_2}.
+	\end{equation}
+	
+\subsection{ArUco marker detektor}
+	
+Tento algoritmus je naimplementován v OpenCV knihovně a umožňuje rozpoznávání ArUco markerů nebo podobných vizuálních značek. Podobně jako výše uvedený korelační algoritmus, hledá konvexní čtyřúhelník. Rozdíl pak spočívá v odlišném zpracování nalezené ROI, kde se místo korelace využívá binární mapa kandidáta.
+
+ROI je rozdělena na mřížku s počtem buněk rovným počtu bitů hledaného vzoru (viz \ref{cell}). Následně se spočítá, kolik bílých a černých pixelů obsahuje každá buňka, na základě čehož se vyhodnotí, jestli buňka je černá nebo bílá (viz \ref{cellm}). Pokud detektor ve svém slovníku obsahuje vzor se stejnou binární maskou, vrátí souřadnice rohů nalezené ROI.
+
+\begin{figure}
+	\caption{Buňky ArUco markeru}
+	
+	\label{cell}
+	\includegraphics[width=0.5\textwidth]{images/2/bitsextraction1.png}
+\end{figure}
+\begin{figure}
+	\caption{Vyhodnocení obrázku pomocí ArUco detektoru}
+	
+	\label{cellm}
+	\includegraphics[width=1\textwidth]{images/2/bitsextraction2.png}
+\end{figure}
+\section{Měření vzdáleností}
+
+%http://www.huecandela.com/hue-x/pin-pdf/Prober-%20Wellman.pdf
+Algoritmy popsané výše naleznou polohu vizuální značky v obraze, z čehož lze spočítat její umístění vůči kameře, je-li známa velikost této značky. Pro výpočty lze použít model ideální (dírkové) kamery, kde vzdálenost mezi kamerou a značkou je vyjádřena jako
+
+\begin{equation}
+d = \frac{fX}{x},
+\end{equation}
+
+kde
+
+$x$: Nejkratší vzdálenost mezi dvěma rohy nalezené značky.
+
+$f$: Ohnisková vzdálenost.
+
+$X$: Známá délka hrany značky.
+
+Pro nalezení posunutí značky vůči kameře při odklonění od její osy, musí být znám zorný úhel kamery. Ten lze spočítat dle vztahu
+
+\begin{equation}
+\alpha = 2\arctan\left(\frac{w}{2f}\right),
+\end{equation}
+
+kde
+
+$w$: Šířka výstupního obrazu z kamery.
+
+Potom úhel, který pokrývá jeden pixel snímku, je vyjádřen vztahem
+
+\begin{equation}
+APP = \frac{\alpha}{w}.
+\end{equation}
+
+Následně posunutí objektu vůči středu kamery je 
+
+\begin{equation}
+\phi = (x_c - x_t)APP,
+\end{equation}
+
+kde 
+
+$x_c$: Pixel vyjadřující střed kamery v horizontálním směru.
+
+$x_t$: Pixel vyjadřující střed nalezené značky v horizontálním směru.
+
+\begin{figure}
+	\caption{Měřené veličiny $d$ a $\phi$}
+	
+	\label{mereni}
+	\includegraphics[width=1\textwidth]{images/2/mereni.png}
+\end{figure}
+\section{Kalmanův filtr}
+%http://www.diss.fu-berlin.de/docs/servlets/MCRFileNodeServlet/FUDOCS_derivate_000000000473/2005_12.pdf
+%https://github.com/rlabbe/Kalman-and-Bayesian-Filters-in-Python
+V případě, že poloha značky vůči kameře není detekovatelná, robot by neměl zastavovat. Z tohoto důvodu je třeba predikovat polohu cíle z předchozích měření. Pro tyto účely v práci je použit Kalmanův filtr. 
+
+Model lze popsat pomocí následujícího stavového vektoru
+\begin{equation}
+{\boldsymbol{x}} = 
+\begin{bmatrix}
+x&y&v_{x}&v_{y}
+\end{bmatrix}^T,
+\end{equation}
+
+kde $v_{lin}$, resp. $v_{ang}$, značí rychlost ve směru osy X, resp. Y.
+
+
+Stavový model je pak vyjádřen jako
+
+\begin{equation}
+\label{x_t+1}
+{\boldsymbol{x}}_{t+1} = \boldsymbol{F}{\boldsymbol{x}}_{t},
+\end{equation}
+
+kde $\boldsymbol{F}$ je matice přechodu stavů $\boldsymbol{x}$ z času $t$ do času $t + 1$ a platí, že
+
+\begin{equation}
+\boldsymbol{F} = \begin{bmatrix}
+1&0&1&0\\
+0&1&0&1\\
+0&0&dt&0\\
+0&0&0&dt
+\end{bmatrix}.
+\end{equation}
+
+Pro sledování cíle lze Kalmanův filtr rozdělit do tří kroků:
+
+\textbf{1.  Inicializace ($t = 0$).} Během tohoto kroků se nastavuje počáteční pozice cíle $\boldsymbol{x}_0$ a výchozí hodnota pro kovarianční matici $\boldsymbol{P}_0$. Jelikož počáteční pozice cíle nemusí být známa, je vhodné zvolit $\boldsymbol{x}_0$ tak, aby v případě, že kamera nedetekuje značku po první iteraci, robot zůstával na místě.
+
+\textbf{2. Predikce ($t > 0$).} V tomto kroku se provádí predikce polohy cíle v čase $t + 1$, tj. $\boldsymbol{x}_{t+1}$, dle \ref{x_t+1}. Také se počítá nová kovarianční matice dle následujícího vztahu
+
+\begin{equation}	
+\boldsymbol{P}_{t+1} = \boldsymbol{F}\boldsymbol{P}_t\boldsymbol{F}^T + \boldsymbol{Q}_{t+1},
+\end{equation}
+
+kde $\boldsymbol{Q}$ značí matici kovariancí šumů.
+
+\textbf{3. Filtrace ($t > 0$).} Během tohoto kroku poloha cíle je upřesněna na základě provedeného měření. Nejdříve se spočte rozdíl mezi reálnou polohou a predikovanou v kroku 2.:
+
+\begin{equation}
+\boldsymbol{y}_{t} = \begin{bmatrix}
+x_{m_t}\\y_{m_t}
+\end{bmatrix} - \boldsymbol{H}\boldsymbol{x}_t,
+\end{equation}
+
+kde 
+
+\begin{equation}
+\boldsymbol{H} = \begin{bmatrix}
+1&0&0&0\\
+0&1&0&0
+\end{bmatrix}.
+\end{equation}
+
+Dále se vypočítá Kalmanovo zesílení, pro nějž platí, že
+
+\begin{equation}
+\boldsymbol{K}_t = \boldsymbol{P}_t\boldsymbol{H}^T(\boldsymbol{H}\boldsymbol{P}_t\boldsymbol{H}^T + \boldsymbol{R})^{-1},
+\end{equation}
+
+kde $\boldsymbol{R}$ ja matice kovariancí šumů.
+
+Následně se provede zpřesnění polohy cíle a aktualizuje se kovarianční matice:
+
+\begin{equation}
+\boldsymbol{x}_{t+1} = \boldsymbol{x}_t + \boldsymbol{K}_t\boldsymbol{y}_t,
+\end{equation}
+
+\begin{equation}	
+\boldsymbol{P}_{t+1} = (\boldsymbol{I} - \boldsymbol{K}_t\boldsymbol{H})\boldsymbol{P}_t.
+\end{equation}
+\begin{figure}
+	\caption{Shrnutí algoritmu Kalmanova filtru}
+	
+	\label{kalman_diag}
+	\includegraphics[width=0.9\textwidth, height=0.9\textwidth]{images/2/kalman_diagram.pdf}
+\end{figure}
+Z nalezených hodnot $x$ a $y$ lze jednoduše odvodit hodnoty $d$ a $\phi$, což je také vidět na \ref{inv}. Jelikož se předpokládá, že poloha robotu je známa, lze spočítat $x_t$ a $y_t$, což je poloha cíle vůči robotu, jako
+
+\begin{equation}
+x_t = x - x_r,
+\end{equation}
+
+\begin{equation}
+y_t = y - y_r.
+\end{equation}
+
+Dále pak $\phi$ a $d$ jsou nalezeny dle vztahů
+
+\begin{equation}
+\phi = h - \atantwo(y_t, x_t),
+\end{equation}
+
+\begin{equation}
+d = \sqrt{x_t + y_t}\cos(\phi).
+\end{equation}
+\begin{figure}
+	\caption{Odvození hodnot $d$ a $\phi$ ze známé polohy cíle}
+	
+	\label{inv}
+	\includegraphics[width=1\textwidth]{images/2/neco.png}
+\end{figure}
+\chapter{Řízení}
+
+\section{Obstacle avoidance}
+
+Pro řízení autonomního robotu je důležité, aby se dokázal vyhýbat překážkám, když sleduje svůj cíl. 
+
+\subsection{Vector Field Histogram}
+
+%http://www-personal.umich.edu/~johannb/Papers/paper16.pdf
+
+%http://www.imavs.org/papers/2016/62_IMAV2016_Proceedings.pdf
+
+Princip tohoto algoritmu spočívá v tom, že se na základě naměřených dat z dálkoměru vytvoří lokální mřížková mapa prostředí o poloměru $r_{map}$. Každá buňka této mapy tak obsahuje hodnotu obsazenosti odpovídající oblasti v reálném světě (viz \ref{mrizka}). Z této mapy se následně spočítá polární histogram, podle kterého se určí směr jízdy robotu.
+
+\begin{figure}
+	\caption{Lokální mapa prostředí o poloměru $r_{map}$ = 10}
+	
+	\label{mrizka}
+	\includegraphics[width=0.8\textwidth]{images/3/mrizka.png}
+\end{figure}
+
+Celý proces tímto způsobem můžeme rozdělit na tři kroky: vytvoření primárního polárního histogramu, prahování primárního histogramu a vytvoření z něj binárního a výběr kandidátů pro směr pohybu.
+
+\subsubsection{Primární polární histogram}
+
+Polární histogram je rozdělen na sektory tak, aby každý z nich odpovídal úhlu $\alpha$, který se volí takovým způsoben že $\frac{360}{\alpha}$ je celý číslo. Tedy například pro $\alpha = 15^{\circ}$ histogram obsahuje 24 sektorů (viz \ref{polar}).
+
+Pro každou buňku aktivního regionu, tedy lokální mapy vytvořené kolem robotu, se spočte směr a její význam (magnitude). 
+
+Směr spočteme dle následujícího vztahu
+
+\begin{equation}
+\beta_{i,j} = 	\atantwo ( y_o - y_i, x_o - x_i),
+\end{equation}
+kde
+
+$x_o, y_o$: Souřadnice robotu v mapě (centrum mapy).
+
+$x_i, y_i$: Souřadnice buňky.	
+
+Dále pak magnitude
+
+\begin{equation}
+m_{i,j} = c_{i,j}^2(a - bd_{i,j}^2),
+\end{equation}
+
+kde
+
+$c_{i,j}$: Obsazenost buňky.
+
+$d_{i,j}$: Vzdálenost buňky od pozice robotu.
+
+Parametry $a$ a $b$ se volí dle vztahu:
+
+\begin{equation}
+a - b\left(\frac{r_{map} - 1}{2}\right)   = 1.
+\end{equation}
+
+
+Aby robot nejel blízko okrajům překážek, zavádí se kompenzace jeho velikosti pomocí poloměru robotu $r_{rob}$ a minimální povolené vzdálenosti mezi robotem a překážkou $d_{safety}$:
+
+$$\gamma_{i,j} = \arcsin\left(\frac{r_{rob} + d_{safety}}{d_{i,j}}\right)$$
+Histogram se potom vytvoří dle vztahu 
+
+\begin{equation}
+H_k^p = \sum_{i,j \in C_{\alpha} } m_{i,j}h_{i,j},
+\end{equation}
+
+kde
+
+$$h_{i,j} = \left\{
+\begin{array}{ll} 
+1&\textrm{jestli $k\alpha \in \left[\beta_{i,j} - \gamma_{i,j}; \beta_{i,j} + \gamma_{i,j}\right]$,} \\ 
+0&\textrm{jinak.}
+\end{array} 
+\right.
+$$
+
+
+\begin{figure}
+	\caption{Polární histogram s vyobrazenými prahy $\tau_{low}$ (zeleně) a $\tau_{high}$ (fialově)}
+	
+	\label{polar}
+	\includegraphics[width=0.9\textwidth]{images/3/polar.png}
+\end{figure}
+\subsubsection{Binární polární histogram}
+
+Aby bylo možné určit kandidáty pro další směr pohybu, primární histogram musí být převeden do binární podoby.
+
+$$H_{k,i}^{b} = \left\{
+\begin{array}{ll}
+1&\textrm{jestli $H_{k,i}^p > \tau_{high}$,}\\
+0&\textrm{jestli $H_{k,i}^p < \tau_{low}$,}\\
+H_{k, i-1}^b&\textrm{jinak.}
+\end{array}
+\right.
+$$
+
+\subsubsection{Výběr kandidátů}
+
+Kandidáty pro směr pohybu se volí podle toho, do jaké kategorie je zařazeno volné místo v binárním histogramu. Ty průjezdy, jež mají velikost (tedy vzdálenost mezi pravým okrajem $k_r$ a levým $k_l$) menší, než $s_{max}$, se nazývají úzké, jiné jsou naopak nazývány široké.
+
+Pro úzké průjezdy lze zvolit pouze jednoho kandidáta, a to 
+
+$$\begin{array}{ll}
+c_n = \frac{k_r + k_l}{2}&\textrm{centrální sektor}
+\end{array}$$
+
+Široké průjezdy mají tři možné kandidáty:
+
+$$\begin{array}{ll}
+c_r = k_r + \frac{s_{max}}{2}&\textrm{pravý sektor,}\\
+
+c_l = k_l - \frac{s_{max}}{2}&\textrm{levý sektor,}\\
+
+c_t = k_t&\textrm{pokud $k_t \in \left[c_r;c_l\right]$}
+\end{array}$$
+
+Nový směr pohybu se zvolí dle minimální ceny spočítané pro kandidáta $c_i$ pomocí vztahu
+
+\begin{equation}
+g(c_i) = \mu_1 \Delta\left(c_i, k_t\right) + \mu_2\Delta\left(c_i, \frac{\theta_n}{\alpha}\right) + \mu_3\Delta\left(c_i, k_{d, n-1}\right)
+\end{equation}
+
+přičemž
+
+$\Delta(c_1, c_2) = \min\left\{|c_1 - c_2|, |c_1 - c_2 - \frac{360^{\circ}}{\alpha}|, |c_1 - c_2 + \frac{360^{\circ}}{\alpha}|\right\}$.
+
+$\theta_n$: Heading direction.
+
+$k_{d, n-1}$: Minule zvolený kandidát.
+
+$\mu_1, \mu_2, \mu_3$: Konstanty, zvolené dle vztahu $\mu_1 > \mu_2 + \mu_3$.
+
+
+
+\chapter{Výsledky simulací}
+
+\chapter{Závěr}
+\appendix
+
+\printindex
+
+%\bibliographystyle{amsalpha}
+%\bibliography{ctutest}
+
+\end{document}
