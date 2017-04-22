@@ -219,7 +219,9 @@ Jak již bylo zmíněno, mobilní robot bude následovat člověka, který má n
 
 \section{Volba souřadnicového systému}
 
-Pro řízení robotu je třeba zvolit souřadnicový systém, ve kterém se bude pohybovat. Z obrázku \ref{ss} je patrné, že je pohyb ve zvoleném souřadnicovém systému prováděn ve směru osy X'
+Pro řízení robotu je třeba zvolit souřadnicový systém, ve kterém se bude pohybovat. 
+
+Počátek zvolené souřadnicové soustavy je umístěn do počáteční pozice robotu a osy X je ve stejném směru, jako počáteční směr jízdy robotu. Kladný směr jízdy robotu je v kladném směru osy Y, jak je vyobrazeno na \ref{ss}, a je v rozmezí $\left(-\pi; \pi\right)$. Poloha cíle (viz sekci \ref{mereni_polohy_cile}) je potom vztažená k poloze robotu a je počítána v čárkované soustavě, jejíž počátek je umístěn do aktuální pozice robotu, a je vůči původní otočená o $h$, kde $h$ je směr jízdy robotu.
 
 \begin{figure}[H]
 	\caption{Použitý souřadnicový systém}
@@ -227,6 +229,15 @@ Pro řízení robotu je třeba zvolit souřadnicový systém, ve kterém se bude
 	\label{ss}
 	\includegraphics[width=0.9\textwidth]{images/2/ss.png}
 \end{figure}
+
+\section{Implementační záležitosti}
+
+%http://opencv.org/about.html
+%https://www.uco.es/investiga/grupos/ava/node/26
+Protože se očekává, že software, který bude výsledkem této práce, bude běžet real-time, musí být rychlý a stabilní. Z těchto důvodů bylo rozhodnuto, že celá implementace bude udělána v jazyce C++.
+
+Kromě toho pro C++ je vytvořená OpenCV knihovna, která nabízí obrovské možnosti pro práci s obrazem. Tato knihovna obsahuje přes 2500 optimalizovaných algoritmů pro počítačové vidění a strojové učení. Některé z nich budou použity pro detekci vizuální značky ve výstupu z kamery. Navíc v této knihovně je implementován algoritmus pro detekci ArUco markeru, který je podrobněji popsán v sekci \ref{aruco_marker}.
+
 \chapter{Detekce}
 
 \section{Zpracování obrazu z kamery}
@@ -304,6 +315,7 @@ Korelaci mezi dvěma obrázky $I_1$ a $I_2$ s $N$ pixely spočítáme následuj�
 	\end{equation}
 	
 \subsection{ArUco marker detektor}
+\label{aruco_marker}
 	
 Tento algoritmus je naimplementován v OpenCV knihovně a umožňuje rozpoznávání ArUco markerů nebo podobných vizuálních značek. Podobně jako výše uvedený korelační algoritmus, hledá konvexní čtyřúhelník. Rozdíl pak spočívá v odlišném zpracování nalezené ROI, kde se místo korelace využívá binární mapa kandidáta.
 
@@ -321,8 +333,8 @@ ROI je rozdělena na mřížku s počtem buněk rovným počtu bitů hledaného 
 	\label{cellm}
 	\includegraphics[width=1\textwidth]{images/2/bitsextraction2.png}
 \end{figure}
-\section{Měření vzdáleností}
-
+\section{Měření polohy cíle}
+\label{mereni_polohy_cile}
 %http://www.huecandela.com/hue-x/pin-pdf/Prober-%20Wellman.pdf
 Algoritmy popsané výše naleznou polohu vizuální značky v obraze, z čehož lze spočítat její umístění vůči kameře, je-li známa velikost této značky. Pro výpočty lze použít model ideální (dírkové) kamery, kde vzdálenost mezi kamerou a značkou je vyjádřena jako
 
@@ -373,6 +385,7 @@ $x_t$: Pixel vyjadřující střed nalezené značky v horizontálním směru.
 	\includegraphics[width=1\textwidth]{images/2/mereni.png}
 \end{figure}
 \section{Kalmanův filtr}
+\label{kalman_section}
 %http://www.diss.fu-berlin.de/docs/servlets/MCRFileNodeServlet/FUDOCS_derivate_000000000473/2005_12.pdf
 %https://github.com/rlabbe/Kalman-and-Bayesian-Filters-in-Python
 V případě, že poloha značky vůči kameře není detekovatelná, robot by neměl zastavovat. Z tohoto důvodu je třeba predikovat polohu cíle z předchozích měření. Pro tyto účely v práci je použit Kalmanův filtr. 
@@ -483,7 +496,7 @@ d = \sqrt{x_t + y_t}\cos(\phi).
 	\label{inv}
 	\includegraphics[width=1\textwidth]{images/2/neco.png}
 \end{figure}
-\chapter{Řízení}
+\chapter{Řízení robotu}
 
 \section{Obstacle avoidance}
 
@@ -604,22 +617,43 @@ c_t = k_t&\textrm{pokud $k_t \in \left[c_r;c_l\right]$}
 Nový směr pohybu se zvolí dle minimální ceny spočítané pro kandidáta $c_i$ pomocí vztahu
 
 \begin{equation}
-g(c_i) = \mu_1 \Delta\left(c_i, k_t\right) + \mu_2\Delta\left(c_i, \frac{\theta_n}{\alpha}\right) + \mu_3\Delta\left(c_i, k_{d, n-1}\right)
+g(c_i) = \mu_1 \Delta\left(c_i, k_t\right) + \mu_2\Delta\left(c_i, \frac{h}{\alpha}\right) + \mu_3\Delta\left(c_i, k_{d, n-1}\right)
 \end{equation}
 
 přičemž
 
 $\Delta(c_1, c_2) = \min\left\{|c_1 - c_2|, |c_1 - c_2 - \frac{360^{\circ}}{\alpha}|, |c_1 - c_2 + \frac{360^{\circ}}{\alpha}|\right\}$.
 
-$\theta_n$: Heading direction.
-
 $k_{d, n-1}$: Minule zvolený kandidát.
 
 $\mu_1, \mu_2, \mu_3$: Konstanty, zvolené dle vztahu $\mu_1 > \mu_2 + \mu_3$.
 
+\section{PID regulátor}
+
+Aby robot udržoval určitou vzdálenost od cíle, je třeba použit mechanismy, které by tomu mohly posloužit. PID regulátor 
 
 
-\chapter{Výsledky simulací}
+
+\chapter{Simulace}
+
+\section{Porovnání algoritmů detekce}
+
+Oba algoritmu byly porovnávány při použití značky o velikosti 10x10 cm a rozlišením kamery 512x512 pixelů. Bylo porovnáno několik parametrů obou algoritmu, a to maximální vzdálenost, na které je vizuální značka ještě detekovatelná, stabilní vzdálenost, při které značka je detekována bez přerušení. Dále se porovnával maximální a stabilní úhel otočení vizuální značky vůči robotu a také průměrný výpočetní čas na jednu iteraci algoritmu. Výsledky jsou znázorněny v tabulce \ref{porovnani}. Je patrné, že detekční schopnosti korelačního algoritmu jsou poněkud horší, než u ArUco detektoru. Avšak je třeba zdůraznit, že sice ArUco detektor dokázal rozpoznat vizuální značku na vzdálenosti přes 5 metrů od kamery, úspěšnost detekcí na tak velké vzdálenosti byla podprůměrná, přibližně 40 \%. Co se týká úhlu otočení značky vůči robotu, tam se korelační algoritmus ukázal být lepší a stabilně detekuje značku při 60$^\circ$ otočení. ArUco má na hranicích detekovatelnosti pouze 15\% úspěšnost.
+
+\begin{table}[hbt]
+	\centering
+	\caption{Porovnání korelačního algoritmu a ArUco detektoru}
+	\label{porovnani}
+	\begin{tabular}{|c|c|c|}
+		\hline
+		Název algoritmu              & Korelační algoritmus & ArUco detektor \\ \hline
+		Max. vzdálenost {[}m{]}      & 3.5                 & 5.4           \\ \hline
+		Stabilní vzdálenost {[}m{]}  & 3.5                 & 3.8           \\ \hline
+		Max. úhel {[}$^\circ${]}     & 60                   & 70             \\ \hline
+		Stabilní úhel {[}$^\circ${]} & 60                   & 55             \\ \hline
+		Výpočetní doba {[}ms{]}      & 15                   & 15             \\ \hline
+	\end{tabular}
+\end{table}
 
 \chapter{Závěr}
 \appendix
