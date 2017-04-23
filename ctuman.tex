@@ -81,6 +81,7 @@
 \usepackage{mparhack}
 \usepackage{epstopdf}
 \usepackage{subfig}
+\usepackage{siunitx}
 
 
 \newcommand\indexmp[1]{{\sffamily\bfseries#1}}
@@ -514,7 +515,7 @@ Princip tohoto algoritmu spočívá v tom, že se na základě naměřených dat
 	\caption{Lokální mapa prostředí o poloměru $r_{map}$ = 10}
 	
 	\label{mrizka}
-	\includegraphics[width=0.8\textwidth]{images/3/mrizka.png}
+	\includegraphics[width=0.6\textwidth, height = 0.6\textwidth]{images/3/mrizka.png}
 \end{figure}
 
 Celý proces tímto způsobem můžeme rozdělit na tři kroky: vytvoření primárního polárního histogramu, prahování primárního histogramu a vytvoření z něj binárního a výběr kandidátů pro směr pohybu.
@@ -630,15 +631,26 @@ $\mu_1, \mu_2, \mu_3$: Konstanty, zvolené dle vztahu $\mu_1 > \mu_2 + \mu_3$.
 
 \section{PID regulátor}
 
-Aby robot udržoval určitou vzdálenost od cíle, je třeba použit mechanismy, které by tomu mohly posloužit. PID regulátor 
+%https://www.cs.hmc.edu/~dodds/projects/RobS05/XPort/XPortArticle.pdf
+ 
+Za jízdy je třeba, aby byla mezi robotem a cílem udržována určitá vzdálenost $d$ a hodnota $\phi$ byla co nejmenší, nejlépe nulová. Pro tyto účely je navržen PID regulátor, který pro aktuální odchylku od referenčních bodů spočte dopřednou a úhlovou rychlosti, které se následně převedou na rychlosti motorů. Zjednodušený nákres algoritmu je zobrazen na \ref{pid}.  Pokud $\epsilon_d$, příp. $\epsilon_\phi$, je v pásmu $\left[-\epsilon_{d_0}; \epsilon_{d_0}\right]$, příp. $\left[-\epsilon_{\phi_0}; \epsilon_{\phi_0}\right]$, pak výstup PID regulátoru bude nulový. Jinak se od odchylky odečte hodnota $\epsilon_{d_0}$, příp. $\epsilon_{\phi_0}$, což zaručí to, že se robot nebude kmitat na místě, když bude hodně blízko referenčního bodu a řízení bude plynulé.
 
+\begin{figure}
+	\caption{PID regulace}
+	
+	\label{pid}
+	\includegraphics[width=0.9\textwidth, height = 0.4\textwidth]{images/3/pid.png}
+\end{figure}
 
 
 \chapter{Simulace}
 
+%http://www.coppeliarobotics.com/index.html
+Pro simulaci byl zvolen V-Rep simulátor. V tomto prostředí byly vytvořeny dva roboty: jeden s vizuální značkou, druhý byl vybaven kamerou a laserovým dálkoměrem a sledoval prvního. Maximální dopřední rychlost obou robotů byla zvolena jako \SI{2}{\meter\per\second}
+
 \section{Porovnání algoritmů detekce}
 
-Oba algoritmu byly porovnávány při použití značky o velikosti 10x10 cm a rozlišením kamery 512x512 pixelů. Bylo porovnáno několik parametrů obou algoritmu, a to maximální vzdálenost, na které je vizuální značka ještě detekovatelná, stabilní vzdálenost, při které značka je detekována bez přerušení. Dále se porovnával maximální a stabilní úhel otočení vizuální značky vůči robotu a také průměrný výpočetní čas na jednu iteraci algoritmu. Výsledky jsou znázorněny v tabulce \ref{porovnani}. Je patrné, že detekční schopnosti korelačního algoritmu jsou poněkud horší, než u ArUco detektoru. Avšak je třeba zdůraznit, že sice ArUco detektor dokázal rozpoznat vizuální značku na vzdálenosti přes 5 metrů od kamery, úspěšnost detekcí na tak velké vzdálenosti byla podprůměrná, přibližně 40 \%. Co se týká úhlu otočení značky vůči robotu, tam se korelační algoritmus ukázal být lepší a stabilně detekuje značku při 60$^\circ$ otočení. ArUco má na hranicích detekovatelnosti pouze 15\% úspěšnost.
+Oba algoritmu byly porovnávány při použití značky o velikosti 10x10 cm a rozlišením kamery 512x512 pixelů. Bylo porovnáno několik parametrů obou algoritmu, a to maximální vzdálenost, na které je vizuální značka ještě detekovatelná, stabilní vzdálenost, při které značka je detekována bez přerušení. Dále se porovnával maximální a stabilní úhel otočení vizuální značky vůči robotu a také průměrný výpočetní čas na jednu iteraci algoritmu. Výsledky jsou znázorněny v tabulce \ref{porovnani}. Je patrné, že detekční schopnosti korelačního algoritmu jsou poněkud horší, než u ArUco detektoru. Avšak je třeba zdůraznit, že sice ArUco detektor dokázal rozpoznat vizuální značku na vzdálenosti přes 5 metrů od kamery, úspěšnost detekcí na tak velké vzdálenosti byla podprůměrná, přibližně 40 \%. Co se týká úhlu otočení značky vůči robotu, tam se korelační algoritmus ukázal být lepší a stabilně detekuje značku při 60$^\circ$ otočení. ArUco má na hranicích detekovatelnosti, tj. při 70$^\circ$ otočení, pouze 15\% úspěšnost.
 
 \begin{table}[hbt]
 	\centering
@@ -654,7 +666,56 @@ Oba algoritmu byly porovnávány při použití značky o velikosti 10x10 cm a r
 		Výpočetní doba {[}ms{]}      & 15                   & 15             \\ \hline
 	\end{tabular}
 \end{table}
+Hlavní rozdíl mezi těmito algoritmy spočívá v možnostech jejich využití. Zatímco ArUco detektor je zaměřený pouze na ArUco markery, korelační algoritmus je obecnější a dá se použít fakticky na jakýkoliv typ vizuální značky. ArUco detektor umožňuje přidání dalších značek do své knihovny, ale jedná se pouze o binární obrázky podobné znázorněnému na \ref{aruco_marker}. Korelační algoritmus si poradí i se značkou, kterou nelze reprezentovat jako bit-mapu, viz např. \ref{hiro}.
 
+
+\begin{figure}
+	\caption{Příklad značky pro korelační algoritmus}
+	
+	\label{hiro}
+	\includegraphics[width=0.5\textwidth]{images/5/r1301.jpg}
+\end{figure}
+
+\section{Porovnání naměřených a reálných hodnot}
+
+Jelikož se v implementovaném programu provádí různá měření, je třeba porovnat, jak naměřené hodnoty jsou správné vůči reálným. Kalmanův filtr, popsaný v \ref{kalman_section}, predikuje polohu cíle a v případě neúspěšné detekce vizuální značky umístění sledovaného objektu vůči robotu je odvozeno právě z predikované polohy. Na obrázku \ref{sled} lze vidět, že výpočet pomocí Kalmanova filtru skoro po celou dobu simulace odpovídá reálné poloze sledovaného objektu. Velká odchylka pak je až na konci simulace, kdy vizuální značka hodně brzo zmizela ze zorného pole robotu a nebylo možné ji v krátké době najít. Toto také odpovídá výsledkům, které jsou na \ref{dist} a \ref{odch}.
+
+
+\begin{figure}
+	\caption{Poloha sledovaného objektu během simulace}
+	
+	\label{sled}
+	\includegraphics[width=0.9\textwidth]{images/5/pos_pioner.eps}
+\end{figure}
+
+
+\begin{figure}
+	\caption{Vzdálenost mezi robotem a sledovaným objektem (d)}
+	
+	\label{dist}
+	\includegraphics[width=0.9\textwidth]{images/5/dist.eps}
+\end{figure}
+
+\begin{figure}
+	\caption{Odchylka sledovaného objektu od středu kamery $\phi$}
+	
+	\label{odch}
+	\includegraphics[width=0.9\textwidth]{images/5/odchylka.eps}
+\end{figure}
+
+
+\begin{figure}
+	\caption{Poloha robotu během simulace}
+	
+	\label{rob_pos}
+	\includegraphics[width=0.9\textwidth]{images/5/pos_rob.eps}
+\end{figure}
+\begin{figure}
+	\caption{Trajektorie robotu a sledovaného objektu}
+	
+	\label{trajektorie}
+	\includegraphics[width=0.9\textwidth]{images/5/trajektorie.eps}
+\end{figure}
 \chapter{Závěr}
 \appendix
 
