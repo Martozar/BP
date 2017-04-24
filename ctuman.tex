@@ -219,6 +219,7 @@ Jak již bylo zmíněno, mobilní robot bude následovat člověka, který má n
 \end{figure}
 
 \section{Volba souřadnicového systému}
+\label{ss_section}
 
 Pro řízení robotu je třeba zvolit souřadnicový systém, ve kterém se bude pohybovat. 
 
@@ -399,7 +400,7 @@ x&y&v_{x}&v_{y}
 \end{bmatrix}^T,
 \end{equation}
 
-kde $v_{lin}$, resp. $v_{ang}$, značí rychlost ve směru osy X, resp. Y.
+kde $v_{x}$, resp. $v_{y}$, značí rychlost ve směru osy X, resp. Y.
 
 
 Stavový model je pak vyjádřen jako
@@ -524,30 +525,22 @@ Celý proces tímto způsobem můžeme rozdělit na tři kroky: vytvoření prim
 
 Polární histogram je rozdělen na sektory tak, aby každý z nich odpovídal úhlu $\alpha$, který se volí takovým způsoben že $\frac{360}{\alpha}$ je celý číslo. Tedy například pro $\alpha = 15^{\circ}$ histogram obsahuje 24 sektorů (viz \ref{polar}).
 
-Pro každou buňku aktivního regionu, tedy lokální mapy vytvořené kolem robotu, se spočte směr a její význam (magnitude). 
-
-Směr spočteme dle následujícího vztahu
+Pro každou buňku aktivního regionu, tedy lokální mapy vytvořené kolem robotu, se spočte směr, ve kterém se vůči středu nachází, a její význam.
+Směr je spočítán dle vztahu
 
 \begin{equation}
 \beta_{i,j} = 	\atantwo ( y_o - y_i, x_o - x_i),
 \end{equation}
-kde
 
-$x_o, y_o$: Souřadnice robotu v mapě (centrum mapy).
+kde $x_o, y_o$ značí souřadnice střed mapy, $x_i, y_i$ jsou souřadnice buňky.	
 
-$x_i, y_i$: Souřadnice buňky.	
-
-Dále pak magnitude
+Dále pak významnost buňky je
 
 \begin{equation}
 m_{i,j} = c_{i,j}^2(a - bd_{i,j}^2),
 \end{equation}
 
-kde
-
-$c_{i,j}$: Obsazenost buňky.
-
-$d_{i,j}$: Vzdálenost buňky od pozice robotu.
+kde $c_{i,j}$ je obsazenost buňky a $d_{i,j}$ - vzdálenost buňky od pozice robotu.
 
 Parametry $a$ a $b$ se volí dle vztahu:
 
@@ -597,7 +590,7 @@ $$
 
 \subsubsection{Výběr kandidátů}
 
-Kandidáty pro směr pohybu se volí podle toho, do jaké kategorie je zařazeno volné místo v binárním histogramu. Ty průjezdy, jež mají velikost (tedy vzdálenost mezi pravým okrajem $k_r$ a levým $k_l$) menší, než $s_{max}$, se nazývají úzké, jiné jsou naopak nazývány široké.
+Kandidáty pro nový směr pohybu se volí podle toho, do jaké kategorie je zařazeno volné místo v binárním histogramu. Ty průjezdy, jež mají velikost (tedy vzdálenost mezi pravým okrajem $k_r$ a levým $k_l$) menší, než $s_{max}$, se nazývají úzké, jiné jsou naopak nazývány široké.
 
 Pro úzké průjezdy lze zvolit pouze jednoho kandidáta, a to 
 
@@ -621,13 +614,13 @@ Nový směr pohybu se zvolí dle minimální ceny spočítané pro kandidáta $c
 g(c_i) = \mu_1 \Delta\left(c_i, k_t\right) + \mu_2\Delta\left(c_i, \frac{h}{\alpha}\right) + \mu_3\Delta\left(c_i, k_{d, n-1}\right)
 \end{equation}
 
-přičemž
+přičemž $k_{d, n-1}$ je minule zvolený kandidát, 
+$\mu_1, \mu_2, \mu_3$ jsou konstanty, zvolené dle vztahu $\mu_1 > \mu_2 + \mu_3$ a také platí, že
 
-$\Delta(c_1, c_2) = \min\left\{|c_1 - c_2|, |c_1 - c_2 - \frac{360^{\circ}}{\alpha}|, |c_1 - c_2 + \frac{360^{\circ}}{\alpha}|\right\}$.
+\begin{equation}
+\Delta(c_1, c_2) = \min\left\{|c_1 - c_2|, |c_1 - c_2 - \frac{360^{\circ}}{\alpha}|, |c_1 - c_2 + \frac{360^{\circ}}{\alpha}|\right\}
+\end{equation}
 
-$k_{d, n-1}$: Minule zvolený kandidát.
-
-$\mu_1, \mu_2, \mu_3$: Konstanty, zvolené dle vztahu $\mu_1 > \mu_2 + \mu_3$.
 
 \section{PID regulátor}
 
@@ -639,14 +632,14 @@ Za jízdy je třeba, aby byla mezi robotem a cílem udržována určitá vzdále
 	\caption{PID regulace}
 	
 	\label{pid}
-	\includegraphics[width=0.9\textwidth, height = 0.4\textwidth]{images/3/pid.png}
+	\includegraphics[width=0.9\textwidth, height = 0.4\textwidth]{images/3/PID.png}
 \end{figure}
 
 
 \chapter{Simulace}
 
 %http://www.coppeliarobotics.com/index.html
-Pro simulaci byl zvolen V-Rep simulátor. V tomto prostředí byly vytvořeny dva roboty: jeden s vizuální značkou, druhý byl vybaven kamerou a laserovým dálkoměrem a sledoval prvního. Maximální dopřední rychlost obou robotů byla zvolena jako \SI{2}{\meter\per\second}
+Pro simulaci byl zvolen V-Rep simulátor. V tomto prostředí byly vytvořeny dva roboty: jeden s vizuální značkou, druhý byl vybaven kamerou a laserovým dálkoměrem a sledoval prvního. Referenční vzdálenost mezi dvěma roboty byla zvolena \SI{1}{\meter}, požadovaná odchylka vizuální značky od středu kamery \SI{0}{\radian}. Maximální dopřední rychlost obou robotů byla nastavena \SI{2.5}{\meter\per\second}
 
 \section{Porovnání algoritmů detekce}
 
@@ -678,31 +671,33 @@ Hlavní rozdíl mezi těmito algoritmy spočívá v možnostech jejich využití
 
 \section{Porovnání naměřených a reálných hodnot}
 
-Jelikož se v implementovaném programu provádí různá měření, je třeba porovnat, jak naměřené hodnoty jsou správné vůči reálným. Kalmanův filtr, popsaný v \ref{kalman_section}, predikuje polohu cíle a v případě neúspěšné detekce vizuální značky umístění sledovaného objektu vůči robotu je odvozeno právě z predikované polohy. Na obrázku \ref{sled} lze vidět, že výpočet pomocí Kalmanova filtru skoro po celou dobu simulace odpovídá reálné poloze sledovaného objektu. Velká odchylka pak je až na konci simulace, kdy vizuální značka hodně brzo zmizela ze zorného pole robotu a nebylo možné ji v krátké době najít. Toto také odpovídá výsledkům, které jsou na \ref{dist} a \ref{odch}.
-
-
-\begin{figure}
+\begin{figure}[hbt]
 	\caption{Poloha sledovaného objektu během simulace}
 	
 	\label{sled}
 	\includegraphics[width=0.9\textwidth]{images/5/pos_pioner.eps}
 \end{figure}
 
+Jelikož se v implementovaném programu provádí různá měření, je třeba porovnat, jak naměřené hodnoty jsou správné vůči reálným. Kalmanův filtr, popsaný v \ref{kalman_section}, predikuje polohu cíle a v případě neúspěšné detekce vizuální značky umístění sledovaného objektu vůči robotu je odvozeno právě z predikované polohy. Na obrázku \ref{sled} lze vidět, že výpočet pomocí Kalmanova filtru skoro po celou dobu simulace odpovídá reálné poloze sledovaného objektu. Velká odchylka pak je až na konci simulace, kdy vizuální značka hodně brzo zmizela ze zorného pole robotu a nebylo možné ji v krátké době najít. Toto také odpovídá výsledkům, které jsou na \ref{dist} a \ref{odch}, kde je vidět, že po cca 2000. iteraci je velký rozdíl mezi změřenými a reálnými hodnotami.
 
-\begin{figure}
+
+\begin{figure}[hbt]
 	\caption{Vzdálenost mezi robotem a sledovaným objektem (d)}
 	
 	\label{dist}
 	\includegraphics[width=0.9\textwidth]{images/5/dist.eps}
 \end{figure}
 
-\begin{figure}
+
+\begin{figure}[hbt]
 	\caption{Odchylka sledovaného objektu od středu kamery $\phi$}
 	
 	\label{odch}
 	\includegraphics[width=0.9\textwidth]{images/5/odchylka.eps}
 \end{figure}
+Na obrázku \ref{dist} je také vidět, že změřená vzdálenost není stejná, jako reálná. Je to způsobeno nepřesnou kalibrací referenční vzdálenosti mezi následovaným a sledujícím roboty. Kdyby kalibrace byla přesnější, bylo by možné dosáhnout podobného výsledku, jako pro odchylku od středu kamery (viz \ref{odch}), kde měření odpovídá reálné hodnotě.
 
+\section{Měření polohy robotu}
 
 \begin{figure}
 	\caption{Poloha robotu během simulace}
@@ -710,6 +705,30 @@ Jelikož se v implementovaném programu provádí různá měření, je třeba p
 	\label{rob_pos}
 	\includegraphics[width=0.9\textwidth]{images/5/pos_rob.eps}
 \end{figure}
+
+%https://chess.eecs.berkeley.edu/eecs149/documentation/differentialDrive.pdf
+Jak bylo řečeno v \ref{kalman_section}, aby bylo možné spočítat polohu cíle vůči robotu, je třeba znát polohu robotu v globálních souřadnicích. Ačkoliv V-Rep simulátor nabízí možnosti pro přesné měření polohy objektů ve světových souřadnicích, v reálném světě tato možnost nemusí být použitelná, protože např. při navigaci robotu uvnitř budov nelze použít GPS. Proto v sekci \ref{ss_section} byl zaveden souřadnicový systém, ve kterém se poloha robotu počítá. Pro toto měření v simulátoru lze odečítat vnitřní polohu rotačních kloubu robotu, na které jsou přidělány kola. V případě robotu s diferenciálním řízením, jeho pozici lze spočítat jako
+
+\begin{equation}
+\begin{bmatrix}
+x\\
+y\\
+h
+\end{bmatrix} = 
+\begin{bmatrix}
+x + \frac{(\Delta R + \Delta L)r_{k}}{2}\cos(h)\\
+y + \frac{(\Delta R + \Delta L)r_{k}}{2}\sin(h)\\
+h + \frac{(\Delta R - \Delta L)r_k}{2r_r}
+\end{bmatrix},
+\end{equation}
+
+přičemž  $\Delta L$ a $\Delta R$ značí změnu vnitřní polohy levého a pravého kloubů za čas $\Delta t$, $r_k$ je poloměr kola a $r_r$ je poloměr robotu, neboli polovina vzdálenosti mezi koly.
+
+Porovnání reálné, tj. změřené v simulátoru, a vypočtené polohy robotu ve zvoleném souřadnicovém systému lze vidět na obrázku \ref{rob_pos}. Je patrné, že pro použitý typ robotu výpočet je hodně přesný a při použití přesných enkodérů lze tento výpočet aplikovat i na reálném robotu.
+
+\section{Trajektorie robotů}
+
+
 \begin{figure}
 	\caption{Trajektorie robotu a sledovaného objektu}
 	

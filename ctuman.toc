@@ -46,4 +46,6 @@
 \contentsline {chapter}{\numberline {5}Simulace}{17}{chapter.5}
 \contentsline {section}{\numberline {5.1}Porovn\IeC {\'a}n\IeC {\'\i } algoritm\IeC {\r u} detekce}{17}{section.5.1}
 \contentsline {section}{\numberline {5.2}Porovn\IeC {\'a}n\IeC {\'\i } nam\IeC {\v e}\IeC {\v r}en\IeC {\'y}ch a re\IeC {\'a}ln\IeC {\'y}ch hodnot}{18}{section.5.2}
+\contentsline {section}{\numberline {5.3}M\IeC {\v e}\IeC {\v r}en\IeC {\'\i } polohy robotu}{19}{section.5.3}
+\contentsline {section}{\numberline {5.4}Trajektorie robot\IeC {\r u}}{20}{section.5.4}
 \contentsline {chapter}{\numberline {6}Z\IeC {\'a}v\IeC {\v e}r}{23}{chapter.6}
