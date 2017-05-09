@@ -1,0 +1,54 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: ctuman.aux
+The style file: unsrt.bst
+Database file #1: ctutest.bib
+Warning--empty year in cite:20
+Warning--empty year in cite:2
+Warning--empty year in cite:16
+Warning--empty journal in cite:10
+Warning--empty publisher in cite:11
+Warning--empty year in cite:11
+Warning--there's a number but no volume in cite:14
+You've used 20 entries,
+            1791 wiz_defined-function locations,
+            549 strings with 6213 characters,
+and the built_in function-call counts, 3668 in all, are:
+= -- 301
+> -- 152
+< -- 2
++ -- 60
+- -- 40
+* -- 221
+:= -- 566
+add.period$ -- 56
+call.type$ -- 20
+change.case$ -- 18
+chr.to.int$ -- 0
+cite$ -- 27
+duplicate$ -- 168
+empty$ -- 400
+format.name$ -- 40
+if$ -- 827
+int.to.chr$ -- 0
+int.to.str$ -- 20
+missing$ -- 17
+newline$ -- 98
+num.names$ -- 15
+pop$ -- 76
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 89
+stack$ -- 0
+substring$ -- 176
+swap$ -- 30
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 7
+while$ -- 24
+width$ -- 22
+write$ -- 193
+(There were 7 warnings)

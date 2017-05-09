@@ -18,30 +18,41 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Robot n\IeC {\'a}sleduj\IeC {\'\i }c\IeC {\'\i } \IeC {\v c}lov\IeC {\v e}ka\relax }}{2}{figure.1.1}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces P\IeC {\v r}\IeC {\'\i }klad vizu\IeC {\'a}ln\IeC {\'\i } zna\IeC {\v c}ky\relax }}{3}{figure.2.1}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces P\IeC {\v r}\IeC {\'\i }klad vizu\IeC {\'a}ln\IeC {\'\i } zna\IeC {\v c}ky\relax }}{4}{figure.2.1}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Pou\IeC {\v z}it\IeC {\'y} sou\IeC {\v r}adnicov\IeC {\'y} syst\IeC {\'e}m\relax }}{4}{figure.2.2}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces P\IeC {\v r}\IeC {\'\i }klad pou\IeC {\v z}it\IeC {\'\i } adaptivn\IeC {\'\i }ho prahov\IeC {\'a}n\IeC {\'\i }\relax }}{6}{figure.3.1}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Hierarchie (topologie) obrazu\relax }}{6}{figure.3.2}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces P\IeC {\v r}\IeC {\'\i }klad korelace mezi dv\IeC {\v e}ma veli\IeC {\v c}inami\relax }}{7}{figure.3.3}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Kladn\IeC {\'a} korelace}}}{7}{subfigure.4.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Z\IeC {\'a}porn\IeC {\'a} korelace}}}{7}{subfigure.4.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\IeC {\v Z}\IeC {\'a}dn\IeC {\'a} korelace}}}{7}{subfigure.4.3}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Aproximace k\IeC {\v r}ivky pomoc\IeC {\'\i } Ramerova Douglasova Peuckerova algoritmu\relax }}{8}{figure.3.4}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Bu\IeC {\v n}ky ArUco markeru\relax }}{8}{figure.3.5}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Vyhodnocen\IeC {\'\i } obr\IeC {\'a}zku pomoc\IeC {\'\i } ArUco detektoru\relax }}{9}{figure.3.6}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces M\IeC {\v e}\IeC {\v r}en\IeC {\'e} veli\IeC {\v c}iny $d$ a $\phi $\relax }}{10}{figure.3.7}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Shrnut\IeC {\'\i } algoritmu Kalmanova filtru\relax }}{11}{figure.3.8}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Odvozen\IeC {\'\i } hodnot $d$ a $\phi $ ze zn\IeC {\'a}m\IeC {\'e} polohy c\IeC {\'\i }le\relax }}{12}{figure.3.9}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces P\IeC {\v r}\IeC {\'\i }klad pou\IeC {\v z}it\IeC {\'\i } adaptivn\IeC {\'\i }ho prahov\IeC {\'a}n\IeC {\'\i } \cite {cite:5}\relax }}{8}{figure.3.1}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {P\IeC {\v r}ed prahov\IeC {\'a}n\IeC {\'\i }m}}}{8}{subfigure.2.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Po prahov\IeC {\'a}n\IeC {\'\i }}}}{8}{subfigure.2.2}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Hierarchie (topologie) obrazu \cite {cite:6}\relax }}{8}{figure.3.2}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces P\IeC {\v r}\IeC {\'\i }klad korelace mezi markery v\IeC {\r u}\IeC {\v c}i referen\IeC {\v c}n\IeC {\'\i }mu\relax }}{9}{figure.3.3}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Referen\IeC {\v c}n\IeC {\'\i } marker}}}{9}{subfigure.4.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {cor($I_1, I_2$) = 0.47}}}{9}{subfigure.4.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {cor($I_1, I_2$) = -0.55}}}{9}{subfigure.4.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {cor($I_1, I_2$) = -0.04}}}{9}{subfigure.4.4}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Aproximace k\IeC {\v r}ivky pomoc\IeC {\'\i } Ramerova Douglasova Peuckerova algoritmu\relax }}{10}{figure.3.4}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Bu\IeC {\v n}ky ArUco markeru\relax }}{10}{figure.3.5}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Vyhodnocen\IeC {\'\i } obr\IeC {\'a}zku pomoc\IeC {\'\i } detektoru ArUco\relax }}{11}{figure.3.6}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces M\IeC {\v e}\IeC {\v r}en\IeC {\'e} veli\IeC {\v c}iny $d$ a $\phi $\relax }}{12}{figure.3.7}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Shrnut\IeC {\'\i } algoritmu Kalmanova filtru\relax }}{13}{figure.3.8}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Odvozen\IeC {\'\i } hodnot $d$ a $\phi $ ze zn\IeC {\'a}m\IeC {\'e} polohy c\IeC {\'\i }le\relax }}{14}{figure.3.9}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Lok\IeC {\'a}ln\IeC {\'\i } mapa prost\IeC {\v r}ed\IeC {\'\i } o polom\IeC {\v e}ru $r_{map}$ = 10\relax }}{14}{figure.4.1}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Pol\IeC {\'a}rn\IeC {\'\i } histogram s vyobrazen\IeC {\'y}mi prahy $\tau _{low}$ (zelen\IeC {\v e}) a $\tau _{high}$ (fialov\IeC {\v e})\relax }}{15}{figure.4.2}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces PID regulace\relax }}{16}{figure.4.3}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Lok\IeC {\'a}ln\IeC {\'\i } mapa prost\IeC {\v r}ed\IeC {\'\i } o polom\IeC {\v e}ru $r_{map}$ = 10\relax }}{16}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Pol\IeC {\'a}rn\IeC {\'\i } histogram s vyobrazen\IeC {\'y}mi prahy $\tau _{low}$ (zelen\IeC {\v e}) a $\tau _{high}$ (fialov\IeC {\v e})\relax }}{17}{figure.4.2}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces PID regulace\relax }}{18}{figure.4.3}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces P\IeC {\v r}\IeC {\'\i }klad zna\IeC {\v c}ky pro korela\IeC {\v c}n\IeC {\'\i } algoritmus\relax }}{18}{figure.5.1}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Poloha sledovan\IeC {\'e}ho objektu b\IeC {\v e}hem simulace\relax }}{18}{figure.5.2}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Vzd\IeC {\'a}lenost mezi robotem a sledovan\IeC {\'y}m objektem (d)\relax }}{19}{figure.5.3}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Odchylka sledovan\IeC {\'e}ho objektu od st\IeC {\v r}edu kamery $\phi $\relax }}{20}{figure.5.4}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Poloha robotu b\IeC {\v e}hem simulace\relax }}{21}{figure.5.5}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Trajektorie robotu a sledovan\IeC {\'e}ho objektu\relax }}{21}{figure.5.6}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Roboty vytvo\IeC {\v r}en\IeC {\'e} v simul\IeC {\'a}toru V-Rep\relax }}{20}{figure.5.1}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces P\IeC {\v r}\IeC {\'\i }klad zna\IeC {\v c}ky pro korela\IeC {\v c}n\IeC {\'\i } algoritmus\relax }}{20}{figure.5.2}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Poloha sledovan\IeC {\'e}ho objektu b\IeC {\v e}hem simulace\relax }}{21}{figure.5.3}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Vzd\IeC {\'a}lenost mezi robotem a sledovan\IeC {\'y}m objektem (d)\relax }}{21}{figure.5.4}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Odchylka sledovan\IeC {\'e}ho objektu od st\IeC {\v r}edu kamery $\phi $\relax }}{22}{figure.5.5}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Poloha robotu b\IeC {\v e}hem simulace\relax }}{23}{figure.5.6}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Simulace s \IeC {\v c}lov\IeC {\v e}kem a p\IeC {\v r}ek\IeC {\'a}\IeC {\v z}kami\relax }}{23}{figure.5.7}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Trajektorie robotu a \IeC {\v c}lov\IeC {\v e}ka\relax }}{24}{figure.5.8}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Souhrn algoritm\IeC {\r u} pro vyh\IeC {\'y}b\IeC {\'a}n\IeC {\'\i } se p\IeC {\v r}ek\IeC {\'a}\IeC {\v z}k\IeC {\'a}m \cite [s. 287--290]{cite:20}\relax }}{27}{figure.A.1}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Souhrn algoritm\IeC {\r u} pro vyh\IeC {\'y}b\IeC {\'a}n\IeC {\'\i } se p\IeC {\v r}ek\IeC {\'a}\IeC {\v z}k\IeC {\'a}m \cite [s. 287--290]{cite:20}\relax }}{28}{figure.A.1a}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Souhrn algoritm\IeC {\r u} pro vyh\IeC {\'y}b\IeC {\'a}n\IeC {\'\i } se p\IeC {\v r}ek\IeC {\'a}\IeC {\v z}k\IeC {\'a}m \cite [s. 287--290]{cite:20}\relax }}{29}{figure.A.1b}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Souhrn algoritm\IeC {\r u} pro vyh\IeC {\'y}b\IeC {\'a}n\IeC {\'\i } se p\IeC {\v r}ek\IeC {\'a}\IeC {\v z}k\IeC {\'a}m \cite [s. 287--290]{cite:20}\relax }}{30}{figure.A.1c}
 \addvspace {10\p@ }

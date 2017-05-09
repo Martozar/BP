@@ -1,0 +1,110 @@
+\begin{thebibliography}{10}
+
+\bibitem{cite:5}
+Derek Bradley and Gerhard Roth.
+\newblock Adaptive thresholding using the integral image.
+\newblock {\em Journal of Graphics Tools}, 12(2):13–21, 2007.
+
+\bibitem{cite:6}
+Opencv: Contours hierarchy.
+\newblock
+  \url{http://docs.opencv.org/trunk/d9/d8b/tutorial_py_contours_hierarchy.html}.
+
+\bibitem{cite:20}
+Roland Siegwart, Illah~Reza Nourbakhsh, and Davide Scaramuzza.
+\newblock {\em Introduction to autonomous mobile robots}.
+\newblock MIT Press.
+\newblock 272--290, 2004.
+
+\bibitem{cite:19}
+J~Blanco, W~Burgard, R~Sanz, and JL~Fernandez.
+\newblock Fast face detection for mobile robots by integrating laser range data
+  with vision.
+\newblock In {\em Proc. of the International Conference on Advanced Robotics
+  (ICAR)}, volume~2, pages 953--958. Citeseer, 2003.
+
+\bibitem{cite:18}
+Muhammad~Sarmad Hassan, Mafaz~Wali Khan, and Ali~Fahim Khan.
+\newblock Design and development of human following robot.
+\newblock {\em Student Research Paper Conference}, 2, Jul 2015.
+
+\bibitem{cite:1}
+Andrej Babinec, Ladislav Jurišica, Peter Hubinský, and František Duchoň.
+\newblock Visual localization of mobile robot using artificial markers.
+\newblock {\em Procedia Engineering}, 96:1–9, 2014.
+
+\bibitem{cite:2}
+Xu~Liu, David Doermann, Huiping Li, K.~C. Lee, Hasan Ozdemir, and Lipin Liu.
+\newblock A novel 2d marker design and application for object tracking and
+  event detection.
+\newblock {\em Lecture Notes in Computer Science}, 5358.
+
+\bibitem{cite:3}
+S.~Garrido-Jurado, R.~Muñoz-Salinas, F.j. Madrid-Cuevas, and M.j.
+  Marín-Jiménez.
+\newblock Automatic generation and detection of highly reliable fiducial
+  markers under occlusion.
+\newblock {\em Pattern Recognition}, 47(6):2280–2292, 2014.
+
+\bibitem{cite:4}
+Opencv: About.
+\newblock \url{http://opencv.org/about.html}.
+
+\bibitem{cite:16}
+F.~Jurie and M.~Dhome.
+\newblock A simple and efficient template matching algorithm.
+\newblock {\em Proceedings Eighth IEEE International Conference on Computer
+  Vision. ICCV 2001}.
+
+\bibitem{cite:17}
+Template matching.
+\newblock
+  \url{http://docs.adaptive-vision.com/4.7/studio/machine_vision_guide/TemplateMatching.html}.
+
+\bibitem{cite:7}
+Opencv: Detection of aruco markers.
+\newblock
+  \url{http://docs.opencv.org/3.1.0/d5/dae/tutorial_aruco_detection.html}.
+
+\bibitem{cite:8}
+Urs Ramer.
+\newblock An iterative procedure for the polygonal approximation of plane
+  curves.
+\newblock {\em Computer Graphics and Image Processing}, 1(3):244 -- 256, 1972.
+
+\bibitem{cite:9}
+Paul Prober and Bill Wellman.
+\newblock Optimum pinhole camera design.
+\newblock {\em Hue Candela}, 2002.
+
+\bibitem{cite:10}
+Erik Cuevas, Daniel Zaldivar, and Raul Rojas.
+\newblock Kalman filter for vision tracking.
+\newblock Aug 2005.
+
+\bibitem{cite:11}
+Rogger Labbe.
+\newblock {\em Kalman and Bayesian Filters in Python}.
+
+\bibitem{cite:12}
+J.~Borenstein and Y.~Koren.
+\newblock The vector field histogram-fast obstacle avoidance for mobile robots.
+\newblock {\em IEEE Transactions on Robotics and Automation}, 7(3):278–288,
+  1991.
+
+\bibitem{cite:13}
+R.J. van Breda and W.J. Smit.
+\newblock Applicability of vector field histogram star (vfh*) on multicopters.
+\newblock {\em International Micro Air Vehicles, Conferences and Competitions},
+  2016.
+
+\bibitem{cite:14}
+Rich LeGrand.
+\newblock Closed-loop motion control for mobile robotics.
+\newblock {\em Circuit Cellar}, (169):34–46, Aug 2004.
+
+\bibitem{cite:15}
+Coppelia robotics v-rep.
+\newblock \url{http://www.coppeliarobotics.com/index.html}.
+
+\end{thebibliography}
