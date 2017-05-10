@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.4.19)  9 MAY 2017 21:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.4.19)  10 MAY 2017 16:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1841,7 +1841,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-<ctu_logo_black.pdf, id=108, 366.36874pt x 279.0425pt>
+<ctu_logo_black.pdf, id=112, 366.36874pt x 279.0425pt>
 File: ctu_logo_black.pdf Graphic file (type pdf)
 
 <use ctu_logo_black.pdf>
@@ -1986,7 +1986,7 @@ Overfull \hbox (5.0pt too wide) in paragraph at lines 168--168
 Kapitola 1.
 [1
 
-] <images/0/maxresdefault.jpg, id=253, 873.2625pt x 572.1375pt>
+] <images/0/maxresdefault.jpg, id=258, 873.2625pt x 572.1375pt>
 File: images/0/maxresdefault.jpg Graphic file (type jpg)
 
 <use images/0/maxresdefault.jpg>
@@ -2005,7 +2005,7 @@ Package hyperref Warning: Composite letter `\textasciicaron+c'
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `t') on input line 226.
 
-<images/2/ArucoMarker.jpg, id=265, 602.25pt x 602.25pt>
+<images/2/ArucoMarker.jpg, id=270, 602.25pt x 602.25pt>
 File: images/2/ArucoMarker.jpg Graphic file (type jpg)
 
 <use images/2/ArucoMarker.jpg>
@@ -2023,7 +2023,7 @@ Underfull \vbox (badness 1681) has occurred while \output is active []
  [3
 
 ]
-<images/2/ss.png, id=277, 845.1575pt x 599.23875pt>
+<images/2/ss.png, id=282, 845.1575pt x 599.23875pt>
 File: images/2/ss.png Graphic file (type png)
  <use images/2/ss.png>
 Package pdftex.def Info: images/2/ss.png used on input line 245.
@@ -2038,21 +2038,21 @@ Package hyperref Warning: Composite letter `\textasciicaron+c'
 
 ]
 Kapitola 3.
-<images/2/adapt_1.jpg, id=305, 656.53732pt x 493.67535pt>
+<images/2/adapt_1.jpg, id=308, 656.53732pt x 493.67535pt>
 File: images/2/adapt_1.jpg Graphic file (type jpg)
 
 <use images/2/adapt_1.jpg>
 Package pdftex.def Info: images/2/adapt_1.jpg used on input line 279.
 (pdftex.def)             Requested size: 163.34889pt x 122.82343pt.
 
-<images/2/adapt_2.jpg, id=306, 663.66254pt x 500.80057pt>
+<images/2/adapt_2.jpg, id=309, 663.66254pt x 500.80057pt>
 File: images/2/adapt_2.jpg Graphic file (type jpg)
 
 <use images/2/adapt_2.jpg>
 Package pdftex.def Info: images/2/adapt_2.jpg used on input line 281.
 (pdftex.def)             Requested size: 163.34889pt x 123.25887pt.
 
-<images/2/ccomp_hierarchy.png, id=309, 451.6875pt x 304.13625pt>
+<images/2/ccomp_hierarchy.png, id=312, 451.6875pt x 304.13625pt>
 File: images/2/ccomp_hierarchy.png Graphic file (type png)
 
 <use images/2/ccomp_hierarchy.png>
@@ -2064,13 +2064,13 @@ Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textasciicaron' on input line 302.
 
-<images/2/3.jpg, id=320, 501.875pt x 501.875pt>
+<images/2/3.jpg, id=325, 501.875pt x 501.875pt>
 File: images/2/3.jpg Graphic file (type jpg)
  <use images/2/3.jpg>
 Package pdftex.def Info: images/2/3.jpg used on input line 311.
 (pdftex.def)             Requested size: 145.19778pt x 145.1954pt.
 
-<images/2/682_klad.jpg, id=321, 501.875pt x 501.875pt>
+<images/2/682_klad.jpg, id=326, 501.875pt x 501.875pt>
 File: images/2/682_klad.jpg Graphic file (type jpg)
 
 <use images/2/682_klad.jpg>
@@ -2081,20 +2081,20 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 313.
 
-<images/2/3_zap.jpg, id=322, 501.875pt x 501.875pt>
+<images/2/3_zap.jpg, id=327, 501.875pt x 501.875pt>
 File: images/2/3_zap.jpg Graphic file (type jpg)
  <use images/2/3_zap.jpg>
 Package pdftex.def Info: images/2/3_zap.jpg used on input line 315.
 (pdftex.def)             Requested size: 145.19778pt x 145.1954pt.
 
-<images/2/682_zadna.jpg, id=323, 501.875pt x 501.875pt>
+<images/2/682_zadna.jpg, id=328, 501.875pt x 501.875pt>
 File: images/2/682_zadna.jpg Graphic file (type jpg)
 
 <use images/2/682_zadna.jpg>
 Package pdftex.def Info: images/2/682_zadna.jpg used on input line 317.
 (pdftex.def)             Requested size: 145.19778pt x 145.1954pt.
 
-<images/2/approx.png, id=326, 602.25pt x 334.24875pt>
+<images/2/approx.png, id=331, 602.25pt x 334.24875pt>
 File: images/2/approx.png Graphic file (type png)
 
 <use images/2/approx.png>
@@ -2103,14 +2103,14 @@ Package pdftex.def Info: images/2/approx.png used on input line 325.
  [8 <./images/2/adapt_1.jpg> <./images/2/adapt_2.jpg> <./images/2/ccomp_hierarc
 hy.png>] [9 <./images/2/3.jpg> <./images/2/682_klad.jpg> <./images/2/3_zap.jpg>
  <./images/2/682_zadna.jpg>]
-<images/2/bitsextraction1.png, id=356, 330.23375pt x 329.23pt>
+<images/2/bitsextraction1.png, id=360, 330.23375pt x 329.23pt>
 File: images/2/bitsextraction1.png Graphic file (type png)
 
 <use images/2/bitsextraction1.png>
 Package pdftex.def Info: images/2/bitsextraction1.png used on input line 359.
 (pdftex.def)             Requested size: 181.5pt x 180.95146pt.
 
-<images/2/bitsextraction2.png, id=357, 697.60625pt x 329.23pt>
+<images/2/bitsextraction2.png, id=361, 697.60625pt x 329.23pt>
 File: images/2/bitsextraction2.png Graphic file (type png)
 
 <use images/2/bitsextraction2.png>
@@ -2131,7 +2131,7 @@ Package hyperref Warning: Composite letter `\textasciicaron+r'
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [10 <./images/2/approx.png> <./images/2/bitsextraction1.png>]
-<images/2/mereni.png, id=365, 845.1575pt x 561.09625pt>
+<images/2/mereni.png, id=369, 845.1575pt x 561.09625pt>
 File: images/2/mereni.png Graphic file (type png)
 
 <use images/2/mereni.png>
@@ -2144,14 +2144,14 @@ Package hyperref Warning: Composite letter `\textring+u'
 (hyperref)                removing `\textring' on input line 407.
 
 [11 <./images/2/bitsextraction2.png>] [12 <./images/2/mereni.png>]
-<images/2/kalman_diagram.pdf, id=393, 432.61626pt x 532.99126pt>
+<images/2/kalman_diagram.pdf, id=397, 432.61626pt x 532.99126pt>
 File: images/2/kalman_diagram.pdf Graphic file (type pdf)
 
 <use images/2/kalman_diagram.pdf>
 Package pdftex.def Info: images/2/kalman_diagram.pdf used on input line 497.
 (pdftex.def)             Requested size: 254.09938pt x 254.10062pt.
  [13 <./images/2/kalman_diagram.pdf>]
-<images/2/neco.png, id=411, 845.1575pt x 561.09625pt>
+<images/2/neco.png, id=415, 845.1575pt x 561.09625pt>
 File: images/2/neco.png Graphic file (type png)
  <use images/2/neco.png>
 Package pdftex.def Info: images/2/neco.png used on input line 522.
@@ -2169,259 +2169,259 @@ Package hyperref Warning: Composite letter `\textasciicaron+r'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textasciicaron' on input line 526.
 
-<images/3/mrizka.png, id=425, 532.99126pt x 561.09625pt>
+[15
+
+] <images/3/mrizka.png, id=436, 532.99126pt x 561.09625pt>
 File: images/3/mrizka.png Graphic file (type png)
 
 <use images/3/mrizka.png>
-Package pdftex.def Info: images/3/mrizka.png used on input line 545.
+Package pdftex.def Info: images/3/mrizka.png used on input line 555.
 (pdftex.def)             Requested size: 217.80402pt x 217.79926pt.
- [15
-
-]
-<images/3/polar.png, id=434, 613.29124pt x 561.09625pt>
+ [16 <./images/3/mrizka.png>]
+<images/3/polar.png, id=448, 613.29124pt x 561.09625pt>
 File: images/3/polar.png Graphic file (type png)
 
 <use images/3/polar.png>
-Package pdftex.def Info: images/3/polar.png used on input line 602.
+Package pdftex.def Info: images/3/polar.png used on input line 612.
 (pdftex.def)             Requested size: 290.40111pt x 265.68445pt.
- [16 <./images/3/mrizka.png>] [17 <./images/3/polar.png>] <images/3/PID.png, id
-=457, 620.3175pt x 270.00874pt>
+ [17 <./images/3/polar.png>]
+<images/3/PID.png, id=461, 620.3175pt x 270.00874pt>
 File: images/3/PID.png Graphic file (type png)
  <use images/3/PID.png>
-Package pdftex.def Info: images/3/PID.png used on input line 661.
+Package pdftex.def Info: images/3/PID.png used on input line 671.
 (pdftex.def)             Requested size: 326.69382pt x 145.20102pt.
 
-[18 <./images/3/PID.png>]
+[18] [19 <./images/3/PID.png>] [20
+
+]
 Kapitola 5.
-<images/5/robots.png, id=468, 719.68875pt x 531.9875pt>
+<images/5/robots.png, id=483, 719.68875pt x 531.9875pt>
 File: images/5/robots.png Graphic file (type png)
 
 <use images/5/robots.png>
-Package pdftex.def Info: images/5/robots.png used on input line 675.
+Package pdftex.def Info: images/5/robots.png used on input line 690.
 (pdftex.def)             Requested size: 290.40111pt x 214.66637pt.
 
 
 Package hyperref Warning: Composite letter `\textring+u'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textring' on input line 677.
+(hyperref)                removing `\textring' on input line 692.
 
-[19
-
-] <images/5/r1301.jpg, id=477, 274.02374pt x 271.0125pt>
+[21] <images/5/r1301.jpg, id=492, 274.02374pt x 271.0125pt>
 File: images/5/r1301.jpg Graphic file (type jpg)
 
 <use images/5/r1301.jpg>
-Package pdftex.def Info: images/5/r1301.jpg used on input line 702.
+Package pdftex.def Info: images/5/r1301.jpg used on input line 717.
 (pdftex.def)             Requested size: 181.5pt x 179.50977pt.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+e'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 705.
+(hyperref)                removing `\textasciicaron' on input line 720.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+r'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 705.
+(hyperref)                removing `\textasciicaron' on input line 720.
 
 Package epstopdf Info: Source file: <images/5/pos_pioner.eps>
-(epstopdf)                    date: 2017-04-22 14:23:04
+(epstopdf)                    date: 2017-05-10 11:06:21
 (epstopdf)                    size: 109977 bytes
 (epstopdf)             Output file: <images/5/pos_pioner-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-04-22 17:21:28
+(epstopdf)                    date: 2017-05-10 11:06:21
 (epstopdf)                    size: 38227 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/5/pos_pioner-eps-co
 nverted-to.pdf images/5/pos_pioner.eps>
-(epstopdf)             \includegraphics on input line 711.
+(epstopdf)             \includegraphics on input line 726.
 Package epstopdf Info: Output file is already uptodate.
-<images/5/pos_pioner-eps-converted-to.pdf, id=478, 421.575pt x 316.18124pt>
+<images/5/pos_pioner-eps-converted-to.pdf, id=493, 421.575pt x 316.18124pt>
 File: images/5/pos_pioner-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/5/pos_pioner-eps-converted-to.pdf>
 Package pdftex.def Info: images/5/pos_pioner-eps-converted-to.pdf used on input
- line 711.
+ line 726.
 (pdftex.def)             Requested size: 290.40111pt x 217.80345pt.
- [20 <./images/5/robots.png> <./images/5/r1301.jpg>]
+ [22 <./images/5/robots.png> <./images/5/r1301.jpg>]
 Package epstopdf Info: Source file: <images/5/dist.eps>
-(epstopdf)                    date: 2017-04-22 14:42:08
+(epstopdf)                    date: 2017-05-10 11:06:21
 (epstopdf)                    size: 136120 bytes
 (epstopdf)             Output file: <images/5/dist-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-04-22 17:22:20
+(epstopdf)                    date: 2017-05-10 11:06:21
 (epstopdf)                    size: 40917 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/5/dist-eps-converte
 d-to.pdf images/5/dist.eps>
-(epstopdf)             \includegraphics on input line 721.
+(epstopdf)             \includegraphics on input line 736.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/5/dist-eps-converted-to.pdf, id=487, 421.575pt x 316.18124pt>
+<images/5/dist-eps-converted-to.pdf, id=502, 421.575pt x 316.18124pt>
 File: images/5/dist-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/5/dist-eps-converted-to.pdf>
 Package pdftex.def Info: images/5/dist-eps-converted-to.pdf used on input line 
-721.
+736.
 (pdftex.def)             Requested size: 290.40111pt x 217.80345pt.
 Package epstopdf Info: Source file: <images/5/odchylka.eps>
-(epstopdf)                    date: 2017-04-22 14:50:10
+(epstopdf)                    date: 2017-05-10 11:06:21
 (epstopdf)                    size: 127901 bytes
 (epstopdf)             Output file: <images/5/odchylka-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-04-22 17:22:22
+(epstopdf)                    date: 2017-05-10 11:06:21
 (epstopdf)                    size: 44528 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/5/odchylka-eps-conv
 erted-to.pdf images/5/odchylka.eps>
-(epstopdf)             \includegraphics on input line 729.
+(epstopdf)             \includegraphics on input line 744.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/5/odchylka-eps-converted-to.pdf, id=488, 421.575pt x 316.18124pt>
+<images/5/odchylka-eps-converted-to.pdf, id=503, 421.575pt x 316.18124pt>
 File: images/5/odchylka-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/5/odchylka-eps-converted-to.pdf>
 Package pdftex.def Info: images/5/odchylka-eps-converted-to.pdf used on input l
-ine 729.
+ine 744.
 (pdftex.def)             Requested size: 290.40111pt x 217.80345pt.
- [21 <./images/5/pos_pioner-eps-converted-to.pdf> <./images/5/dist-eps-converte
+ [23 <./images/5/pos_pioner-eps-converted-to.pdf> <./images/5/dist-eps-converte
 d-to.pdf>]
 
 Package hyperref Warning: Composite letter `\textasciicaron+e'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 733.
+(hyperref)                removing `\textasciicaron' on input line 748.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+r'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 733.
+(hyperref)                removing `\textasciicaron' on input line 748.
 
 Package epstopdf Info: Source file: <images/5/pos_rob.eps>
-(epstopdf)                    date: 2017-04-22 14:26:44
+(epstopdf)                    date: 2017-05-10 11:06:21
 (epstopdf)                    size: 131070 bytes
 (epstopdf)             Output file: <images/5/pos_rob-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-04-22 17:22:20
+(epstopdf)                    date: 2017-05-10 11:06:21
 (epstopdf)                    size: 48595 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/5/pos_rob-eps-conve
 rted-to.pdf images/5/pos_rob.eps>
-(epstopdf)             \includegraphics on input line 739.
+(epstopdf)             \includegraphics on input line 754.
 Package epstopdf Info: Output file is already uptodate.
-<images/5/pos_rob-eps-converted-to.pdf, id=505, 421.575pt x 316.18124pt>
+<images/5/pos_rob-eps-converted-to.pdf, id=521, 421.575pt x 316.18124pt>
 File: images/5/pos_rob-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/5/pos_rob-eps-converted-to.pdf>
 Package pdftex.def Info: images/5/pos_rob-eps-converted-to.pdf used on input li
-ne 739.
+ne 754.
 (pdftex.def)             Requested size: 290.40111pt x 217.80345pt.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+r'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 762.
+(hyperref)                removing `\textasciicaron' on input line 777.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+e'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 762.
+(hyperref)                removing `\textasciicaron' on input line 777.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+r'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 762.
+(hyperref)                removing `\textasciicaron' on input line 777.
 
-<images/5/people.png, id=510, 1161.33875pt x 758.835pt>
+<images/5/people.png, id=526, 1161.33875pt x 758.835pt>
 File: images/5/people.png Graphic file (type png)
 
 <use images/5/people.png>
-Package pdftex.def Info: images/5/people.png used on input line 769.
+Package pdftex.def Info: images/5/people.png used on input line 784.
 (pdftex.def)             Requested size: 326.69778pt x 213.46814pt.
- [22 <./images/5/odchylka-eps-converted-to.pdf>]
-[23 <./images/5/pos_rob-eps-converted-to.pdf> <./images/5/people.png>]
+ [24 <./images/5/odchylka-eps-converted-to.pdf>]
+[25 <./images/5/pos_rob-eps-converted-to.pdf> <./images/5/people.png>]
 Package epstopdf Info: Source file: <images/5/trajek.eps>
-(epstopdf)                    date: 2017-04-30 15:45:10
+(epstopdf)                    date: 2017-05-10 11:06:21
 (epstopdf)                    size: 142469 bytes
 (epstopdf)             Output file: <images/5/trajek-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-04-30 15:47:22
+(epstopdf)                    date: 2017-05-10 11:06:21
 (epstopdf)                    size: 50394 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/5/trajek-eps-conver
 ted-to.pdf images/5/trajek.eps>
-(epstopdf)             \includegraphics on input line 779.
+(epstopdf)             \includegraphics on input line 794.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/5/trajek-eps-converted-to.pdf, id=530, 421.575pt x 316.18124pt>
+<images/5/trajek-eps-converted-to.pdf, id=545, 421.575pt x 316.18124pt>
 File: images/5/trajek-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/5/trajek-eps-converted-to.pdf>
 Package pdftex.def Info: images/5/trajek-eps-converted-to.pdf used on input lin
-e 779.
+e 794.
 (pdftex.def)             Requested size: 290.40111pt x 217.80345pt.
- [24 <./images/5/trajek-eps-converted-to.pdf>]
+ [26 <./images/5/trajek-eps-converted-to.pdf>]
 Kapitola 6.
 
 Package hyperref Warning: Composite letter `\textasciicaron+e'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 782.
+(hyperref)                removing `\textasciicaron' on input line 797.
 
 .................................................
 . LaTeX info: "xparse/redefine-command"
 . 
-. Redefining command \chapter with sig. 's' on line 795.
+. Redefining command \chapter with sig. 's' on line 810.
 .................................................
 .................................................
 . LaTeX info: "xparse/redefine-command"
 . 
-. Redefining command \appendix with sig. 'ss' on line 795.
+. Redefining command \appendix with sig. 'ss' on line 810.
 .................................................
-[25
+[27
 
-] [26
+] [28
 
 ]
 P\v {r}\'{\i }loha A.
 
 Package hyperref Warning: Composite letter `\textasciicaron+r'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 796.
+(hyperref)                removing `\textasciicaron' on input line 811.
 
 
 Package hyperref Warning: Composite letter `\textring+u'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textring' on input line 796.
+(hyperref)                removing `\textring' on input line 811.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+r'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 796.
+(hyperref)                removing `\textasciicaron' on input line 811.
 
-<images/6/4.png, id=551, 616.3025pt x 389.455pt>
+<images/6/4.png, id=567, 616.3025pt x 389.455pt>
 File: images/6/4.png Graphic file (type png)
  <use images/6/4.png>
-Package pdftex.def Info: images/6/4.png used on input line 801.
+Package pdftex.def Info: images/6/4.png used on input line 816.
 (pdftex.def)             Requested size: 363.0pt x 229.39018pt.
 
-<images/6/1.png, id=554, 619.31375pt x 608.2725pt>
+<images/6/1.png, id=570, 619.31375pt x 608.2725pt>
 File: images/6/1.png Graphic file (type png)
  <use images/6/1.png>
-Package pdftex.def Info: images/6/1.png used on input line 806.
+Package pdftex.def Info: images/6/1.png used on input line 821.
 (pdftex.def)             Requested size: 363.0pt x 356.53874pt.
 
-<images/6/2.png, id=557, 605.26125pt x 636.3775pt>
+<images/6/2.png, id=573, 605.26125pt x 636.3775pt>
 File: images/6/2.png Graphic file (type png)
  <use images/6/2.png>
-Package pdftex.def Info: images/6/2.png used on input line 811.
+Package pdftex.def Info: images/6/2.png used on input line 826.
 (pdftex.def)             Requested size: 363.0pt x 381.66437pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [27 <./images/6/4.png>] <images/6/3.png, id=566, 614.295pt x 761.84625pt>
+ [29 <./images/6/4.png>] <images/6/3.png, id=582, 614.295pt x 761.84625pt>
 File: images/6/3.png Graphic file (type png)
 
 <use images/6/3.png>
-Package pdftex.def Info: images/6/3.png used on input line 816.
+Package pdftex.def Info: images/6/3.png used on input line 831.
 (pdftex.def)             Requested size: 363.0pt x 450.1945pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [28 <./images/6/1.png>]
+ [30 <./images/6/1.png>]
 No file ctuman.ind.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [29 <./images/6/2.png>] (./ctuman.bbl [30 <./images/6/3.png>]
+ [31 <./images/6/2.png>] (./ctuman.bbl [32 <./images/6/3.png>]
 P\v {r}\'{\i }loha B.
 
 Underfull \hbox (badness 8094) in paragraph at lines 60--63
@@ -2429,27 +2429,27 @@ Underfull \hbox (badness 8094) in paragraph at lines 60--63
 docs . adaptive-[]vision . com / 4 . 7 /
  []
 
-[31
+[33
 
-]) [32]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 825.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 825.
+]) [34]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 840.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 840.
  (./ctuman.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 825.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 825.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 840.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 840.
 Package rerunfilecheck Info: File `ctuman.out' has not changed.
-(rerunfilecheck)             Checksum: 912FF733DA46F4A6CAE3B6F23D2FA909;1790.
+(rerunfilecheck)             Checksum: 2077A35B6F4ED343B983FBD3A32169F0;1858.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 26157 strings out of 493029
- 468033 string characters out of 6136234
- 574637 words of memory out of 5000000
- 28940 multiletter control sequences out of 15000+600000
- 143437 words of font info for 177 fonts, out of 8000000 for 9000
+ 26166 strings out of 493029
+ 468145 string characters out of 6136234
+ 574642 words of memory out of 5000000
+ 28943 multiletter control sequences out of 15000+600000
+ 143520 words of font info for 178 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,17n,92p,10347b,1216s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
@@ -2467,10 +2467,10 @@ fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx
 10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso10.pfb></usr/share/texmf/fo
 nts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pf
 b></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb>
-Output written on ctuman.pdf (40 pages, 3271602 bytes).
+Output written on ctuman.pdf (42 pages, 3274154 bytes).
 PDF statistics:
- 704 PDF objects out of 1000 (max. 8388607)
- 589 compressed objects within 6 object streams
- 163 named destinations out of 1000 (max. 500000)
- 46961 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 720 PDF objects out of 1000 (max. 8388607)
+ 603 compressed objects within 7 object streams
+ 167 named destinations out of 1000 (max. 500000)
+ 46969 words of extra memory for PDF output out of 51595 (max. 10000000)
 

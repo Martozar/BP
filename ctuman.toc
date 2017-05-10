@@ -35,19 +35,20 @@
 \contentsline {section}{\numberline {3.4}Kalman\IeC {\r u}v filtr}{11}{section.3.4}
 \contentsline {chapter}{\numberline {4}\IeC {\v R}\IeC {\'\i }zen\IeC {\'\i } robotu}{15}{chapter.4}
 \contentsline {section}{\numberline {4.1}Vyh\IeC {\'y}b\IeC {\'a}n\IeC {\'\i } se p\IeC {\v r}ek\IeC {\'a}\IeC {\v z}k\IeC {\'a}m}{15}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Vector Field Histogram (VFH)}{15}{subsection.4.1.1}
-\contentsline {subsubsection}{Prim\IeC {\'a}rn\IeC {\'\i } pol\IeC {\'a}rn\IeC {\'\i } histogram}{15}{subsubsection*.5}
-\contentsline {subsubsection}{Prim\IeC {\'a}rn\IeC {\'\i } pol\IeC {\'a}rn\IeC {\'\i } histogram}{15}{subsubsection*.5}
-\contentsline {subsubsection}{Bin\IeC {\'a}rn\IeC {\'\i } pol\IeC {\'a}rn\IeC {\'\i } histogram}{16}{subsubsection*.6}
-\contentsline {subsubsection}{Bin\IeC {\'a}rn\IeC {\'\i } pol\IeC {\'a}rn\IeC {\'\i } histogram}{16}{subsubsection*.6}
-\contentsline {subsubsection}{V\IeC {\'y}b\IeC {\v e}r kandid\IeC {\'a}t\IeC {\r u}}{17}{subsubsection*.7}
-\contentsline {subsubsection}{V\IeC {\'y}b\IeC {\v e}r kandid\IeC {\'a}t\IeC {\r u}}{17}{subsubsection*.7}
+\contentsline {subsection}{\numberline {4.1.1}Algoritmus Bug}{15}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Vector Field Histogram (VFH)}{16}{subsection.4.1.2}
+\contentsline {subsubsection}{Prim\IeC {\'a}rn\IeC {\'\i } pol\IeC {\'a}rn\IeC {\'\i } histogram}{16}{subsubsection*.5}
+\contentsline {subsubsection}{Prim\IeC {\'a}rn\IeC {\'\i } pol\IeC {\'a}rn\IeC {\'\i } histogram}{16}{subsubsection*.5}
+\contentsline {subsubsection}{Bin\IeC {\'a}rn\IeC {\'\i } pol\IeC {\'a}rn\IeC {\'\i } histogram}{17}{subsubsection*.6}
+\contentsline {subsubsection}{Bin\IeC {\'a}rn\IeC {\'\i } pol\IeC {\'a}rn\IeC {\'\i } histogram}{17}{subsubsection*.6}
+\contentsline {subsubsection}{V\IeC {\'y}b\IeC {\v e}r kandid\IeC {\'a}t\IeC {\r u}}{18}{subsubsection*.7}
+\contentsline {subsubsection}{V\IeC {\'y}b\IeC {\v e}r kandid\IeC {\'a}t\IeC {\r u}}{18}{subsubsection*.7}
 \contentsline {section}{\numberline {4.2}PID regul\IeC {\'a}tor}{18}{section.4.2}
-\contentsline {chapter}{\numberline {5}Simulace}{19}{chapter.5}
-\contentsline {section}{\numberline {5.1}Porovn\IeC {\'a}n\IeC {\'\i } algoritm\IeC {\r u} detekce}{19}{section.5.1}
-\contentsline {section}{\numberline {5.2}Porovn\IeC {\'a}n\IeC {\'\i } nam\IeC {\v e}\IeC {\v r}en\IeC {\'y}ch a re\IeC {\'a}ln\IeC {\'y}ch hodnot}{20}{section.5.2}
-\contentsline {section}{\numberline {5.3}M\IeC {\v e}\IeC {\v r}en\IeC {\'\i } polohy robotu}{22}{section.5.3}
-\contentsline {section}{\numberline {5.4}Trajektorie robotu p\IeC {\v r}i j\IeC {\'\i }zd\IeC {\v e} s p\IeC {\v r}ek\IeC {\'a}\IeC {\v z}kami}{23}{section.5.4}
-\contentsline {chapter}{\numberline {6}Z\IeC {\'a}v\IeC {\v e}r}{25}{chapter.6}
-\contentsline {chapter}{\numberline {A}P\IeC {\v r}ehled algoritm\IeC {\r u} pro vyh\IeC {\'y}b\IeC {\'a}n\IeC {\'\i } se p\IeC {\v r}ek\IeC {\'a}\IeC {\v z}k\IeC {\'a}m}{27}{appendix.A}
-\contentsline {chapter}{\numberline {B}Literatura}{31}{appendix.B}
+\contentsline {chapter}{\numberline {5}Simulace}{21}{chapter.5}
+\contentsline {section}{\numberline {5.1}Porovn\IeC {\'a}n\IeC {\'\i } algoritm\IeC {\r u} detekce}{21}{section.5.1}
+\contentsline {section}{\numberline {5.2}Porovn\IeC {\'a}n\IeC {\'\i } nam\IeC {\v e}\IeC {\v r}en\IeC {\'y}ch a re\IeC {\'a}ln\IeC {\'y}ch hodnot}{22}{section.5.2}
+\contentsline {section}{\numberline {5.3}M\IeC {\v e}\IeC {\v r}en\IeC {\'\i } polohy robotu}{24}{section.5.3}
+\contentsline {section}{\numberline {5.4}Trajektorie robotu p\IeC {\v r}i j\IeC {\'\i }zd\IeC {\v e} s p\IeC {\v r}ek\IeC {\'a}\IeC {\v z}kami}{25}{section.5.4}
+\contentsline {chapter}{\numberline {6}Z\IeC {\'a}v\IeC {\v e}r}{27}{chapter.6}
+\contentsline {chapter}{\numberline {A}P\IeC {\v r}ehled algoritm\IeC {\r u} pro vyh\IeC {\'y}b\IeC {\'a}n\IeC {\'\i } se p\IeC {\v r}ek\IeC {\'a}\IeC {\v z}k\IeC {\'a}m}{29}{appendix.A}
+\contentsline {chapter}{\numberline {B}Literatura}{33}{appendix.B}

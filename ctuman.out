@@ -14,13 +14,14 @@
 \BOOKMARK [1][-]{section.3.4}{Kalmanuv filtr}{chapter.3}% 14
 \BOOKMARK [0][-]{chapter.4}{R\355zen\355 robotu}{}% 15
 \BOOKMARK [1][-]{section.4.1}{Vyh\375b\341n\355 se prek\341\236k\341m}{chapter.4}% 16
-\BOOKMARK [2][-]{subsection.4.1.1}{Vector Field Histogram \(VFH\)}{section.4.1}% 17
-\BOOKMARK [1][-]{section.4.2}{PID regul\341tor}{chapter.4}% 18
-\BOOKMARK [0][-]{chapter.5}{Simulace}{}% 19
-\BOOKMARK [1][-]{section.5.1}{Porovn\341n\355 algoritmu detekce}{chapter.5}% 20
-\BOOKMARK [1][-]{section.5.2}{Porovn\341n\355 nameren\375ch a re\341ln\375ch hodnot}{chapter.5}% 21
-\BOOKMARK [1][-]{section.5.3}{Meren\355 polohy robotu}{chapter.5}% 22
-\BOOKMARK [1][-]{section.5.4}{Trajektorie robotu pri j\355zde s prek\341\236kami}{chapter.5}% 23
-\BOOKMARK [0][-]{chapter.6}{Z\341ver}{}% 24
-\BOOKMARK [0][-]{appendix.A}{Prehled algoritmu pro vyh\375b\341n\355 se prek\341\236k\341m}{}% 25
-\BOOKMARK [0][-]{appendix.B}{Literatura}{}% 26
+\BOOKMARK [2][-]{subsection.4.1.1}{Algoritmus Bug}{section.4.1}% 17
+\BOOKMARK [2][-]{subsection.4.1.2}{Vector Field Histogram \(VFH\)}{section.4.1}% 18
+\BOOKMARK [1][-]{section.4.2}{PID regul\341tor}{chapter.4}% 19
+\BOOKMARK [0][-]{chapter.5}{Simulace}{}% 20
+\BOOKMARK [1][-]{section.5.1}{Porovn\341n\355 algoritmu detekce}{chapter.5}% 21
+\BOOKMARK [1][-]{section.5.2}{Porovn\341n\355 nameren\375ch a re\341ln\375ch hodnot}{chapter.5}% 22
+\BOOKMARK [1][-]{section.5.3}{Meren\355 polohy robotu}{chapter.5}% 23
+\BOOKMARK [1][-]{section.5.4}{Trajektorie robotu pri j\355zde s prek\341\236kami}{chapter.5}% 24
+\BOOKMARK [0][-]{chapter.6}{Z\341ver}{}% 25
+\BOOKMARK [0][-]{appendix.A}{Prehled algoritmu pro vyh\375b\341n\355 se prek\341\236k\341m}{}% 26
+\BOOKMARK [0][-]{appendix.B}{Literatura}{}% 27

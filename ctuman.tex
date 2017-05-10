@@ -527,7 +527,17 @@ d = \sqrt{x_t + y_t}\cos(\phi).
 
 Pro řízení autonomního robotu je důležité, aby se během sledování cíle dokázal vyhýbat překážkám. Algoritmů pro řízení robotu v prostředí s překážkami je několik \cite{cite:20}, jejichž přehled je k nalezení v příloze \ref{obstacle_avoidance}.
 
-Jelikož se předpokládá, že robot bude řízen v relativní souřadnicově soustavě a není možnost vždy mít přesné globální souřadnice robotu a překážek, je třeba zvolit takový algoritmus, který by spoléhal pouze na lokální mapu prostředí, která by se vytvářela z měření dálkoměru. Dalším omezením pro výběr algoritmu je popis modelu robotu. 
+Omezením na výběr algoritmu pro vyhýbání se překážkám je to, že se robot bude pohybovat v prostředí, které není dopředu známo. Proto je výhodnější použít algoritmus, který pracuje s lokální mapou prostředí vytvořenou kolem robotu místo globální. Navíc při použitý vztažné soustavy a diferenciálního výpočtu polohy a rychlosti robotu nelze přesně stanovit, kde se nachází on nebo překážky kolem něj. Proto je třeba použít algoritmus, který by pracoval pouze se zakládní kinematikou robotu a prostředí.
+
+S uvážením těchto omezení, nejvhodnějšími algoritmy pro řešení zádaného problému jsou algoritmus Bug \cite[s. 272--276]{cite:20} nebo Vector Field Histogram \cite[s. 276--278]{cite:20}\cite{cite:12}.
+
+\subsection{Algoritmus Bug}
+
+Tento algoritmus je nejjednošším algoritmem pro vyhýbání se překážkám. Podstatou algoritmu je to, že robot narazí na překážku a následuje její konturu. Existuje několik obdob toho algortimu, které se liší v tom, jak je obvod překážky sledován robotem. Například algoritmus Bug1 prvně s použitím dotykového senzoru objede celou překážku, následně zvolí bod, který je nejblíže cíli, vrátí se tam a pokračuje směrem k cíli. Tento postup je dost neefiktivní, ale zajistí, že robot vždy dosáhne cíle.
+
+Možným vylepšením tohoto algoritmu je Tangent Bug, který používá dálkoměr pro měření vzdálenosti k překážkám a vytváří model lokálního prostředí, který je reprezentován jako graf. 
+
+Nevýhodou algoritmu Bug je to, že když nalezne jakoukoliv překážku, snaží se sledovat její konturu, nikoliv se jí přímo výhnout. Proto při následování cíle se může stát, že kvůli sledování obrysu překážky dojde ke ztatě cíle ze zorného pole a již nebude možnost odhádnout jeho pozici. Proto v práci je použit Vector Field Histogram, který je navržen tak, aby se robot snažil překážky objíždět dříve, než bude v nebezpečné zóně blízko k překážkám. 
 
 \subsection{Vector Field Histogram (VFH)}
 
@@ -536,16 +546,16 @@ Jelikož se předpokládá, že robot bude řízen v relativní souřadnicově s
 %http://www.imavs.org/papers/2016/62_IMAV2016_Proceedings.pdf
 
 
-Princip tohoto algoritmu \cite{cite:12} spočívá v tom, že se na základě dat naměřených dálkoměrem vytvoří lokální mřížková mapa prostředí o poloměru $r_{map}$. Každá buňka této mapy tak obsahuje hodnotu obsazenosti odpovídající oblasti v reálném světě (viz obr. \ref{mrizka}). Z této mapy se následně spočítá polární histogram, podle kterého se určí směr jízdy robotu.
+Princip tohoto algoritmu spočívá v tom, že se na základě dat naměřených dálkoměrem vytvoří lokální mřížková mapa prostředí o poloměru $r_{map}$ a se zvoleným rozlišením. Každá buňka této mapy tak obsahuje hodnotu obsazenosti odpovídající oblasti v reálném světě (viz obr. \ref{mrizka}). Z této mapy se následně spočítá polární histogram, podle kterého se určí směr jízdy robotu.
 
-\begin{figure}
+\begin{figure}[H]
 	\caption{Lokální mapa prostředí o poloměru $r_{map}$ = 10}
 
 	\label{mrizka}
 	\includegraphics[width=0.6\textwidth, height = 0.6\textwidth]{images/3/mrizka.png}
 \end{figure}
 
-Celý proces tímto způsobem můžeme rozdělit na tři kroky: vytvoření primárního polárního histogramu, prahování primárního histogramu (vytvoření binární reprezentace), a nakonec výběr kandidátů pro směr pohybu.
+Celý proces tímto způsobem lze rozdělit na tři kroky: vytvoření primárního polárního histogramu, prahování primárního histogramu (vytvoření binární reprezentace), a nakonec výběr kandidátů pro směr pohybu.
 
 \subsubsection{Primární polární histogram}
 
@@ -654,7 +664,7 @@ $\mu_1, \mu_2, \mu_3$ jsou konstanty, zvolené dle vztahu $\mu_1 > \mu_2 + \mu_3
 
 Za jízdy je třeba, aby byla mezi robotem a cílem udržována určitá vzdálenost $d$ a hodnota úhlu $\phi$ byla co nejmenší, nejlépe nulová. Pro tyto účely je navržen PID regulátor  \cite{cite:14}, který pro aktuální odchylku od referenčních bodů spočte dopřednou a úhlovou rychlost, které se následně převedou na rychlosti motorů. Zjednodušený nákres algoritmu je zobrazen na \ref{pid}.  Pokud je $\epsilon_d$, resp. $\epsilon_\phi$, v pásmu $\left[-\epsilon_{d_0}; \epsilon_{d_0}\right]$, resp. $\left[-\epsilon_{\phi_0}; \epsilon_{\phi_0}\right]$, pak bude výstup PID regulátoru nulový. Jinak je od odchylky odečtena hodnota $\epsilon_{d_0}$, resp. $\epsilon_{\phi_0}$, což zaručí to, že robot nebude kmitat na místě, pokud bude blízko referenčního bodu, a řízení bude plynulé.
 
-\begin{figure}
+\begin{figure}[H]
 	\caption{PID regulace}
 
 	\label{pid}
@@ -662,6 +672,11 @@ Za jízdy je třeba, aby byla mezi robotem a cílem udržována určitá vzdále
 \end{figure}
 
 
+Výsledná dopřední, reps. úhlová, rychlost je vypočtena pomocí vztahu 
+
+\begin{equation}
+V_{for, ang} = K_perror + K_ierror
+\end{equation}
 \chapter{Simulace}
 \label{simulace}
 %http://www.coppeliarobotics.com/index.html
