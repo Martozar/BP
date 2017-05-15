@@ -23,9 +23,13 @@
 \contentsline {section}{\numberline {1.1}C\IeC {\'\i }l pr\IeC {\'a}ce}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Motivace}{2}{section.1.2}
 \contentsline {chapter}{\numberline {2}N\IeC {\'a}vrh syst\IeC {\'e}mu}{3}{chapter.2}
+\contentsline {subsubsection}{Nevizu\IeC {\'a}ln\IeC {\'\i } metody}{3}{subsubsection*.5}
+\contentsline {subsubsection}{Nevizu\IeC {\'a}ln\IeC {\'\i } metody}{3}{subsubsection*.5}
+\contentsline {subsubsection}{Vizu\IeC {\'a}ln\IeC {\'\i } metody}{3}{subsubsection*.6}
+\contentsline {subsubsection}{Vizu\IeC {\'a}ln\IeC {\'\i } metody}{3}{subsubsection*.6}
 \contentsline {section}{\numberline {2.1}Volba vizu\IeC {\'a}ln\IeC {\'\i } zna\IeC {\v c}ky}{3}{section.2.1}
 \contentsline {section}{\numberline {2.2}Volba sou\IeC {\v r}adnicov\IeC {\'e}ho syst\IeC {\'e}mu}{4}{section.2.2}
-\contentsline {section}{\numberline {2.3}Implementa\IeC {\v c}n\IeC {\'\i } z\IeC {\'a}le\IeC {\v z}itosti}{5}{section.2.3}
+\contentsline {section}{\numberline {2.3}Implementa\IeC {\v c}n\IeC {\'\i } z\IeC {\'a}le\IeC {\v z}itosti}{4}{section.2.3}
 \contentsline {chapter}{\numberline {3}Detekce}{7}{chapter.3}
 \contentsline {section}{\numberline {3.1}Zpracov\IeC {\'a}n\IeC {\'\i } obrazu z kamery}{7}{section.3.1}
 \contentsline {section}{\numberline {3.2}Rozpozn\IeC {\'a}v\IeC {\'a}n\IeC {\'\i } vzoru}{7}{section.3.2}
@@ -37,13 +41,15 @@
 \contentsline {section}{\numberline {4.1}Vyh\IeC {\'y}b\IeC {\'a}n\IeC {\'\i } se p\IeC {\v r}ek\IeC {\'a}\IeC {\v z}k\IeC {\'a}m}{15}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Algoritmus Bug}{15}{subsection.4.1.1}
 \contentsline {subsection}{\numberline {4.1.2}Vector Field Histogram (VFH)}{16}{subsection.4.1.2}
-\contentsline {subsubsection}{Prim\IeC {\'a}rn\IeC {\'\i } pol\IeC {\'a}rn\IeC {\'\i } histogram}{16}{subsubsection*.5}
-\contentsline {subsubsection}{Prim\IeC {\'a}rn\IeC {\'\i } pol\IeC {\'a}rn\IeC {\'\i } histogram}{16}{subsubsection*.5}
-\contentsline {subsubsection}{Bin\IeC {\'a}rn\IeC {\'\i } pol\IeC {\'a}rn\IeC {\'\i } histogram}{17}{subsubsection*.6}
-\contentsline {subsubsection}{Bin\IeC {\'a}rn\IeC {\'\i } pol\IeC {\'a}rn\IeC {\'\i } histogram}{17}{subsubsection*.6}
-\contentsline {subsubsection}{V\IeC {\'y}b\IeC {\v e}r kandid\IeC {\'a}t\IeC {\r u}}{18}{subsubsection*.7}
-\contentsline {subsubsection}{V\IeC {\'y}b\IeC {\v e}r kandid\IeC {\'a}t\IeC {\r u}}{18}{subsubsection*.7}
+\contentsline {subsubsection}{Prim\IeC {\'a}rn\IeC {\'\i } pol\IeC {\'a}rn\IeC {\'\i } histogram}{16}{subsubsection*.7}
+\contentsline {subsubsection}{Prim\IeC {\'a}rn\IeC {\'\i } pol\IeC {\'a}rn\IeC {\'\i } histogram}{16}{subsubsection*.7}
+\contentsline {subsubsection}{Bin\IeC {\'a}rn\IeC {\'\i } pol\IeC {\'a}rn\IeC {\'\i } histogram}{17}{subsubsection*.8}
+\contentsline {subsubsection}{Bin\IeC {\'a}rn\IeC {\'\i } pol\IeC {\'a}rn\IeC {\'\i } histogram}{17}{subsubsection*.8}
+\contentsline {subsubsection}{V\IeC {\'y}b\IeC {\v e}r kandid\IeC {\'a}t\IeC {\r u}}{18}{subsubsection*.9}
+\contentsline {subsubsection}{V\IeC {\'y}b\IeC {\v e}r kandid\IeC {\'a}t\IeC {\r u}}{18}{subsubsection*.9}
 \contentsline {section}{\numberline {4.2}PID regul\IeC {\'a}tor}{18}{section.4.2}
+\contentsline {subsubsection}{Anti windup}{19}{subsubsection*.10}
+\contentsline {subsubsection}{Anti windup}{19}{subsubsection*.10}
 \contentsline {chapter}{\numberline {5}Simulace}{21}{chapter.5}
 \contentsline {section}{\numberline {5.1}Porovn\IeC {\'a}n\IeC {\'\i } algoritm\IeC {\r u} detekce}{21}{section.5.1}
 \contentsline {section}{\numberline {5.2}Porovn\IeC {\'a}n\IeC {\'\i } nam\IeC {\v e}\IeC {\v r}en\IeC {\'y}ch a re\IeC {\'a}ln\IeC {\'y}ch hodnot}{22}{section.5.2}

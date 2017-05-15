@@ -169,7 +169,7 @@ V Praze, \ctufield{day}.~\monthinlanguage{title}~\ctufield{year}
 
 \chapter{Úvod}
 
-Pomocný robot se může zdát mnhým z nás jako futuristický sen. Takový robot by místo nás nosil věci, pomáhal při nákupech, asistoval v nemocnicích či ošetřoval raněné ve válkách.  Měl by tolik výhod, že by v budoucnu bylo trendem tohoto pomocníka vlastnit.
+Pomocný robot se může mnohým z nás  zdát jako futuristický sen. Takový robot by místo nás nosil věci, pomáhal při nákupech, asistoval v nemocnicích či ošetřoval raněné ve válkách.  Měl by tolik výhod, že by v budoucnu bylo trendem tohoto pomocníka vlastnit.
 
 Bylo provedeno mnoho různých výzkumů ohledně návrhu robotů, které by dokázaly sledovat člověka. S tímto problémem jsou spojené dvě důležité otázky. Jaké senzory použit pro lokalizaci člověka? Jak řešit řízení a navigaci robotu tak, aby udržoval určitou vzdálenost a vyhýbal se případným překážkám?
 
@@ -183,9 +183,10 @@ Cílem této práce je navrhnout systém pro řízení robotu, tak aby dokázal 
 
 Při návrhu tohoto systému je třeba uvědomit si několik věcí:
 \begin{enumerate}
-	\item Cíl se nesmí pohybovat větší rychlostí, než je maximální rychlost robotu. Může se stát, že robot už nikdy nedokáže najít sledovaného člověka, dokud se dotyčný nevrátí na dostatečně blízko k robotu.
-
-	\item Aby značka byla dobře detekovatelná, musí být umístěna v ochranném prostředí, tj. být kontrastní v porovnání s pozadím.
+	
+	\item Pro detekování člověka by měl být použit takový algoritmus, který dokáže fungovat v prostředí, kde kromě sledovaného člověka jsou i další lidi.
+	
+	\item Cíl se nesmí pohybovat průměrnou rychlostí větší, než je maximální rychlost robotu. Může se stát, že robot už nikdy nedokáže najít sledovaného člověka, dokud se dotyčný nevrátí na dostatečně blízko k robotu.
 
 	\item V případě použití dálkoměru pro měření vzdálenosti mezi objekty je důležité, aby systém nedetekoval sledovaný cíl jako překážku.
 \end{enumerate}
@@ -209,11 +210,17 @@ Jak již bylo řečeno, robot s podobnou funkcionalitou by byl velice užitečn�
 %https://pdfs.semanticscholar.org/85b3/0c6cf6853fed8f45502bd03cc85c3e2a59df.pdf
 %https://agrosy.cs.uni-kl.de/fileadmin/Literatur/Braun05a.pdf
 %Design and Development of Human Following Robot
-Existuje několik výzkumných projektů, které se zabývají problematikou pomocných robotů, které by následovaly člověka. Většina těchto projektů zakládá na detekci pohybujícího se objektu, které je následně sledován. V některých pracích jsou použity neuronové sítě pro detekci obličeje a background subtraction pro nalezení pohybu v obraze \cite{cite:19}, např. pohybujících se nohou člověka. Avšak použití tohoto algoritmu vede k tomu, že sledovaný člověk musí být otočen k robotu obličejem, a prezence několika lidí v místnosti přivede k tomu, že robot nedokáže určit, koho musí následovat. V případě, že neuronová síť bude naučena pouze na konkrétního člověka, což by tento problém mohlo řešit, znovupoužitelnost algoritmu klesá, protože by bylo třeba síť přeučovat pro každý konkrétní případ.
+
+Problematiku detekci člověka lze řešit pomocí nevizuálních nebo vizuálních metod. Zatímco co první používají různé senzory, jako např. dálkoměr, druhé spoléhají na kameru. Každá z těchto metod má své výhody a nevýhody, proto před samotným návrhem programu pro následování člověka mobilním robotem je třeba zhodnotit používané přístupy.
+
+\subsubsection{Nevizuální metody} 
+
+\subsubsection{Vizuální metody}
+
+Existuje několik výzkumných projektů, které se zabývají problematikou pomocných robotů, které by následovaly člověka za použití vizuálních metod s použitím kamery. Většina těchto projektů zakládá na detekci pohybujícího se objektu, které je následně sledován. V některých pracích jsou použity neuronové sítě pro detekci obličeje spolu s background subtraction pro nalezení pohybu v obraze \cite{cite:19}, např. pohybujících se nohou člověka. Avšak použití tohoto algoritmu vede k tomu, že sledovaný člověk musí být otočen k robotu obličejem, a prezence několika lidí v místnosti přivede k tomu, že robot nedokáže určit, koho musí následovat. V případě, že neuronová síť bude naučena pouze na konkrétního člověka, což by tento problém mohlo řešit, znovupoužitelnost algoritmu klesá. Jelikož síť by byla naučena pouze pro jednu osobu, bylo by ji třeba přeučovat pro každé nové použití algoritmu.
 
 Dalším možným řešením této problematiky je použití barevného markeru \cite{cite:18}, což znamená, že robot hledá určitou shodu barev, kterou pak sleduje. V tomto případě člověk může být otočen k robotu zády, a algoritmus může být použit i v plných lidí prostorech. Avšak detekce barevného vzoru nemusí být robustní kvůli změně osvětlení nebo špatné volbě barev, které nebudou dostatečně kontrastní v porovnání s oblečením sledovaného člověka.
 
-Proto pro návrh této práce bylo rozhodnuto použít specifický druh vizuálních značek, což bude popsáno v následujícím textu. Cíl pro sledování musí být unikátní, a algoritmus detekce musí být robustní, aby nedocházelo k tomu, že robot nebude vědět, koho má sledovat. Robot dopředu bude vědět, jaký typ značky musí hledat, proto se snižuje šance, že si splete cíl s jiným člověkem nebo překážkou. 
 
 \section{Volba vizuální značky}
 
@@ -221,6 +228,10 @@ Proto pro návrh této práce bylo rozhodnuto použít specifický druh vizuáln
 %https://www.researchgate.net/publication/270107591_Visual_Localization_of_Mobile_Robot_Using_Artificial_Markers
 %https://pdfs.semanticscholar.org/71e8/30b6da4b7adbfcd369664e5347a515e25d64.pdf
 %http://www.uco.es/investiga/grupos/ava/sites/default/files/GarridoJurado2014.pdf
+
+
+Po vyhodnocení možných přístupu k řešení problému následování člověka mobilním robotem bylo rozhodnuto použít vizuální metodu, která by zakládala na hledání specifické vizuální značky umístěné na člověku. Cíl pro sledování musí být unikátní, a algoritmus detekce musí být robustní, aby nedocházelo k tomu, že robot nebude vědět, koho má sledovat. Bude známo, jaký typ značky robot musí hledat, proto se snižuje šance, že si splete cíl s jiným člověkem nebo překážkou. 
+
 Mobilní robot bude následovat člověka, který má na sobě umístěnou předem známou vizuální značku. Pro navigaci robotu se v praxi běžně používají markery pro rozšířenou realitu \cite{cite:1}\cite{cite:2}\cite{cite:3}. Jejich detekce je většinou jednoduchá a můžou v sobě uchovávat užitečnou informaci, např. identifikační číslo, podle kterého robot pozná, koho sleduje. Jednu z možných vizuálních značek, které jsou v této práci použity, lze vidět na obrázku \ref{am}.
 
 \begin{figure}[]
@@ -238,11 +249,11 @@ Pro řízení robotu je třeba zvolit souřadnicový systém, ve kterém se bude
 Počátek zvolené souřadnicové soustavy umístěn do počáteční pozice robotu a osa X je ve stejném směru, jako počáteční směr jízdy robotu. Kladný směr jízdy robotu je v kladném směru osy Y, jak je vyobrazeno na \ref{ss}, a je v rozmezí $\left(-\pi; \pi\right)$. Poloha cíle (viz sekci \ref{mereni_polohy_cile}) je poté vztažená k poloze robotu a je počítána v čárkované soustavě, jejíž počátek je umístěn do aktuální pozice robotu, a je vůči původní otočená o $h$, kde $h$ je směr jízdy robotu.
 
 
-\begin{figure}[H]
+\begin{figure}[]
 	\caption{Použitý souřadnicový systém}
 	
 	\label{ss}
-	\includegraphics[width=0.9\textwidth]{images/2/ss.png}
+	\includegraphics[width=0.8\textwidth]{images/2/ss.png}
 \end{figure}
 \section{Implementační záležitosti}
 
@@ -293,11 +304,11 @@ Dále je třeba najít kontury. Cannyho algoritmus pro nalezení kontur je imple
 
 %http://web.stanford.edu/class/ee368/Handouts/Lectures/2014_Spring/Combined_Slides/9-Template-Matching-Combined.pdf
 %http://docs.adaptive-vision.com/4.7/studio/machine_vision_guide/TemplateMatching.html
-Pro rozpoznávání vizuální značky je vhodné použít algoritmus, který zakládá na hledání známého vzoru v obraze. Nejběžnějším algoritmem, který se pro této účely používá, je Template Matching \cite{cite:16}. Podstatou tohoto algoritmu je to, že se pro různé velikosti vstupného obrazu počítá jeho korelace se známým vzorem. Vytváří se tzv. pyramida obrazů \cite{cite:17}, která se skládá ze vstupních obrázků různé velikosti a orientace. Každý obraz v této pyramidě je rozdělen na oblasti o stejné velikosti, jako je velikost vzoru. Pro každou z těchto oblasti se výpočte korelace se vzorem. Následně je zvolena oblast, kde je korelační koeficient největší.
+Pro rozpoznávání vizuální značky je vhodné použít algoritmus, který zakládá na hledání známého vzoru v obraze. Nejběžnější metodou, která se pro této účely používá, je Template Matching \cite{cite:16}. Podstatou této metody je to, že se pro různé velikosti vstupného obrazu počítá jeho korelace se známým vzorem. Kvůli tomu, že vzor může mít v obraze jinou velikost, než je reálná, vytváří se tzv. pyramida obrazů \cite{cite:17}. Tato pyramida se skládá ze vstupních obrázků různé velikosti a orientace. Každý obraz v této pyramidě je rozdělen na oblasti o stejné velikosti, jako je reálná velikost vzoru. Pro každou z těchto oblasti se výpočte korelace se vzorem. Následně je zvolena oblast, kde je korelační koeficient největší.
 
 Kvůli tomu, že korelace musí být spočtena pro velký počet vstupních obrazu o různé velikosti, Template Matching může být pomalý. Jelikož se předpokládá použití čtvercové vizuální značky, je praktičtější nejdříve najít oblast zájmu (Region of Interest, ROI), pro níž se spočte korelace se známým vzorem.
 
-Proto pro detekci vizuální značky byl navržen korelační algoritmus, který je popsán v následujícím textu. Pro porovnání funkčnosti tohoto algoritmu byl použit ArUco marker detektor  \cite{cite:7}, který je k dispozici přímo v knihovně OpenCV.
+Proto pro detekci vizuální značky byl navržen korelační algoritmus, který je popsán v následujícím textu. Pro porovnání funkčnosti tohoto algoritmu byl použit ArUco marker detektor  \cite{cite:7}, který je k dispozici v knihovně OpenCV.
 
 \subsection{Korelační algoritmus}
 
@@ -587,7 +598,7 @@ a - b\left(\frac{r_{map} - 1}{2}\right)   = 1.
 
 Aby robot nejel blízko k okrajům překážek, zavádí se kompenzace jeho velikosti pomocí poloměru robotu $r_{rob}$ a minimální povolené vzdálenosti mezi robotem a překážkou $d_{safety}$:
 
-$$\gamma_{i,j} = \arcsin\left(\frac{r_{rob} + d_{safety}}{d_{i,j}}\right)$$
+$$\gamma_{i,j} = \arcsin\left(\frac{r_{rob} + d_{safety}}{d_{i,j}}\right)$$.
 Histogram je potom spočten vztahem:
 
 \begin{equation}
@@ -596,13 +607,14 @@ H_k^p = \sum_{i,j \in C_{\alpha} } m_{i,j}h_{i,j},
 
 kde
 
-$$h_{i,j} = \left\{
+\begin{equation}
+h_{i,j} = \left\{
 \begin{array}{ll}
 1&\textrm{jestli $k\alpha \in \left[\beta_{i,j} - \gamma_{i,j}; \beta_{i,j} + \gamma_{i,j}\right]$,} \\
 0&\textrm{jinak.}
 \end{array}
 \right.
-$$
+\end{equation}
 
 
 \begin{figure}
@@ -615,14 +627,15 @@ $$
 
 Aby bylo možné určit kandidáty pro další směr pohybu, primární histogram musí být převeden do binární podoby.
 
-$$H_{k,i}^{b} = \left\{
+\begin{equation}
+H_{k,i}^{b} = \left\{
 \begin{array}{ll}
 1&\textrm{jestli $H_{k,i}^p > \tau_{high}$,}\\
 0&\textrm{jestli $H_{k,i}^p < \tau_{low}$,}\\
 H_{k, i-1}^b&\textrm{jinak.}
 \end{array}
 \right.
-$$
+\end{equation}
 
 \subsubsection{Výběr kandidátů}
 
@@ -630,19 +643,23 @@ Kandidáty pro nový směr pohybu se volí dle toho, do jaké kategorie je zařa
 
 Pro úzké průjezdy lze zvolit pouze jednoho kandidáta, a to:
 
-$$\begin{array}{ll}
-c_n = \frac{k_r + k_l}{2}&\textrm{centrální sektor}
-\end{array}$$
+\begin{equation}
+\begin{array}{ll}
+c_n = \frac{k_r + k_l}{2}&\textrm{centrální sektor}.
+\end{array}
+\end{equation}
 
 Široké průjezdy mají tři možné kandidáty:
 
-$$\begin{array}{ll}
+\begin{equation}
+\begin{array}{ll}
 c_r = k_r + \frac{s_{max}}{2}&\textrm{pravý sektor,}\\
 
 c_l = k_l - \frac{s_{max}}{2}&\textrm{levý sektor,}\\
 
-c_t = k_t&\textrm{pokud $k_t \in \left[c_r;c_l\right]$}
-\end{array}$$
+c_t = k_t&\textrm{pokud $k_t \in \left[c_r;c_l\right]$}.
+\end{array}
+\end{equation}
 
 Nový směr pohybu se zvolí dle minimální ceny spočítané pro kandidáta $c_i$ pomocí vztahu \cite{cite:13}
 
@@ -654,7 +671,7 @@ přičemž $k_{d, n-1}$ je minule zvolený kandidát,
 $\mu_1, \mu_2, \mu_3$ jsou konstanty, zvolené dle vztahu $\mu_1 > \mu_2 + \mu_3$ a také platí, že
 
 \begin{equation}
-\Delta(c_1, c_2) = \min\left\{|c_1 - c_2|, |c_1 - c_2 - \frac{360^{\circ}}{\alpha}|, |c_1 - c_2 + \frac{360^{\circ}}{\alpha}|\right\}
+\Delta(c_1, c_2) = \min\left\{|c_1 - c_2|, |c_1 - c_2 - \frac{360^{\circ}}{\alpha}|, |c_1 - c_2 + \frac{360^{\circ}}{\alpha}|\right\}.
 \end{equation}
 
 
@@ -662,7 +679,7 @@ $\mu_1, \mu_2, \mu_3$ jsou konstanty, zvolené dle vztahu $\mu_1 > \mu_2 + \mu_3
 
 %https://www.cs.hmc.edu/~dodds/projects/RobS05/XPort/XPortArticle.pdf
 
-Za jízdy je třeba, aby byla mezi robotem a cílem udržována určitá vzdálenost $d$ a hodnota úhlu $\phi$ byla co nejmenší, nejlépe nulová. Pro tyto účely je navržen PID regulátor  \cite{cite:14}, který pro aktuální odchylku od referenčních bodů spočte dopřednou a úhlovou rychlost, které se následně převedou na rychlosti motorů. Zjednodušený nákres algoritmu je zobrazen na \ref{pid}.  Pokud je $\epsilon_d$, resp. $\epsilon_\phi$, v pásmu $\left[-\epsilon_{d_0}; \epsilon_{d_0}\right]$, resp. $\left[-\epsilon_{\phi_0}; \epsilon_{\phi_0}\right]$, pak bude výstup PID regulátoru nulový. Jinak je od odchylky odečtena hodnota $\epsilon_{d_0}$, resp. $\epsilon_{\phi_0}$, což zaručí to, že robot nebude kmitat na místě, pokud bude blízko referenčního bodu, a řízení bude plynulé.
+Za jízdy je třeba, aby byla mezi robotem a cílem udržována určitá vzdálenost $d$ a hodnota úhlu $\phi$ byla co nejmenší, nejlépe nulová. Pro tyto účely je navržen diskrétní PID regulátor  \cite{cite:14}, který pro aktuální odchylku od referenčních bodů spočte dopřednou a úhlovou rychlost, které se následně převedou na rychlosti motorů. Zjednodušený nákres algoritmu je zobrazen na \ref{pid}.  Pokud je $\epsilon_d$, resp. $\epsilon_\phi$, v pásmu $\left[-\epsilon_{d_0}; \epsilon_{d_0}\right]$, resp. $\left[-\epsilon_{\phi_0}; \epsilon_{\phi_0}\right]$, pak bude výstup PID regulátoru nulový. Jinak je od odchylky odečtena hodnota $\epsilon_{d_0}$, resp. $\epsilon_{\phi_0}$, což zaručí to, že robot nebude kmitat na místě, pokud bude blízko referenčního bodu, a řízení bude plynulé.
 
 \begin{figure}[H]
 	\caption{PID regulace}
@@ -672,11 +689,45 @@ Za jízdy je třeba, aby byla mezi robotem a cílem udržována určitá vzdále
 \end{figure}
 
 
-Výsledná dopřední, reps. úhlová, rychlost je vypočtena pomocí vztahu 
+Výsledná dopřední, reps. úhlová, rychlost v čase $t$ je vypočtena pomocí vztahu 
 
 \begin{equation}
-V_{for, ang} = K_perror + K_ierror
+V_{for, ang} = K_pE + K_iI + K_dD,
 \end{equation}
+
+kde $K_p$, $K_i$ a $K_d$ jsou koeficienty proporcionální, integrální a diferenciální složky PID regulátoru, a pro $E$, $I$, $D$ platí, že
+
+\begin{equation}
+E = \left\{
+\begin{array}{ll}
+\epsilon - \epsilon_0&\textrm{jestli $\left|\epsilon\right| > \epsilon_0$,}\\
+0&\textrm{jinak.}
+\end{array}
+\right.
+\end{equation}
+
+\begin{equation}
+I = \sum_t E_t \Delta t, 
+\end{equation}
+
+\begin{equation}
+D = \frac{E_t - E_{t-1}}{\Delta t}.
+\end{equation}
+
+\subsubsection{Anti windup}
+
+Jelikož integrální složka pořád sčítá chybu, může dojít k tomu, že výstup PID regulátoru bude přesahovat maximální povolenou rychlost robotu, a tudíž ztrácí schopnost ji regulovat. Tomuto jevu se říká integrální windup. Aby nedocházelo k nekontrolovanému výpočtu integrální složky, je v práci použita technika anti windup. Ta zajistí to, že integrál v čase $t+1$ bude roven
+
+\begin{equation}
+I_{t+1} = \left\{
+	\begin{array}{ll}
+	I_t + K_aE\Delta t &\textrm{jestli $\left|V\right| > V_{max}$,}\\
+	I_t + E\Delta t & \textrm{jinak,}
+	\end{array}
+	\right.
+\end{equation}
+
+kde $K_a$ je anti windup koeficient. V případě, že $K_a$ bude roven 0, integrální složka se nezmění. Naopak pokud $K_a$ je 1, anti windup bude ignorován.
 \chapter{Simulace}
 \label{simulace}
 %http://www.coppeliarobotics.com/index.html
@@ -800,7 +851,7 @@ Cílem této práce bylo navrhnout software pro autonomní řízení robotu nás
 
 Pro detekci člověka v obrazu bylo rozhodnuto použit vizuální značku, která byla robotem známa, funkčnost takového řešení byla ověřena simulací. Robot dokáže spočítat vzdálenost a směr, ve kterém se detekovaná značka vůči němu nachází. Díky dálkoměru robot také ví, jestli na cestě k cíli jsou překážky. Pokud ano, pomocí Vector Field Histogram algoritmu je vypočten nový směr jízdy tak, aby robot nenarazil na žádnou překážku a zároveň byl co nejblíže člověku. Na základě spočtených parametrů se pomocí PID regulátoru vyhodnotí rychlosti, které je třeba aplikovat na motory, aby robot dosáhl cílové pozice vůči sledovanému člověku. Navíc pro případ, kdy robot nedetekuje značku, a tedy ani nedokáže spočítat vzdálenost k cíli, je použit Kalmanův filtr, který předpovídá polohu cíle na základě předchozích měření.
 
-V simulátoru bylo provedeno několik testů s roboty, nastavení simulací a výsledky některých testů jsou popsány v kapitole \ref{simulace}. Průměrná vzdálenost $d$ mezi roboty byla \SI{1.99}{\meter} a odchylka sledovaného robotu od středu kamery $\phi$ stanovila \SI{0.0023}{\radian}. Jelikož rychlost robotů byla stejná a počáteční vzdálenost mezi nimi byla \SI{2}{\meter}, sledující robot se nedokázal přiblížit referenční hodnotě \SI{1}{\meter}. Dále pak byla změřena průměrná absolutní odchylka mezi reálnou a vypočtenou polohou sledujícího robotu, která stanovila \SI{0.17}{\meter}. Rozdíl mezi reálnou a spočtenou hodnotou směru jízdy robotu byla \SI{-0.02}{\radian}. Nakonec byl spočítán rozdíl mezi reálnou a vypočtenou pomocí Kalmanova filtru polohou sledovaného robotu, ten stanovil \SI{0.32}{\meter}. Tak velká odchylka byla způsobena tím, že byly simulovány situace, kdy značka zmizí ze zorného pole robotu. Avšak robot dokázal pokaždé najít značku znovu a pokračovat v jízdě. 
+V simulátoru bylo provedeno několik testů s roboty, nastavení simulací a výsledky některých testů jsou popsány v kapitole \ref{simulace}. Průměrná vzdálenost $d$ mezi roboty byla \SI{0.95}{\meter} a odchylka sledovaného robotu od středu kamery $\phi$ stanovila \SI{0.0023}{\radian}. Dále byl spočítán rozdíl mezi reálnou a vypočtenou pomocí Kalmanova filtru polohou sledovaného robotu, ten stanovil \SI{0.32}{\meter}. Tak velká odchylka byla způsobena tím, že byly simulovány situace, kdy značka zmizí ze zorného pole robotu. Avšak robot dokázal pokaždé najít značku znovu a pokračovat v jízdě. 	
 
 
 Tato práce byla velkým přínosem hlavně proto, že v ní byla možnost vyzkoušet různé techniky používané pro řízení mobilních robotů. Navíc díky této práci jsme se seznámili s simulačními prostředí pro robotiku a OpenCV knihovnou, která je běžně používána pro implementaci softwaru pro počítačové vidění a strojové učení.
