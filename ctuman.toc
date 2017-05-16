@@ -59,3 +59,4 @@
 \contentsline {section}{\numberline {5.4}Trajektorie robotu p\IeC {\v r}i j\IeC {\'\i }zd\IeC {\v e} s p\IeC {\v r}ek\IeC {\'a}\IeC {\v z}kami}{25}{section.5.4}
 \contentsline {chapter}{\numberline {6}Z\IeC {\'a}v\IeC {\v e}r}{27}{chapter.6}
 \contentsline {chapter}{\numberline {A}Literatura}{29}{appendix.A}
+\contentsline {chapter}{\numberline {B}Obsah CD}{31}{appendix.B}
