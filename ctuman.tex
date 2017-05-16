@@ -43,8 +43,8 @@
 	author = {Mykhaylo Zelenskyy},
 	supervisor = {Ing. Jan Chudoba},
 %	supervisor-address = {Ústav X, \\ Uliční 5, \\ Praha 99},
-	keywords-czech = {robotika, počítačové vidění, řízení robotu},
-	keywords-english = {robotics, computer vision, robot control},
+	keywords-czech = {robotika, počítačové vidění, řízení robotu, korelace, ArUco, PID, VFH, V-Rep},
+	keywords-english = {robotics, computer vision, robot control, correlation, ArUco, PID, VFH, V-Rep},
 	day = \the\day,
 	month = \the\month,
 	year = \the\year,
@@ -130,10 +130,12 @@
 
 % Abstract in Czech
 \begin{abstract-czech}
+	V práci je probírána problematika následování člověka mobilním robotem. Pro detekci vizuální značky, dle které je člověk sledován, jsou použity korelační algoritmus a detektor ArUco markerů. Pro řízení robotu je použit diskrétní PID regulátor. Také je použit algoritmus Vector Field Histogram pro vyhýbání se překážkám. Software byl vyzkoušen v simulátoru V-Rep a také na reálném robotu.
 \end{abstract-czech}
 
 % Abstract in English
 \begin{abstract-english}
+	This thesis is focused on the problem of following of human by mobile robot. The correlation algorithm and ArUco marker detector are used for detection of visual mark used for defining the followed person. Discrete PID controller is used for robot control. Also Vector Field Histogram algorithm is used for obstacle avoidance. Software was tested in V-Rep simulator and with real robot.
 \end{abstract-english}
 
 % Acknowledgements / Podekovani
