@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.4.19)  15 MAY 2017 11:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.4.19)  16 MAY 2017 13:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1307,6 +1307,281 @@ ass ctuthesis
 )
 \c@theorem=\count266
 
+(/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen260
+\extrarowheight=\dimen261
+\NC@list=\toks41
+\extratabsurround=\skip76
+\backup@length=\skip77
+)
+\everycr=\toks42
+\minrowclearance=\skip78
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks43
+\pgfutil@tempdima=\dimen262
+\pgfutil@tempdimb=\dimen263
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
+ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box86
+(/usr/share/texlive/texmf-dist/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
+))
+Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
+
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks44
+\pgfkeys@temptoks=\toks45
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
+ex
+\pgfkeys@tmptoks=\toks46
+))
+\pgf@x=\dimen264
+\pgf@y=\dimen265
+\pgf@xa=\dimen266
+\pgf@ya=\dimen267
+\pgf@xb=\dimen268
+\pgf@yb=\dimen269
+\pgf@xc=\dimen270
+\pgf@yc=\dimen271
+\w@pgf@writea=\write4
+\r@pgf@reada=\read1
+\c@pgf@counta=\count267
+\c@pgf@countb=\count268
+\c@pgf@countc=\count269
+\c@pgf@countd=\count270
+\t@pgf@toka=\toks47
+\t@pgf@tokb=\toks48
+\t@pgf@tokc=\toks49
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
+f
+File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
+tex
+File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
+\pgfsyssoftpath@smallbuffer@items=\count271
+\pgfsyssoftpath@bigbuffer@items=\count272
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
+tex
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen272
+\pgfmath@count=\count273
+\pgfmath@box=\box87
+\pgfmath@toks=\toks50
+\pgfmath@stack@operand=\toks51
+\pgfmath@stack@operation=\toks52
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonomet
+ric.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
+thmetics.code.tex)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count274
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
+x
+File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
+\pgf@picminx=\dimen273
+\pgf@picmaxx=\dimen274
+\pgf@picminy=\dimen275
+\pgf@picmaxy=\dimen276
+\pgf@pathminx=\dimen277
+\pgf@pathmaxx=\dimen278
+\pgf@pathminy=\dimen279
+\pgf@pathmaxy=\dimen280
+\pgf@xx=\dimen281
+\pgf@xy=\dimen282
+\pgf@yx=\dimen283
+\pgf@yy=\dimen284
+\pgf@zx=\dimen285
+\pgf@zy=\dimen286
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
+code.tex
+File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
+\pgf@path@lastx=\dimen287
+\pgf@path@lasty=\dimen288
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
+.tex
+File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
+\pgf@shorten@end@additional=\dimen289
+\pgf@shorten@start@additional=\dimen290
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
+x
+File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
+\pgfpic=\box88
+\pgf@hbox=\box89
+\pgf@layerbox@main=\box90
+\pgf@picture@serial@count=\count275
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
+ode.tex
+File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
+\pgflinewidth=\dimen291
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
+s.code.tex
+File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
+\pgf@pt@x=\dimen292
+\pgf@pt@y=\dimen293
+\pgf@pt@temp=\dimen294
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.t
+ex
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing
+.code.tex
+File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
+x
+File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
+\pgfarrowsep=\dimen295
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
+\pgf@max=\dimen296
+\pgf@sys@shading@range@num=\count276
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
+tex
+File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
+\pgfexternal@startupbox=\box91
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
+x
+File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.c
+ode.tex
+File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.
+tex
+File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
+\pgfnodeparttextbox=\box92
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
+.sty
+Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen297
+\pgf@nodesepend=\dimen298
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
+.sty
+Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
+)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen299
+\pgffor@skip=\dimen300
+\pgffor@stack=\toks53
+\pgffor@toks=\toks54
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
+.code.tex
+File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
+\pgf@plot@mark@count=\count277
+\pgfplotmarksize=\dimen301
+)
+\tikz@lastx=\dimen302
+\tikz@lasty=\dimen303
+\tikz@lastxsaved=\dimen304
+\tikz@lastysaved=\dimen305
+\tikzleveldistance=\dimen306
+\tikzsiblingdistance=\dimen307
+\tikz@figbox=\box93
+\tikz@figbox@bg=\box94
+\tikz@tempbox=\box95
+\tikz@tempbox@bg=\box96
+\tikztreelevel=\count278
+\tikznumberofchildren=\count279
+\tikznumberofcurrentchild=\count280
+\tikz@fig@count=\count281
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
+\pgfmatrixcurrentrow=\count282
+\pgfmatrixcurrentcolumn=\count283
+\pgf@matrix@numberofcolumns=\count284
+)
+\tikz@expandcount=\count285
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
+)))
 (/usr/share/texlive/texmf-dist/tex/latex/mparhack/mparhack.sty
 Package: mparhack 2005/04/17 v1.4 (T. Sgouros and S. Ulrich)
 )
@@ -1329,71 +1604,62 @@ e
 )))
 (/usr/share/texlive/texmf-dist/tex/latex/subfig/subfig.sty
 Package: subfig 2005/06/28 ver: 1.3 subfig package
-\c@KVtest=\count267
-\sf@farskip=\skip76
-\sf@captopadj=\dimen260
-\sf@capskip=\skip77
-\sf@nearskip=\skip78
-\c@subfigure=\count268
-\c@subfigure@save=\count269
-\c@lofdepth=\count270
-\c@subtable=\count271
-\c@subtable@save=\count272
-\c@lotdepth=\count273
-\sf@top=\skip79
-\sf@bottom=\skip80
+\c@KVtest=\count286
+\sf@farskip=\skip79
+\sf@captopadj=\dimen308
+\sf@capskip=\skip80
+\sf@nearskip=\skip81
+\c@subfigure=\count287
+\c@subfigure@save=\count288
+\c@lofdepth=\count289
+\c@subtable=\count290
+\c@subtable@save=\count291
+\c@lotdepth=\count292
+\sf@top=\skip82
+\sf@bottom=\skip83
 )
 (/usr/share/texlive/texmf-dist/tex/latex/siunitx/siunitx.sty
 Package: siunitx 2016/03/01 v2.6q A comprehensive (SI) units package
-
-(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
-Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
-\col@sep=\dimen261
-\extrarowheight=\dimen262
-\NC@list=\toks41
-\extratabsurround=\skip81
-\backup@length=\skip82
-)
-\l__siunitx_tmp_box=\box86
-\l__siunitx_tmp_dim=\dimen263
-\l__siunitx_tmp_int=\count274
-\l__siunitx_number_mantissa_length_int=\count275
-\l__siunitx_number_uncert_length_int=\count276
-\l__siunitx_round_int=\count277
-\l__siunitx_process_decimal_int=\count278
-\l__siunitx_process_uncertainty_int=\count279
-\l__siunitx_process_fixed_int=\count280
-\l__siunitx_process_integer_min_int=\count281
-\l__siunitx_process_precision_int=\count282
-\l__siunitx_group_min_int=\count283
-\l__siunitx_angle_marker_box=\box87
-\l__siunitx_angle_unit_box=\box88
-\l__siunitx_angle_marker_dim=\dimen264
-\l__siunitx_angle_unit_dim=\dimen265
-\l__siunitx_unit_int=\count284
-\l__siunitx_unit_denominator_int=\count285
-\l__siunitx_unit_numerator_int=\count286
-\l__siunitx_unit_prefix_int=\count287
-\l__siunitx_unit_prefix_base_int=\count288
-\l__siunitx_unit_prefix_gram_int=\count289
-\l__siunitx_number_product_int=\count290
-\c__siunitx_one_fill_skip=\skip83
-\l__siunitx_table_unit_align_skip=\skip84
-\l__siunitx_table_exponent_dim=\dimen266
-\l__siunitx_table_integer_dim=\dimen267
-\l__siunitx_table_mantissa_dim=\dimen268
-\l__siunitx_table_marker_dim=\dimen269
-\l__siunitx_table_result_dim=\dimen270
-\l__siunitx_table_uncert_dim=\dimen271
-\l__siunitx_table_fill_pre_dim=\dimen272
-\l__siunitx_table_fill_post_dim=\dimen273
-\l__siunitx_table_fill_mid_dim=\dimen274
-\l__siunitx_table_pre_box=\box89
-\l__siunitx_table_post_box=\box90
-\l__siunitx_table_mantissa_box=\box91
-\l__siunitx_table_result_box=\box92
-\l__siunitx_table_number_align_skip=\skip85
-\l__siunitx_table_text_align_skip=\skip86
+\l__siunitx_tmp_box=\box97
+\l__siunitx_tmp_dim=\dimen309
+\l__siunitx_tmp_int=\count293
+\l__siunitx_number_mantissa_length_int=\count294
+\l__siunitx_number_uncert_length_int=\count295
+\l__siunitx_round_int=\count296
+\l__siunitx_process_decimal_int=\count297
+\l__siunitx_process_uncertainty_int=\count298
+\l__siunitx_process_fixed_int=\count299
+\l__siunitx_process_integer_min_int=\count300
+\l__siunitx_process_precision_int=\count301
+\l__siunitx_group_min_int=\count302
+\l__siunitx_angle_marker_box=\box98
+\l__siunitx_angle_unit_box=\box99
+\l__siunitx_angle_marker_dim=\dimen310
+\l__siunitx_angle_unit_dim=\dimen311
+\l__siunitx_unit_int=\count303
+\l__siunitx_unit_denominator_int=\count304
+\l__siunitx_unit_numerator_int=\count305
+\l__siunitx_unit_prefix_int=\count306
+\l__siunitx_unit_prefix_base_int=\count307
+\l__siunitx_unit_prefix_gram_int=\count308
+\l__siunitx_number_product_int=\count309
+\c__siunitx_one_fill_skip=\skip84
+\l__siunitx_table_unit_align_skip=\skip85
+\l__siunitx_table_exponent_dim=\dimen312
+\l__siunitx_table_integer_dim=\dimen313
+\l__siunitx_table_mantissa_dim=\dimen314
+\l__siunitx_table_marker_dim=\dimen315
+\l__siunitx_table_result_dim=\dimen316
+\l__siunitx_table_uncert_dim=\dimen317
+\l__siunitx_table_fill_pre_dim=\dimen318
+\l__siunitx_table_fill_post_dim=\dimen319
+\l__siunitx_table_fill_mid_dim=\dimen320
+\l__siunitx_table_pre_box=\box100
+\l__siunitx_table_post_box=\box101
+\l__siunitx_table_mantissa_box=\box102
+\l__siunitx_table_result_box=\box103
+\l__siunitx_table_number_align_skip=\skip86
+\l__siunitx_table_text_align_skip=\skip87
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
@@ -1511,27 +1777,32 @@ Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 . 
 . Defining command \__siunitx_bookmark_si:w with sig. 'om' on line 7400.
 .................................................
-\g__file_internal_ior=\read1
+\g__file_internal_ior=\read2
 
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/translator.sty
 Package: translator 2010/06/12 ver 1.10
 
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/translator-language-
-mappings.tex)))
+mappings.tex))) (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen321
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/hhline.sty
+Package: hhline 2014/10/28 v2.03 Table rule package (DPC)
+)
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \ctump with sig. 'm' on line 104.
+. Defining command \ctump with sig. 'm' on line 113.
 .................................................
- (/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2014/10/28 v2.10 `tabularx' package (DPC)
-\TX@col@width=\dimen275
-\TX@old@table=\dimen276
-\TX@old@col=\dimen277
-\TX@target=\dimen278
-\TX@delta=\dimen279
-\TX@cols=\count291
-\TX@ftn=\toks42
+\TX@col@width=\dimen322
+\TX@old@table=\dimen323
+\TX@old@col=\dimen324
+\TX@target=\dimen325
+\TX@delta=\dimen326
+\TX@cols=\count310
+\TX@ftn=\toks55
 )
 (/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
 Package: mathtools 2015/11/12 v1.18 mathematical typesetting tools
@@ -1543,43 +1814,39 @@ LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
-\g_MT_multlinerow_int=\count292
-\l_MT_multwidth_dim=\dimen280
-\origjot=\skip87
-\l_MT_shortvdotswithinadjustabove_dim=\dimen281
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen282
-\l_MT_above_intertext_sep=\dimen283
-\l_MT_below_intertext_sep=\dimen284
-\l_MT_above_shortintertext_sep=\dimen285
-\l_MT_below_shortintertext_sep=\dimen286
+\g_MT_multlinerow_int=\count311
+\l_MT_multwidth_dim=\dimen327
+\origjot=\skip88
+\l_MT_shortvdotswithinadjustabove_dim=\dimen328
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen329
+\l_MT_above_intertext_sep=\dimen330
+\l_MT_below_intertext_sep=\dimen331
+\l_MT_above_shortintertext_sep=\dimen332
+\l_MT_below_shortintertext_sep=\dimen333
 )
-\myboxa=\box93
- (./ctuman.aux
-
-LaTeX Warning: Label `korelace' multiply defined.
-
-)
+\myboxa=\box104
+ (./ctuman.aux)
 \openout1 = `ctuman.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 154.
-LaTeX Font Info:    ... okay on input line 154.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 154.
-LaTeX Font Info:    ... okay on input line 154.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 154.
-LaTeX Font Info:    ... okay on input line 154.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 154.
-LaTeX Font Info:    ... okay on input line 154.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 154.
-LaTeX Font Info:    ... okay on input line 154.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 154.
-LaTeX Font Info:    ... okay on input line 154.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 154.
-LaTeX Font Info:    ... okay on input line 154.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 154.
- (/usr/share/texmf/tex/latex/lm/t1lmr.fd
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 163.
+LaTeX Font Info:    ... okay on input line 163.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 163.
+LaTeX Font Info:    ... okay on input line 163.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 163.
+LaTeX Font Info:    ... okay on input line 163.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 163.
+LaTeX Font Info:    ... okay on input line 163.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 163.
+LaTeX Font Info:    ... okay on input line 163.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 163.
+LaTeX Font Info:    ... okay on input line 163.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 163.
+LaTeX Font Info:    ... okay on input line 163.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 163.
+(/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Info: Redefining \microtypecontext on input line 154.
+LaTeX Info: Redefining \microtypecontext on input line 163.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1596,19 +1863,19 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 )
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count293
-\scratchdimen=\dimen287
-\scratchbox=\box94
-\nofMPsegments=\count294
-\nofMParguments=\count295
-\everyMPshowfont=\toks43
-\MPscratchCnt=\count296
-\MPscratchDim=\dimen288
-\MPnumerator=\count297
-\makeMPintoPDFobject=\count298
-\everyMPtoPDFconversion=\toks44
+\scratchcounter=\count312
+\scratchdimen=\dimen334
+\scratchbox=\box105
+\nofMPsegments=\count313
+\nofMParguments=\count314
+\everyMPshowfont=\toks56
+\MPscratchCnt=\count315
+\MPscratchDim=\dimen335
+\MPnumerator=\count316
+\makeMPintoPDFobject=\count317
+\everyMPtoPDFconversion=\toks57
 )
-\AtBeginShipoutBox=\box95
+\AtBeginShipoutBox=\box106
  (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
 Package: pdflscape 2008/08/11 v0.10 Display of landscape pages in PDF (HO)
 
@@ -1657,24 +1924,25 @@ Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count299
-Package hyperref Info: Link coloring OFF on input line 154.
+\c@lstlisting=\count318
+Package hyperref Info: Link coloring OFF on input line 163.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count300
+\c@section@level=\count319
 )
-LaTeX Info: Redefining \ref on input line 154.
-LaTeX Info: Redefining \pageref on input line 154.
-LaTeX Info: Redefining \nameref on input line 154.
+LaTeX Info: Redefining \ref on input line 163.
+LaTeX Info: Redefining \pageref on input line 163.
+LaTeX Info: Redefining \nameref on input line 163.
 
 (./ctuman.out) (./ctuman.out)
-\@outlinefile=\write4
-\openout4 = `ctuman.out'.
+\@outlinefile=\write5
+\openout5 = `ctuman.out'.
 
+ ABD: EveryShipout initializing macros
 Now handling font encoding TS1 ...
 ... processing UTF-8 mapping file for font encoding TS1
 
@@ -1757,38 +2025,38 @@ Dictionary: translator-basic-dictionary, Language: English
 (/usr/share/texlive/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
 File: siunitx-abbreviations.cfg 2016/03/01 v2.6q siunitx: Abbreviated units
 )
-\c__siunitx_mathsf_int=\count301
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 154.
+\c__siunitx_mathsf_int=\count320
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 163.
 
 
 (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 154.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 163.
 
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 154
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 163
 .
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 154
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 163
 .
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 154.
+(Font)              <10.95> on input line 163.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 154.
+(Font)              <8> on input line 163.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 154.
-LaTeX Font Info:    Try loading font information for U+msa on input line 154.
+(Font)              <6> on input line 163.
+LaTeX Font Info:    Try loading font information for U+msa on input line 163.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1796,7 +2064,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 154.
+LaTeX Font Info:    Try loading font information for U+msb on input line 163.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1804,7 +2072,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Try loading font information for OT1+lmss on input line 154
+LaTeX Font Info:    Try loading font information for OT1+lmss on input line 163
 .
 
 (/usr/share/texmf/tex/latex/lm/ot1lmss.fd
@@ -1814,8 +2082,8 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `lmss' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-\c__siunitx_mathtt_int=\count302
-LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 154
+\c__siunitx_mathtt_int=\count321
+LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 163
 .
 
 (/usr/share/texmf/tex/latex/lm/ot1lmtt.fd
@@ -1825,8 +2093,8 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `lmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-\ctuclsnamebox=\box96
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 165.
+\ctuclsnamebox=\box107
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 174.
 
 
 (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
@@ -1841,20 +2109,20 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-<ctu_logo_black.pdf, id=112, 366.36874pt x 279.0425pt>
+<ctu_logo_black.pdf, id=111, 366.36874pt x 279.0425pt>
 File: ctu_logo_black.pdf Graphic file (type pdf)
 
 <use ctu_logo_black.pdf>
-Package pdftex.def Info: ctu_logo_black.pdf used on input line 168.
+Package pdftex.def Info: ctu_logo_black.pdf used on input line 177.
 (pdftex.def)             Requested size: 85.86746pt x 65.40001pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 168.
+(Font)              <14.4> on input line 177.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 168.
+(Font)              <10> on input line 177.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 168.
+(Font)              <7> on input line 177.
 
-Overfull \hbox (5.0pt too wide) in paragraph at lines 168--168
+Overfull \hbox (5.0pt too wide) in paragraph at lines 177--177
 []|| [][][][][][] 
  []
 
@@ -1902,22 +2170,22 @@ Overfull \hbox (5.0pt too wide) in paragraph at lines 168--168
 .................................................
 . LaTeX info: "xparse/redefine-command"
 . 
-. Redefining command \chapter with sig. 'som' on line 168.
+. Redefining command \chapter with sig. 'som' on line 177.
 .................................................
 .................................................
 . LaTeX info: "xparse/redefine-command"
 . 
-. Redefining command \tableofcontents with sig. '' on line 168.
+. Redefining command \tableofcontents with sig. '' on line 177.
 .................................................
 .................................................
 . LaTeX info: "xparse/redefine-command"
 . 
-. Redefining command \listoffigures with sig. '' on line 168.
+. Redefining command \listoffigures with sig. '' on line 177.
 .................................................
 .................................................
 . LaTeX info: "xparse/redefine-command"
 . 
-. Redefining command \listoftables with sig. '' on line 168.
+. Redefining command \listoftables with sig. '' on line 177.
 .................................................
  [3
 
@@ -1925,23 +2193,21 @@ Overfull \hbox (5.0pt too wide) in paragraph at lines 168--168
 ] [4
 
 ] (./ctuman.toc)
-\tf@toc=\write5
-\openout5 = `ctuman.toc'.
+\tf@toc=\write6
+\openout6 = `ctuman.toc'.
 
  [5
 
 
 ] (./ctuman.lof)
-\tf@lof=\write6
-\openout6 = `ctuman.lof'.
+\tf@lof=\write7
+\openout7 = `ctuman.lof'.
+
+ (./ctuman.lot)
+\tf@lot=\write8
+\openout8 = `ctuman.lot'.
 
  [6
-
-] (./ctuman.lot)
-\tf@lot=\write7
-\openout7 = `ctuman.lot'.
-
- [7
 
 ]
 *geometry* verbose mode - [ newgeometry ] result:
@@ -1977,185 +2243,184 @@ Overfull \hbox (5.0pt too wide) in paragraph at lines 168--168
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- [8
 
-
-
-
-]
 Kapitola 1.
 [1
 
-] <images/0/maxresdefault.jpg, id=258, 873.2625pt x 572.1375pt>
+
+
+
+
+] <images/0/maxresdefault.jpg, id=243, 873.2625pt x 572.1375pt>
 File: images/0/maxresdefault.jpg Graphic file (type jpg)
 
 <use images/0/maxresdefault.jpg>
-Package pdftex.def Info: images/0/maxresdefault.jpg used on input line 203.
+Package pdftex.def Info: images/0/maxresdefault.jpg used on input line 212.
 (pdftex.def)             Requested size: 363.0pt x 237.82549pt.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 208.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 217.
  [2 <./images/0/maxresdefault.jpg>]
 Kapitola 2.
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 225.
+(hyperref)                removing `\textasciicaron' on input line 234.
 
 [3
 
 ]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `t') on input line 237.
+               Default added (so using `t') on input line 246.
 
-<images/2/ArucoMarker.jpg, id=278, 602.25pt x 602.25pt>
+<images/2/ArucoMarker.jpg, id=263, 602.25pt x 602.25pt>
 File: images/2/ArucoMarker.jpg Graphic file (type jpg)
 
 <use images/2/ArucoMarker.jpg>
-Package pdftex.def Info: images/2/ArucoMarker.jpg used on input line 241.
+Package pdftex.def Info: images/2/ArucoMarker.jpg used on input line 250.
 (pdftex.def)             Requested size: 181.5pt x 181.50345pt.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+r'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 244.
+(hyperref)                removing `\textasciicaron' on input line 254.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `t') on input line 252.
+               Default added (so using `t') on input line 262.
 
-<images/2/ss.png, id=281, 845.1575pt x 599.23875pt>
+<images/2/ss.png, id=266, 845.1575pt x 599.23875pt>
 File: images/2/ss.png Graphic file (type png)
  <use images/2/ss.png>
-Package pdftex.def Info: images/2/ss.png used on input line 256.
+Package pdftex.def Info: images/2/ss.png used on input line 266.
 (pdftex.def)             Requested size: 290.40111pt x 205.90552pt.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 258.
+(hyperref)                removing `\textasciicaron' on input line 268.
 
 [4 <./images/2/ArucoMarker.jpg>] [5 <./images/2/ss.png>] [6
 
 ]
 Kapitola 3.
-<images/2/adapt_1.jpg, id=310, 656.53732pt x 493.67535pt>
+<images/2/adapt_1.jpg, id=294, 656.53732pt x 493.67535pt>
 File: images/2/adapt_1.jpg Graphic file (type jpg)
 
 <use images/2/adapt_1.jpg>
-Package pdftex.def Info: images/2/adapt_1.jpg used on input line 290.
+Package pdftex.def Info: images/2/adapt_1.jpg used on input line 300.
 (pdftex.def)             Requested size: 163.34889pt x 122.82343pt.
 
-<images/2/adapt_2.jpg, id=311, 663.66254pt x 500.80057pt>
+<images/2/adapt_2.jpg, id=295, 663.66254pt x 500.80057pt>
 File: images/2/adapt_2.jpg Graphic file (type jpg)
 
 <use images/2/adapt_2.jpg>
-Package pdftex.def Info: images/2/adapt_2.jpg used on input line 292.
+Package pdftex.def Info: images/2/adapt_2.jpg used on input line 302.
 (pdftex.def)             Requested size: 163.34889pt x 123.25887pt.
 
-<images/2/ccomp_hierarchy.png, id=314, 451.6875pt x 304.13625pt>
+<images/2/ccomp_hierarchy.png, id=298, 451.6875pt x 304.13625pt>
 File: images/2/ccomp_hierarchy.png Graphic file (type png)
 
 <use images/2/ccomp_hierarchy.png>
-Package pdftex.def Info: images/2/ccomp_hierarchy.png used on input line 300.
+Package pdftex.def Info: images/2/ccomp_hierarchy.png used on input line 310.
 (pdftex.def)             Requested size: 290.40111pt x 195.54683pt.
  [7]
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 313.
+(hyperref)                removing `\textasciicaron' on input line 323.
 
-<images/2/3.jpg, id=327, 501.875pt x 501.875pt>
+<images/2/3.jpg, id=311, 501.875pt x 501.875pt>
 File: images/2/3.jpg Graphic file (type jpg)
  <use images/2/3.jpg>
-Package pdftex.def Info: images/2/3.jpg used on input line 322.
+Package pdftex.def Info: images/2/3.jpg used on input line 332.
 (pdftex.def)             Requested size: 145.19778pt x 145.1954pt.
 
-<images/2/682_klad.jpg, id=328, 501.875pt x 501.875pt>
+<images/2/682_klad.jpg, id=312, 501.875pt x 501.875pt>
 File: images/2/682_klad.jpg Graphic file (type jpg)
 
 <use images/2/682_klad.jpg>
-Package pdftex.def Info: images/2/682_klad.jpg used on input line 324.
+Package pdftex.def Info: images/2/682_klad.jpg used on input line 334.
 (pdftex.def)             Requested size: 145.19778pt x 145.1954pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 324.
+(Font)              <9> on input line 334.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 324.
+(Font)              <5> on input line 334.
 
-<images/2/3_zap.jpg, id=329, 501.875pt x 501.875pt>
+<images/2/3_zap.jpg, id=313, 501.875pt x 501.875pt>
 File: images/2/3_zap.jpg Graphic file (type jpg)
  <use images/2/3_zap.jpg>
-Package pdftex.def Info: images/2/3_zap.jpg used on input line 326.
+Package pdftex.def Info: images/2/3_zap.jpg used on input line 336.
 (pdftex.def)             Requested size: 145.19778pt x 145.1954pt.
 
-<images/2/682_zadna.jpg, id=330, 501.875pt x 501.875pt>
+<images/2/682_zadna.jpg, id=314, 501.875pt x 501.875pt>
 File: images/2/682_zadna.jpg Graphic file (type jpg)
 
 <use images/2/682_zadna.jpg>
-Package pdftex.def Info: images/2/682_zadna.jpg used on input line 328.
+Package pdftex.def Info: images/2/682_zadna.jpg used on input line 338.
 (pdftex.def)             Requested size: 145.19778pt x 145.1954pt.
 
-<images/2/approx.png, id=333, 602.25pt x 334.24875pt>
+<images/2/approx.png, id=317, 602.25pt x 334.24875pt>
 File: images/2/approx.png Graphic file (type png)
 
 <use images/2/approx.png>
-Package pdftex.def Info: images/2/approx.png used on input line 336.
+Package pdftex.def Info: images/2/approx.png used on input line 346.
 (pdftex.def)             Requested size: 290.40111pt x 161.1771pt.
  [8 <./images/2/adapt_1.jpg> <./images/2/adapt_2.jpg> <./images/2/ccomp_hierarc
 hy.png>] [9 <./images/2/3.jpg> <./images/2/682_klad.jpg> <./images/2/3_zap.jpg>
  <./images/2/682_zadna.jpg>]
-<images/2/bitsextraction1.png, id=362, 330.23375pt x 329.23pt>
+<images/2/bitsextraction1.png, id=347, 330.23375pt x 329.23pt>
 File: images/2/bitsextraction1.png Graphic file (type png)
 
 <use images/2/bitsextraction1.png>
-Package pdftex.def Info: images/2/bitsextraction1.png used on input line 370.
+Package pdftex.def Info: images/2/bitsextraction1.png used on input line 380.
 (pdftex.def)             Requested size: 181.5pt x 180.95146pt.
 
-<images/2/bitsextraction2.png, id=363, 697.60625pt x 329.23pt>
+<images/2/bitsextraction2.png, id=348, 697.60625pt x 329.23pt>
 File: images/2/bitsextraction2.png Graphic file (type png)
 
 <use images/2/bitsextraction2.png>
-Package pdftex.def Info: images/2/bitsextraction2.png used on input line 376.
+Package pdftex.def Info: images/2/bitsextraction2.png used on input line 386.
 (pdftex.def)             Requested size: 363.0pt x 171.31612pt.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+e'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 378.
+(hyperref)                removing `\textasciicaron' on input line 388.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+r'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 378.
+(hyperref)                removing `\textasciicaron' on input line 388.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [10 <./images/2/approx.png> <./images/2/bitsextraction1.png>]
-<images/2/mereni.png, id=371, 845.1575pt x 561.09625pt>
+<images/2/mereni.png, id=356, 845.1575pt x 561.09625pt>
 File: images/2/mereni.png Graphic file (type png)
 
 <use images/2/mereni.png>
-Package pdftex.def Info: images/2/mereni.png used on input line 416.
+Package pdftex.def Info: images/2/mereni.png used on input line 426.
 (pdftex.def)             Requested size: 363.0pt x 241.00127pt.
 
 
 Package hyperref Warning: Composite letter `\textring+u'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textring' on input line 418.
+(hyperref)                removing `\textring' on input line 428.
 
 [11 <./images/2/bitsextraction2.png>] [12 <./images/2/mereni.png>]
-<images/2/kalman_diagram.pdf, id=399, 432.61626pt x 532.99126pt>
+<images/2/kalman_diagram.pdf, id=383, 432.61626pt x 532.99126pt>
 File: images/2/kalman_diagram.pdf Graphic file (type pdf)
 
 <use images/2/kalman_diagram.pdf>
-Package pdftex.def Info: images/2/kalman_diagram.pdf used on input line 508.
+Package pdftex.def Info: images/2/kalman_diagram.pdf used on input line 518.
 (pdftex.def)             Requested size: 254.09938pt x 254.10062pt.
  [13 <./images/2/kalman_diagram.pdf>]
-<images/2/neco.png, id=417, 845.1575pt x 561.09625pt>
+<images/2/neco.png, id=402, 845.1575pt x 561.09625pt>
 File: images/2/neco.png Graphic file (type png)
  <use images/2/neco.png>
-Package pdftex.def Info: images/2/neco.png used on input line 533.
+Package pdftex.def Info: images/2/neco.png used on input line 543.
 (pdftex.def)             Requested size: 363.0pt x 241.00127pt.
 
 [14 <./images/2/neco.png>]
@@ -2163,296 +2428,250 @@ Kapitola 4.
 
 Package hyperref Warning: Composite letter `\textasciicaron+R'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 535.
+(hyperref)                removing `\textasciicaron' on input line 545.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+r'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 537.
+(hyperref)                removing `\textasciicaron' on input line 547.
+
+
+Overfull \hbox (17.66626pt too wide) in paragraph at lines 565--577
+ [][] 
+ []
 
 [15
 
-] <images/3/mrizka.png, id=438, 532.99126pt x 561.09625pt>
+] <images/3/mrizka.png, id=425, 532.99126pt x 561.09625pt>
 File: images/3/mrizka.png Graphic file (type png)
 
 <use images/3/mrizka.png>
-Package pdftex.def Info: images/3/mrizka.png used on input line 566.
+Package pdftex.def Info: images/3/mrizka.png used on input line 600.
 (pdftex.def)             Requested size: 217.80402pt x 217.79926pt.
  [16 <./images/3/mrizka.png>]
-<images/3/polar.png, id=450, 613.29124pt x 561.09625pt>
+<images/3/polar.png, id=433, 613.29124pt x 561.09625pt>
 File: images/3/polar.png Graphic file (type png)
 
 <use images/3/polar.png>
-Package pdftex.def Info: images/3/polar.png used on input line 624.
+Package pdftex.def Info: images/3/polar.png used on input line 658.
 (pdftex.def)             Requested size: 290.40111pt x 265.68445pt.
- [17 <./images/3/polar.png>]
-<images/3/PID.png, id=464, 620.3175pt x 270.00874pt>
+ [17] [18 <./images/3/polar.png>]
+<images/3/PID.png, id=461, 620.3175pt x 270.00874pt>
 File: images/3/PID.png Graphic file (type png)
  <use images/3/PID.png>
-Package pdftex.def Info: images/3/PID.png used on input line 688.
+Package pdftex.def Info: images/3/PID.png used on input line 722.
 (pdftex.def)             Requested size: 326.69382pt x 145.20102pt.
 
-[18] [19 <./images/3/PID.png>] [20
+[19 <./images/3/PID.png>]
+Overfull \hbox (15.30836pt too wide) in paragraph at lines 774--782
+ [][] 
+ []
 
-]
+[20]
 Kapitola 5.
-<images/5/robots.png, id=494, 719.68875pt x 531.9875pt>
+<images/5/robots.png, id=487, 719.68875pt x 531.9875pt>
 File: images/5/robots.png Graphic file (type png)
 
 <use images/5/robots.png>
-Package pdftex.def Info: images/5/robots.png used on input line 741.
+Package pdftex.def Info: images/5/robots.png used on input line 819.
 (pdftex.def)             Requested size: 290.40111pt x 214.66637pt.
 
 
 Package hyperref Warning: Composite letter `\textring+u'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textring' on input line 743.
+(hyperref)                removing `\textring' on input line 821.
 
-[21] <images/5/r1301.jpg, id=503, 274.02374pt x 271.0125pt>
+[21
+
+] <images/5/r1301.jpg, id=496, 274.02374pt x 271.0125pt>
 File: images/5/r1301.jpg Graphic file (type jpg)
 
 <use images/5/r1301.jpg>
-Package pdftex.def Info: images/5/r1301.jpg used on input line 768.
+Package pdftex.def Info: images/5/r1301.jpg used on input line 846.
 (pdftex.def)             Requested size: 181.5pt x 179.50977pt.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+e'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 771.
+(hyperref)                removing `\textasciicaron' on input line 849.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+r'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 771.
+(hyperref)                removing `\textasciicaron' on input line 849.
 
 Package epstopdf Info: Source file: <images/5/pos_pioner.eps>
-(epstopdf)                    date: 2017-04-22 14:23:04
+(epstopdf)                    date: 2017-05-10 11:06:21
 (epstopdf)                    size: 109977 bytes
 (epstopdf)             Output file: <images/5/pos_pioner-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-04-22 17:21:28
+(epstopdf)                    date: 2017-05-10 11:06:21
 (epstopdf)                    size: 38227 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/5/pos_pioner-eps-co
 nverted-to.pdf images/5/pos_pioner.eps>
-(epstopdf)             \includegraphics on input line 777.
+(epstopdf)             \includegraphics on input line 855.
 Package epstopdf Info: Output file is already uptodate.
-<images/5/pos_pioner-eps-converted-to.pdf, id=504, 421.575pt x 316.18124pt>
+<images/5/pos_pioner-eps-converted-to.pdf, id=497, 421.575pt x 316.18124pt>
 File: images/5/pos_pioner-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/5/pos_pioner-eps-converted-to.pdf>
 Package pdftex.def Info: images/5/pos_pioner-eps-converted-to.pdf used on input
- line 777.
+ line 855.
 (pdftex.def)             Requested size: 290.40111pt x 217.80345pt.
  [22 <./images/5/robots.png> <./images/5/r1301.jpg>]
 Package epstopdf Info: Source file: <images/5/dist.eps>
-(epstopdf)                    date: 2017-04-22 14:42:08
+(epstopdf)                    date: 2017-05-10 11:06:21
 (epstopdf)                    size: 136120 bytes
 (epstopdf)             Output file: <images/5/dist-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-04-22 17:22:20
+(epstopdf)                    date: 2017-05-10 11:06:21
 (epstopdf)                    size: 40917 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/5/dist-eps-converte
 d-to.pdf images/5/dist.eps>
-(epstopdf)             \includegraphics on input line 787.
+(epstopdf)             \includegraphics on input line 865.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/5/dist-eps-converted-to.pdf, id=513, 421.575pt x 316.18124pt>
+<images/5/dist-eps-converted-to.pdf, id=506, 421.575pt x 316.18124pt>
 File: images/5/dist-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/5/dist-eps-converted-to.pdf>
 Package pdftex.def Info: images/5/dist-eps-converted-to.pdf used on input line 
-787.
+865.
 (pdftex.def)             Requested size: 290.40111pt x 217.80345pt.
 Package epstopdf Info: Source file: <images/5/odchylka.eps>
-(epstopdf)                    date: 2017-04-22 14:50:10
+(epstopdf)                    date: 2017-05-10 11:06:21
 (epstopdf)                    size: 127901 bytes
 (epstopdf)             Output file: <images/5/odchylka-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-04-22 17:22:22
+(epstopdf)                    date: 2017-05-10 11:06:21
 (epstopdf)                    size: 44528 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/5/odchylka-eps-conv
 erted-to.pdf images/5/odchylka.eps>
-(epstopdf)             \includegraphics on input line 795.
+(epstopdf)             \includegraphics on input line 873.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/5/odchylka-eps-converted-to.pdf, id=514, 421.575pt x 316.18124pt>
+<images/5/odchylka-eps-converted-to.pdf, id=507, 421.575pt x 316.18124pt>
 File: images/5/odchylka-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/5/odchylka-eps-converted-to.pdf>
 Package pdftex.def Info: images/5/odchylka-eps-converted-to.pdf used on input l
-ine 795.
+ine 873.
 (pdftex.def)             Requested size: 290.40111pt x 217.80345pt.
  [23 <./images/5/pos_pioner-eps-converted-to.pdf> <./images/5/dist-eps-converte
 d-to.pdf>]
 
 Package hyperref Warning: Composite letter `\textasciicaron+e'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 799.
+(hyperref)                removing `\textasciicaron' on input line 877.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+r'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 799.
+(hyperref)                removing `\textasciicaron' on input line 877.
 
 Package epstopdf Info: Source file: <images/5/pos_rob.eps>
-(epstopdf)                    date: 2017-04-22 14:26:44
+(epstopdf)                    date: 2017-05-10 11:06:21
 (epstopdf)                    size: 131070 bytes
 (epstopdf)             Output file: <images/5/pos_rob-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-04-22 17:22:20
+(epstopdf)                    date: 2017-05-10 11:06:21
 (epstopdf)                    size: 48595 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/5/pos_rob-eps-conve
 rted-to.pdf images/5/pos_rob.eps>
-(epstopdf)             \includegraphics on input line 805.
+(epstopdf)             \includegraphics on input line 883.
 Package epstopdf Info: Output file is already uptodate.
-<images/5/pos_rob-eps-converted-to.pdf, id=532, 421.575pt x 316.18124pt>
+<images/5/pos_rob-eps-converted-to.pdf, id=524, 421.575pt x 316.18124pt>
 File: images/5/pos_rob-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/5/pos_rob-eps-converted-to.pdf>
 Package pdftex.def Info: images/5/pos_rob-eps-converted-to.pdf used on input li
-ne 805.
+ne 883.
 (pdftex.def)             Requested size: 290.40111pt x 217.80345pt.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+r'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 828.
+(hyperref)                removing `\textasciicaron' on input line 906.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+e'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 828.
+(hyperref)                removing `\textasciicaron' on input line 906.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+r'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 828.
+(hyperref)                removing `\textasciicaron' on input line 906.
 
-<images/5/people.png, id=537, 1161.33875pt x 758.835pt>
+<images/5/people.png, id=529, 1161.33875pt x 758.835pt>
 File: images/5/people.png Graphic file (type png)
 
 <use images/5/people.png>
-Package pdftex.def Info: images/5/people.png used on input line 835.
+Package pdftex.def Info: images/5/people.png used on input line 913.
 (pdftex.def)             Requested size: 326.69778pt x 213.46814pt.
  [24 <./images/5/odchylka-eps-converted-to.pdf>]
 [25 <./images/5/pos_rob-eps-converted-to.pdf> <./images/5/people.png>]
 Package epstopdf Info: Source file: <images/5/trajek.eps>
-(epstopdf)                    date: 2017-04-30 15:45:10
+(epstopdf)                    date: 2017-05-10 11:06:21
 (epstopdf)                    size: 142469 bytes
 (epstopdf)             Output file: <images/5/trajek-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-04-30 15:47:22
+(epstopdf)                    date: 2017-05-10 11:06:21
 (epstopdf)                    size: 50394 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/5/trajek-eps-conver
 ted-to.pdf images/5/trajek.eps>
-(epstopdf)             \includegraphics on input line 845.
+(epstopdf)             \includegraphics on input line 923.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/5/trajek-eps-converted-to.pdf, id=557, 421.575pt x 316.18124pt>
+<images/5/trajek-eps-converted-to.pdf, id=549, 421.575pt x 316.18124pt>
 File: images/5/trajek-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/5/trajek-eps-converted-to.pdf>
 Package pdftex.def Info: images/5/trajek-eps-converted-to.pdf used on input lin
-e 845.
+e 923.
 (pdftex.def)             Requested size: 290.40111pt x 217.80345pt.
  [26 <./images/5/trajek-eps-converted-to.pdf>]
 Kapitola 6.
 
 Package hyperref Warning: Composite letter `\textasciicaron+e'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 848.
+(hyperref)                removing `\textasciicaron' on input line 926.
 
 .................................................
 . LaTeX info: "xparse/redefine-command"
 . 
-. Redefining command \chapter with sig. 's' on line 861.
+. Redefining command \chapter with sig. 's' on line 939.
 .................................................
 .................................................
 . LaTeX info: "xparse/redefine-command"
 . 
-. Redefining command \appendix with sig. 'ss' on line 861.
+. Redefining command \appendix with sig. 'ss' on line 939.
 .................................................
-[27
+No file ctuman.ind.
+(./ctuman.bbl [27
 
 ] [28
 
 ]
 P\v {r}\'{\i }loha A.
 
-Package hyperref Warning: Composite letter `\textasciicaron+r'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 862.
-
-
-Package hyperref Warning: Composite letter `\textring+u'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textring' on input line 862.
-
-
-Package hyperref Warning: Composite letter `\textasciicaron+r'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 862.
-
-<images/6/4.png, id=578, 616.3025pt x 389.455pt>
-File: images/6/4.png Graphic file (type png)
- <use images/6/4.png>
-Package pdftex.def Info: images/6/4.png used on input line 867.
-(pdftex.def)             Requested size: 363.0pt x 229.39018pt.
-
-<images/6/1.png, id=581, 619.31375pt x 608.2725pt>
-File: images/6/1.png Graphic file (type png)
- <use images/6/1.png>
-Package pdftex.def Info: images/6/1.png used on input line 872.
-(pdftex.def)             Requested size: 363.0pt x 356.53874pt.
-
-<images/6/2.png, id=584, 605.26125pt x 636.3775pt>
-File: images/6/2.png Graphic file (type png)
- <use images/6/2.png>
-Package pdftex.def Info: images/6/2.png used on input line 877.
-(pdftex.def)             Requested size: 363.0pt x 381.66437pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [29 <./images/6/4.png>] <images/6/3.png, id=593, 614.295pt x 761.84625pt>
-File: images/6/3.png Graphic file (type png)
-
-<use images/6/3.png>
-Package pdftex.def Info: images/6/3.png used on input line 882.
-(pdftex.def)             Requested size: 363.0pt x 450.1945pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [30 <./images/6/1.png>]
-No file ctuman.ind.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [31 <./images/6/2.png>] (./ctuman.bbl [32 <./images/6/3.png>]
-P\v {r}\'{\i }loha B.
-
 Underfull \hbox (badness 8094) in paragraph at lines 60--63
 []\T1/lmr/m/n/10.95 (+20) Template matching.  []$\T1/lmtt/m/n/10.95 http : / / 
 docs . adaptive-[]vision . com / 4 . 7 /
  []
 
-[33
-
-]) [34]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 891.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 891.
+[29]) [30]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 970.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 970.
  (./ctuman.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 891.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 891.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 970.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 970.
 Package rerunfilecheck Info: File `ctuman.out' has not changed.
-(rerunfilecheck)             Checksum: 2077A35B6F4ED343B983FBD3A32169F0;1858.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
+(rerunfilecheck)             Checksum: 480F505026072101F3D95A1E78765749;1760.
  ) 
 Here is how much of TeX's memory you used:
- 26177 strings out of 493029
- 468312 string characters out of 6136234
- 574643 words of memory out of 5000000
- 28943 multiletter control sequences out of 15000+600000
- 143520 words of font info for 178 fonts, out of 8000000 for 9000
+ 35568 strings out of 493029
+ 673490 string characters out of 6136234
+ 750710 words of memory out of 5000000
+ 38131 multiletter control sequences out of 15000+600000
+ 143733 words of font info for 180 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,17n,92p,10347b,1216s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,19n,92p,10347b,1221s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
 ips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/s
 hare/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/l
@@ -2468,10 +2687,10 @@ fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx
 10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso10.pfb></usr/share/texmf/fo
 nts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pf
 b></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb>
-Output written on ctuman.pdf (42 pages, 3276487 bytes).
+Output written on ctuman.pdf (36 pages, 3123789 bytes).
 PDF statistics:
- 733 PDF objects out of 1000 (max. 8388607)
- 616 compressed objects within 7 object streams
- 178 named destinations out of 1000 (max. 500000)
- 46969 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 689 PDF objects out of 1000 (max. 8388607)
+ 586 compressed objects within 6 object streams
+ 169 named destinations out of 1000 (max. 500000)
+ 46953 words of extra memory for PDF output out of 51595 (max. 10000000)
 

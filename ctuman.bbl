@@ -103,6 +103,11 @@ Rich LeGrand.
 \newblock Closed-loop motion control for mobile robotics.
 \newblock {\em Circuit Cellar}, (169):34–46, Aug 2004.
 
+\bibitem{cite:21}
+Finn Haugen.
+\newblock Ziegler-nichols’ closed-loop method.
+\newblock {\em TechTeach}, Jul 2010.
+
 \bibitem{cite:15}
 Coppelia robotics v-rep.
 \newblock \url{http://www.coppeliarobotics.com/index.html}.

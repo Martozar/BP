@@ -80,11 +80,20 @@
 \DeclareMathOperator{\atantwo}{atan2}
 
 % Marginpars used as navigation aids.
+%\PassOptionsToPackage{table,xcdraw}{xcolor}
+\usepackage{colortbl}
+\usepackage{tikz}
+
 \usepackage{mparhack}
 \usepackage{epstopdf}
 \usepackage{subfig}
 \usepackage{siunitx}
 \usepackage{url}
+\usepackage{multirow}
+\usepackage[justification=centering]{caption}
+
+
+\usepackage{hhline}
 
 
 \newcommand\indexmp[1]{{\sffamily\bfseries#1}}
@@ -217,7 +226,7 @@ Problematiku detekci člověka lze řešit pomocí nevizuálních nebo vizuáln�
 
 \subsubsection{Vizuální metody}
 
-Existuje několik výzkumných projektů, které se zabývají problematikou pomocných robotů, které by následovaly člověka za použití vizuálních metod s použitím kamery. Většina těchto projektů zakládá na detekci pohybujícího se objektu, které je následně sledován. V některých pracích jsou použity neuronové sítě pro detekci obličeje spolu s background subtraction pro nalezení pohybu v obraze \cite{cite:19}, např. pohybujících se nohou člověka. Avšak použití tohoto algoritmu vede k tomu, že sledovaný člověk musí být otočen k robotu obličejem, a prezence několika lidí v místnosti přivede k tomu, že robot nedokáže určit, koho musí následovat. V případě, že neuronová síť bude naučena pouze na konkrétního člověka, což by tento problém mohlo řešit, znovupoužitelnost algoritmu klesá. Jelikož síť by byla naučena pouze pro jednu osobu, bylo by ji třeba přeučovat pro každé nové použití algoritmu.
+Existuje několik výzkumných projektů, které se zabývají problematikou pomocných robotů, které by následovaly člověka za použití vizuálních metod. Většina těchto projektů zakládá na detekci pohybujícího se objektu, které je následně sledován. V některých pracích jsou použity neuronové sítě pro detekci obličeje spolu s background subtraction pro nalezení pohybu v obraze \cite{cite:19}, např. pohybujících se nohou člověka. Avšak použití tohoto algoritmu vede k tomu, že sledovaný člověk musí být otočen k robotu obličejem, a prezence několika lidí v místnosti přivede k tomu, že robot nedokáže určit, koho musí následovat. V případě, že neuronová síť bude naučena pouze na konkrétního člověka, což by tento problém mohlo řešit, znovupoužitelnost algoritmu klesá. Jelikož síť by byla naučena pouze pro jednu osobu, bylo by ji třeba přeučovat pro každé nové použití algoritmu.
 
 Dalším možným řešením této problematiky je použití barevného markeru \cite{cite:18}, což znamená, že robot hledá určitou shodu barev, kterou pak sleduje. V tomto případě člověk může být otočen k robotu zády, a algoritmus může být použit i v plných lidí prostorech. Avšak detekce barevného vzoru nemusí být robustní kvůli změně osvětlení nebo špatné volbě barev, které nebudou dostatečně kontrastní v porovnání s oblečením sledovaného člověka.
 
@@ -240,6 +249,7 @@ Mobilní robot bude následovat člověka, který má na sobě umístěnou před
 	\label{am}
 	\includegraphics[width=0.5\textwidth]{images/2/ArucoMarker.jpg}
 \end{figure}
+
 
 \section{Volba souřadnicového systému}
 \label{ss_section}
@@ -536,11 +546,35 @@ d = \sqrt{x_t + y_t}\cos(\phi).
 
 \section{Vyhýbání se překážkám}
 
-Pro řízení autonomního robotu je důležité, aby se během sledování cíle dokázal vyhýbat překážkám. Algoritmů pro řízení robotu v prostředí s překážkami je několik \cite{cite:20}, jejichž přehled je k nalezení v příloze \ref{obstacle_avoidance}.
+Pro řízení autonomního robotu je důležité, aby se během sledování cíle dokázal vyhýbat překážkám. Algoritmů pro řízení robotu v prostředí s překážkami je několik \cite{cite:20}, jejichž přehled je k nalezení v tabulce \ref{obstacle_avoidance}. V tabulce je uveden název metody, kinematika použitého robotu a prostředí, pohled na vytvářený model prostředí, mapa, která se pro algoritmus používá, a druhy senzorů, které je třeba pro algoritmus použít.
 
 Omezením na výběr algoritmu pro vyhýbání se překážkám je to, že se robot bude pohybovat v prostředí, které není dopředu známo. Proto je výhodnější použít algoritmus, který pracuje s lokální mapou prostředí vytvořenou kolem robotu místo globální. Navíc při použitý vztažné soustavy a diferenciálního výpočtu polohy a rychlosti robotu nelze přesně stanovit, kde se nachází on nebo překážky kolem něj. Proto je třeba použít algoritmus, který by pracoval pouze se zakládní kinematikou robotu a prostředí.
 
 S uvážením těchto omezení, nejvhodnějšími algoritmy pro řešení zádaného problému jsou algoritmus Bug \cite[s. 272--276]{cite:20} nebo Vector Field Histogram \cite[s. 276--278]{cite:20}\cite{cite:12}.
+
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+% \usepackage[table,xcdraw]{xcolor}
+% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+\begin{table}[hbt]
+	\centering
+	\caption{Souhrn základních algoritmů pro vyhýbání se překážkám \newline\cite[s. 287--290]{cite:20}}
+	\label{obstacle_avoidance}
+	\begin{tabular}{|c|c|c|c|c|}
+		\hline
+		\cellcolor[HTML]{C0C0C0}                         & \cellcolor[HTML]{C0C0C0}                             & \cellcolor[HTML]{C0C0C0}                                   & \cellcolor[HTML]{C0C0C0}                                           & \cellcolor[HTML]{C0C0C0}                                   \\
+		\multirow{-2}{*}{\cellcolor[HTML]{C0C0C0}Metoda} & \multirow{-2}{*}{\cellcolor[HTML]{C0C0C0}Kinemtaika} & \multirow{-2}{*}{\cellcolor[HTML]{C0C0C0}Pohled}           & \multirow{-2}{*}{\cellcolor[HTML]{C0C0C0}Mapa}                     & \multirow{-2}{*}{\cellcolor[HTML]{C0C0C0}Senzor}           \\ \hline
+		Bug                                              & Žádná                                                & Lokální                                                    & \begin{tabular}[c]{@{}c@{}}Žádná\\ Lokální graf tečen\end{tabular} & \begin{tabular}[c]{@{}c@{}}Dotykový\\ Dálkový\end{tabular} \\ \hline
+		VFH                                              & Záklaní                                              & Lokální                                                    & Mřížoví histogram                                                  & Dálkový                                                    \\ \hline
+		Bubble band                                      & Přesná                                               & \begin{tabular}[c]{@{}c@{}}Lokální\\ Globální\end{tabular} & Globální polygon                                                   & Různé                                                      \\ \hline
+		Curvature velocity                               & Přesná                                               & Lokální                                                    & Mřížoví histogram                                                  & Dálkový                                                    \\ \hline
+		Dynamic window                                   & Přesná                                               & Globální                                                   & Obstacle line field                                                & Dálkový                                                    \\ \hline
+		Nearness diagram                                 & Holonomní                                            & Globální                                                   & Žádná                                                              & Dálkový                                                    \\ \hline
+		Gradient method                                  & Přesná                                               & Globální                                                   & Žádná                                                              & Dálkový                                                    \\ \hline
+	\end{tabular}
+\end{table}
 
 \subsection{Algoritmus Bug}
 
@@ -728,6 +762,50 @@ I_{t+1} = \left\{
 \end{equation}
 
 kde $K_a$ je anti windup koeficient. V případě, že $K_a$ bude roven 0, integrální složka se nezmění. Naopak pokud $K_a$ je 1, anti windup bude ignorován.
+
+\subsubsection{Volba koeficientů}
+%http://techteach.no/publications/articles/zn_closed_loop_method/zn_closed_loop_method.pdf
+Při volbě koeficientů PID regulátoru je třeba mít na mysli vlastnosti každé složky (viz tabulke \ref{PID}).  Pro ladění těchto koeficientů lze použít např. Zieglerovu Nicholsovu metodu \cite{cite:21}. Princip metody spočívá v tom, že se nalezne kritické zesílení $K_{p_c}$, při kterém systém, tedy robot, začne kmítat a zjistí se doba jedné oscilace $P_c$ pro toto zesílení. Na základě těchto údajů se spočtou koeficienty složek použitého PID regulátoru (viz tabulka \ref{koef}). 
+
+\begin{table}[hbt]
+	\centering
+	\caption{Vliv zvětšení koeficientů PID regulátoru na kvalitu regulace}
+	\label{PID}
+	\begin{tabular}{|c|c|c|c|c|}
+		\hline
+		\rowcolor[HTML]{C0C0C0} 
+		Koeficient & Doba náběhu & Overshoot & Doba ustálení & Chyba v ekvilibriu \\ \hline
+		$K_p$      & Snižuje     & Zvyšuje   & Malá změna    & Snižuje            \\ \hline
+		$K_i$      & Snižuje     & Zvyšuje   & Zvyšuje       & Eliminuje          \\ \hline
+		$K_d$      & Malá změna  & Snižuje   & Snižuje       & Žádná              \\ \hline
+	\end{tabular}
+\end{table}
+K ladění lze přistupovat i empiricky. Když je známa maximální rychlost, se kterou se robot může pohybovat, lze jednoduše odhádnout parametr $K_p$. Mělo by být zajištěno, že se robot bude pohybovat rychlostí, která je přímo úměrná chybě. Pokud je tedy očekávána maximální rychlost $V_{max}$ a maximální odchylka od referenčního bodu je $E_{max}$, pak by mělo platit, že
+
+\begin{equation}
+K_p = \frac{V_{max}}{E_{max}}.
+\end{equation}
+
+Ostatní parametry by se měly zvolit tak, aby nedocházelo ke zbytečnému kmitání robotu a rychlé odezvě na průdké změny polohy cíle.
+
+
+% Please add the following required packages to your document preamble:
+% \usepackage[table,xcdraw]{xcolor}
+% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+\begin{table}[hbt]
+	\centering
+	\caption{Nastavení koeficientů PID regulátoru pomocí Zieglerovy Nicholsovy metody}
+	\label{koef}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		\rowcolor[HTML]{C0C0C0} 
+		Regulátor & $K_p$         & $K_i$                            & $K_d$                          \\ \hline
+		$P$       & $0.5K_{p_c}$  & 0                                & 0                              \\ \hline
+		$PI$      & $0.45K_{p_c}$ & $1.2\frac{K_{p_c}\Delta t}{P_c}$ & 0                              \\ \hline
+		$PD$      & $0.8K_{p_c}$    & 0                                & $K_{p_c}\frac{P_c}{8\Delta t}$ \\ \hline
+		$PID$     & $0.6K_{p_c}$  & $2\frac{K_{p_c}\Delta t}{P_c}$   & $K_{p_c}\frac{P_c}{8\Delta t}$ \\ \hline
+	\end{tabular}
+\end{table}
 \chapter{Simulace}
 \label{simulace}
 %http://www.coppeliarobotics.com/index.html
@@ -858,7 +936,7 @@ Tato práce byla velkým přínosem hlavně proto, že v ní byla možnost vyzko
 
 
 \appendix
-
+\iffalse
 \chapter{Přehled algoritmů pro vyhýbání se překážkám}
 \label{obstacle_avoidance}
 \begin{figure}[H]
@@ -882,6 +960,7 @@ Tato práce byla velkým přínosem hlavně proto, že v ní byla možnost vyzko
 	\subfloat{\includegraphics[width=1\textwidth]{images/6/3.png}}
 	\newline
 \end{figure}
+\fi
 \printindex
 
 \bibliographystyle{unsrt}

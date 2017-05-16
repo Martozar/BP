@@ -38,7 +38,7 @@
 \contentsline {figure}{\numberline {3.9}{\ignorespaces Odvozen\IeC {\'\i } hodnot $d$ a $\phi $ ze zn\IeC {\'a}m\IeC {\'e} polohy c\IeC {\'\i }le\relax }}{14}{figure.3.9}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Lok\IeC {\'a}ln\IeC {\'\i } mapa prost\IeC {\v r}ed\IeC {\'\i } o polom\IeC {\v e}ru $r_{map}$ = 10\relax }}{16}{figure.4.1}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Pol\IeC {\'a}rn\IeC {\'\i } histogram s vyobrazen\IeC {\'y}mi prahy $\tau _{low}$ (zelen\IeC {\v e}) a $\tau _{high}$ (fialov\IeC {\v e})\relax }}{17}{figure.4.2}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Pol\IeC {\'a}rn\IeC {\'\i } histogram s vyobrazen\IeC {\'y}mi prahy $\tau _{low}$ (zelen\IeC {\v e}) a $\tau _{high}$ (fialov\IeC {\v e})\relax }}{18}{figure.4.2}
 \contentsline {figure}{\numberline {4.3}{\ignorespaces PID regulace\relax }}{19}{figure.4.3}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Roboty vytvo\IeC {\v r}en\IeC {\'e} v simul\IeC {\'a}toru V-Rep\relax }}{22}{figure.5.1}
@@ -50,9 +50,4 @@
 \contentsline {figure}{\numberline {5.7}{\ignorespaces Simulace s \IeC {\v c}lov\IeC {\v e}kem a p\IeC {\v r}ek\IeC {\'a}\IeC {\v z}kami\relax }}{25}{figure.5.7}
 \contentsline {figure}{\numberline {5.8}{\ignorespaces Trajektorie robotu a \IeC {\v c}lov\IeC {\v e}ka\relax }}{26}{figure.5.8}
 \addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Souhrn algoritm\IeC {\r u} pro vyh\IeC {\'y}b\IeC {\'a}n\IeC {\'\i } se p\IeC {\v r}ek\IeC {\'a}\IeC {\v z}k\IeC {\'a}m \cite [s. 287--290]{cite:20}\relax }}{29}{figure.A.1}
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Souhrn algoritm\IeC {\r u} pro vyh\IeC {\'y}b\IeC {\'a}n\IeC {\'\i } se p\IeC {\v r}ek\IeC {\'a}\IeC {\v z}k\IeC {\'a}m \cite [s. 287--290]{cite:20}\relax }}{30}{figure.A.1a}
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Souhrn algoritm\IeC {\r u} pro vyh\IeC {\'y}b\IeC {\'a}n\IeC {\'\i } se p\IeC {\v r}ek\IeC {\'a}\IeC {\v z}k\IeC {\'a}m \cite [s. 287--290]{cite:20}\relax }}{31}{figure.A.1b}
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Souhrn algoritm\IeC {\r u} pro vyh\IeC {\'y}b\IeC {\'a}n\IeC {\'\i } se p\IeC {\v r}ek\IeC {\'a}\IeC {\v z}k\IeC {\'a}m \cite [s. 287--290]{cite:20}\relax }}{32}{figure.A.1c}
 \addvspace {10\p@ }
