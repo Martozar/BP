@@ -12,15 +12,15 @@ Warning--empty year in cite:11
 Warning--there's a number but no volume in cite:14
 You've used 21 entries,
             1791 wiz_defined-function locations,
-            554 strings with 6281 characters,
-and the built_in function-call counts, 3799 in all, are:
-= -- 312
+            555 strings with 6306 characters,
+and the built_in function-call counts, 3801 in all, are:
+= -- 313
 > -- 156
 < -- 2
 + -- 62
 - -- 41
-* -- 226
-:= -- 590
+* -- 225
+:= -- 591
 add.period$ -- 59
 call.type$ -- 21
 change.case$ -- 19
@@ -29,17 +29,17 @@ cite$ -- 28
 duplicate$ -- 176
 empty$ -- 414
 format.name$ -- 41
-if$ -- 855
+if$ -- 856
 int.to.chr$ -- 0
 int.to.str$ -- 21
 missing$ -- 18
 newline$ -- 103
 num.names$ -- 16
-pop$ -- 79
+pop$ -- 77
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 92
+skip$ -- 93
 stack$ -- 0
 substring$ -- 176
 swap$ -- 31
@@ -50,5 +50,5 @@ type$ -- 0
 warning$ -- 7
 while$ -- 25
 width$ -- 23
-write$ -- 203
+write$ -- 204
 (There were 7 warnings)

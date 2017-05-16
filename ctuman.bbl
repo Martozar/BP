@@ -104,9 +104,9 @@ Rich LeGrand.
 \newblock {\em Circuit Cellar}, (169):34–46, Aug 2004.
 
 \bibitem{cite:21}
-Finn Haugen.
-\newblock Ziegler-nichols’ closed-loop method.
-\newblock {\em TechTeach}, Jul 2010.
+N.~B.~Nichols J.~G.~Ziegler.
+\newblock Optimum settings for automatic controller.
+\newblock {\em Trans. ASME}, 64, 1942.
 
 \bibitem{cite:15}
 Coppelia robotics v-rep.
