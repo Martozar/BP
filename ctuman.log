@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.4.19)  16 MAY 2017 17:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.4.19)  17 MAY 2017 15:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2645,10 +2645,10 @@ Package hyperref Warning: Composite letter `\textasciicaron+r'
 (hyperref)                removing `\textasciicaron' on input line 878.
 
 Package epstopdf Info: Source file: <images/5/pos_pioner.eps>
-(epstopdf)                    date: 2017-04-22 14:23:04
+(epstopdf)                    date: 2017-05-10 11:06:21
 (epstopdf)                    size: 109977 bytes
 (epstopdf)             Output file: <images/5/pos_pioner-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-04-22 17:21:28
+(epstopdf)                    date: 2017-05-10 11:06:21
 (epstopdf)                    size: 38227 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/5/pos_pioner-eps-co
 nverted-to.pdf images/5/pos_pioner.eps>
@@ -2663,10 +2663,10 @@ Package pdftex.def Info: images/5/pos_pioner-eps-converted-to.pdf used on input
 (pdftex.def)             Requested size: 290.40111pt x 217.80345pt.
  [22 <./images/5/robots.png> <./images/5/r1301.jpg>]
 Package epstopdf Info: Source file: <images/5/dist.eps>
-(epstopdf)                    date: 2017-04-22 14:42:08
+(epstopdf)                    date: 2017-05-10 11:06:21
 (epstopdf)                    size: 136120 bytes
 (epstopdf)             Output file: <images/5/dist-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-04-22 17:22:20
+(epstopdf)                    date: 2017-05-10 11:06:21
 (epstopdf)                    size: 40917 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/5/dist-eps-converte
 d-to.pdf images/5/dist.eps>
@@ -2681,10 +2681,10 @@ Package pdftex.def Info: images/5/dist-eps-converted-to.pdf used on input line
 894.
 (pdftex.def)             Requested size: 290.40111pt x 217.80345pt.
 Package epstopdf Info: Source file: <images/5/odchylka.eps>
-(epstopdf)                    date: 2017-04-22 14:50:10
+(epstopdf)                    date: 2017-05-10 11:06:21
 (epstopdf)                    size: 127901 bytes
 (epstopdf)             Output file: <images/5/odchylka-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-04-22 17:22:22
+(epstopdf)                    date: 2017-05-10 11:06:21
 (epstopdf)                    size: 44528 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/5/odchylka-eps-conv
 erted-to.pdf images/5/odchylka.eps>
@@ -2711,10 +2711,10 @@ Package hyperref Warning: Composite letter `\textasciicaron+r'
 (hyperref)                removing `\textasciicaron' on input line 906.
 
 Package epstopdf Info: Source file: <images/5/pos_rob.eps>
-(epstopdf)                    date: 2017-04-22 14:26:44
+(epstopdf)                    date: 2017-05-10 11:06:21
 (epstopdf)                    size: 131070 bytes
 (epstopdf)             Output file: <images/5/pos_rob-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-04-22 17:22:20
+(epstopdf)                    date: 2017-05-10 11:06:21
 (epstopdf)                    size: 48595 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/5/pos_rob-eps-conve
 rted-to.pdf images/5/pos_rob.eps>
@@ -2752,10 +2752,10 @@ Package pdftex.def Info: images/5/people.png used on input line 942.
  [24 <./images/5/odchylka-eps-converted-to.pdf>]
 [25 <./images/5/pos_rob-eps-converted-to.pdf> <./images/5/people.png>]
 Package epstopdf Info: Source file: <images/5/trajek.eps>
-(epstopdf)                    date: 2017-04-30 15:45:10
+(epstopdf)                    date: 2017-05-10 11:06:21
 (epstopdf)                    size: 142469 bytes
 (epstopdf)             Output file: <images/5/trajek-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-04-30 15:47:22
+(epstopdf)                    date: 2017-05-10 11:06:21
 (epstopdf)                    size: 50394 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/5/trajek-eps-conver
 ted-to.pdf images/5/trajek.eps>
@@ -2814,11 +2814,11 @@ Package rerunfilecheck Info: File `ctuman.out' has not changed.
 (rerunfilecheck)             Checksum: 3DEA68FF94062BDA27175D59161D74D0;1805.
  ) 
 Here is how much of TeX's memory you used:
- 44866 strings out of 493029
- 948401 string characters out of 6136234
- 1018247 words of memory out of 5000000
+ 44864 strings out of 493029
+ 948381 string characters out of 6136234
+ 1018246 words of memory out of 5000000
  47362 multiletter control sequences out of 15000+600000
- 143603 words of font info for 179 fonts, out of 8000000 for 9000
+ 143520 words of font info for 178 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  136i,19n,178p,10347b,2128s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
@@ -2837,7 +2837,7 @@ fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10
 ts/type1/public/lm/lmsso10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.p
 fb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/ty
 pe1/public/lm/lmtt10.pfb>
-Output written on ctuman.pdf (37 pages, 3144889 bytes).
+Output written on ctuman.pdf (37 pages, 3145221 bytes).
 PDF statistics:
  708 PDF objects out of 1000 (max. 8388607)
  601 compressed objects within 7 object streams
